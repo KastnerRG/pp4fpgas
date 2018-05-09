@@ -27,4 +27,6 @@
 *.mtc1
 *.out
 *.synctex.gz
+*.upa
+*.upb
 main.pdf
