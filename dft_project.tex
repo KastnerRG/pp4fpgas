@@ -1,0 +1,41 @@
+\chapter{Discrete Fourier Transform (DFT) Project}
+\glsresetall
+\label{chapter:DFT_project}
+
+\section{Introduction}
+The goal of this project is design architectures that implement the Discrete Fourier Transform (DFT).  The DFT is a common operation in signal processing which generates a frequency domain representation of the discrete input signal. We start with the direct implementation of the DFT which is a matrix-vector multiplication. The input signal is a vector of samples and the matrix is composed of a set of basis functions corresponding to discrete cosine and sine waveforms of different frequencies. The multiplication of the input signal with these basis functions describes how well the input signal correlates with those waveforms, which is the value of the Fourier series at that frequency.
+
+\section{Materials}
+You can find the following files in \texttt{project2-dft.zip}. These are divided into four folders: \texttt{dft\_8\_precomputed}, \texttt{dft\_32\_precomputed}, \texttt{dft\_256\_precomputed}, and \texttt{dft\_1024\_precomputed}. Each of these folders has its own testbench, \texttt{out.gold.dat} file, and \texttt{coefficients.h} file. 
+
+Each folder contains following files:
+\begin{itemize}
+\item \texttt{dft.cpp}: The baseline implementation for the dft function.
+\item \texttt{dft.h}: Header file holding important constants and other variables.
+\item \texttt{dft\_test.cpp}: Testbench
+\item \texttt{coefficientsX.h}: A file containing the values of corresponding to one sine/cosine period sampled based upon the DFT points. For example, an 8 point DFT has 8 samples across both the sine and cosine function evenly spaced across one period. This is equivalent to dividing one rotation in the complex plane equally by the number of points in the DFT. 
+\item \texttt{out.gold.dat}: ``Golden'' output. The testbench (dft\_test.cpp) generates a sample input and calls the function \texttt{dft} in \texttt{dft.cpp} with that sample input. This output of the function is compared to the expected output. This will indicate PASS or FAIL. If it fails, then the code in \texttt{dft} is incorrect. There are four different versions of depending on the DFT size and way in which the DFT coefficients were generated.
+\item \texttt{script.tcl} and \texttt{directives.tcl}: Used to create the project. 
+\end{itemize}
+
+\section{Project Goal}
+You should modify the code to create a number of different architectures that perform tradeoffs between performance and area.  For \texttt{dft\_256\_precomputed} and \texttt{dft\_1024\_precomputed} designs, you need to use precomputed values from \texttt{coefficients256.h} and \texttt{coefficients1024.h}. 
+
+For 256-point and 1024-point DFTs, you will create a report describing how you generated these different architectures (code restructuring, pragmas utilized, etc.). For each architecture you should provide its results including the resource utilization (BRAMs, DSP48, LUT, FF), and performance in terms of throughput (number of FFT operations/second), latency, clock cycles, clock frequency (which is fixed to 10 ns). You can do most of the design space exploration on the 256 point DFT. You should pick your ``best'' 256 architecture and synthesize that as a 1024 DFT.
+
+The 8 and 32 point folders are provided for your convenience. If you would like, you can do some of your initial design space optimization on these smaller architectures. But it is not necessary to use these at all.
+
+The key in this project is to understand the tradeoffs between loop optimizations (unrolling and pipelining) and data partitioning. Therefore you should focus on these optimizations.
+
+\section{Optimization Hints and Guidelines}
+\begin{itemize}
+\item You should use a clock period of 10 ns.
+\item The output of your architecture must closely match the golden output. Be sure to generate a working function before performing any optimizations. If the result does not match exactly, but is close, please explain why in the report.
+\item You should use float for all data types. You do not need to perform bitwidth optimization of this project.
+\item The current design is set up to do the DFT in-place, i.e., you put the output results back into the same arrays that give you the input results. You can change this if you think it will give you better results.
+\item There are many different ways to generate the DFT coefficients. These are constants when the DFT size is fixed. We have given you the coefficients for both 256 (in \texttt{coefficients256.h}) and 1024 (in \texttt{coefficients1024.h}). They each have two constant arrays, \texttt{sin\_table} and \texttt{cos\_table}. You can use these coefficient arrays directly as memories in your architectures. You are also free to create your own arrays using a different structure (e.g., 2D array, reordering of elements in the given 1D arrays, etc.). Or you could dynamically generate the coefficients. 
+\item There is significant amount of parallelism that can be exploited by (partially) unrolling the for loops. Pipelining these (partially) unrolled for loops should lead to higher throughputs.
+\item There are more efficient methods for performing the DFT that exploit the symmetries of the Fourier constants, e.g., the fast Fourier transform (FFT). Do not use these symmetries. In other words, treat this like a matrix-vector multiply with unknown matrix values. Do not worry, we will implement FFT architectures in a following project that will fully take advantage of these symmetries.
+\item You do not need to report your optimizations for your 8 point and 32 point DFT; these folders are provided for your convenience. Since these will very likely synthesize much faster than larger point DFT functions, it may be useful to use these to debug your code or in your initial design space exploration.
+\item Your report must explicitly state how you calculated the throughput results. Note that this is often not simply a function of the latency and the clock period, and involves using the initiation interval.
+\end{itemize}

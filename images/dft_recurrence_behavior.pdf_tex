@@ -1,0 +1,74 @@
+%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'dft_recurrence_behavior.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{462.39863281bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.22156714)%
+    \put(0,0){\includegraphics[width=\unitlength]{dft_recurrence_behavior.pdf}}%
+    \put(0.10813181,0.09692749){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{sin/cos}}}%
+    \put(0.09515599,0.11422858){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{double}}}%
+    \put(0.10813181,0.13152967){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{int to double}}}%
+    \put(0.11135749,0.15267926){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{sample[i]}}}%
+    \put(0.10813181,0.01042205){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{sample[i]}}}%
+    \put(0.09515599,0.04502423){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{double}}}%
+    \put(0.09515599,0.0796264){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{double}}}%
+    \put(0.19031198,0.19208348){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Loop Interval = 4}}}%
+    \put(0.09515599,0.02772314){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{double}}}%
+    \put(0.09515599,0.06232532){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{double}}}%
+    \put(0.87010329,0.18613117){\makebox(0,0)[lb]{\smash{temp\_real[0]}}}%
+    \put(0.87010329,0.16017964){\makebox(0,0)[lb]{\smash{temp\_real[1]}}}%
+    \put(0.87010329,0.134228){\makebox(0,0)[lb]{\smash{temp\_real[2]}}}%
+    \put(0.87010329,0.10827637){\makebox(0,0)[lb]{\smash{temp\_real[3]}}}%
+    \put(0.87010329,0.08232463){\makebox(0,0)[lb]{\smash{temp\_real[4]}}}%
+    \put(0.87010329,0.056373){\makebox(0,0)[lb]{\smash{temp\_real[5]}}}%
+    \put(0.87010329,0.03042136){\makebox(0,0)[lb]{\smash{temp\_real[6]}}}%
+    \put(0.87010329,0.00446973){\makebox(0,0)[lb]{\smash{temp\_real[7]}}}%
+    \put(0.66264354,0.20546733){\makebox(0,0)[lb]{\smash{j}}}%
+    \put(0.63864673,0.17970831){\makebox(0,0)[lb]{\smash{i}}}%
+  \end{picture}%
+\endgroup%

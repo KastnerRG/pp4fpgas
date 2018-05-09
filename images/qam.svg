@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg1333" sodipodi:docbase="C:\Documents and Settings\Matt\My Documents\PhD\Images\Modulation schemes\Constellations" inkscape:version="0.43" sodipodi:version="0.32" sodipodi:docname="BPSKSVG.svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://web.resource.org/cc/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="622.9px"
+	 height="643.879px" viewBox="0 0 622.9 643.879" enable-background="new 0 0 622.9 643.879" xml:space="preserve">
+<sodipodi:namedview  inkscape:window-y="-4" inkscape:window-x="-4" inkscape:window-height="966" inkscape:window-width="1400" inkscape:grid-points="true" inkscape:grid-bbox="true" inkscape:current-layer="layer1" inkscape:pageshadow="2" inkscape:pageopacity="0.0" inkscape:document-units="px" gridempspacing="5" gridtolerance="1px" gridspacingy="5px" gridspacingx="5px" showgrid="true" inkscape:cy="321.94021" inkscape:cx="313.77055" inkscape:zoom="1.2409137" borderopacity="1.0" bordercolor="#666666" pagecolor="#ffffff" id="base">
+	</sodipodi:namedview>
+<g id="layer1" inkscape:groupmode="layer" inkscape:label="Layer 1">
+	<path id="path1344" fill="none" stroke="#000000" stroke-width="3" d="M603.84,319.378c-598.84,0-598.84,0-598.84,0"/>
+	<path id="path3965" fill="none" stroke="#000000" stroke-width="3" d="M305.34,19.04c0,611.839,0,13,0,598.839"/>
+	
+		<path id="path1437" inkscape:randomized="0" inkscape:rounded="0" inkscape:flatsided="true" sodipodi:arg2="1.5663437" sodipodi:arg1="0.51914611" sodipodi:r2="5.631465" sodipodi:r1="11.26293" sodipodi:sides="3" sodipodi:cy="278.89285" sodipodi:cx="137.37112" sodipodi:type="star" stroke="#000000" d="
+		M593.581,329.188l-0.11-20.729l21.51,10.283L593.581,329.188z"/>
+	
+		<path id="path11904" inkscape:randomized="0" inkscape:rounded="0" inkscape:flatsided="true" sodipodi:arg2="1.5663437" sodipodi:arg1="0.51914611" sodipodi:r2="5.631465" sodipodi:r1="11.26293" sodipodi:sides="3" sodipodi:cy="278.89285" sodipodi:cx="137.37112" sodipodi:type="star" stroke="#000000" d="
+		M315.148,26.359l-20.728,0.11l10.284-21.51L315.148,26.359z"/>
+	<text transform="matrix(1 0 0 1 321.1104 26.4688)" font-family="'ArialMT'" font-size="20">Q</text>
+	<text transform="matrix(1 0 0 1 593.4707 352.9385)" font-family="'Verdana'" font-size="20">I</text>
+</g>
+<path id="path1437_1_" inkscape:randomized="0" inkscape:rounded="0" inkscape:flatsided="true" sodipodi:arg2="1.5663437" sodipodi:arg1="0.51914611" sodipodi:r2="5.631465" sodipodi:r1="11.26293" sodipodi:sides="3" sodipodi:cy="278.89285" sodipodi:cx="137.37112" sodipodi:type="star" stroke="#000000" d="
+	M26.4,309.015l0.11,20.729L5,319.458L26.4,309.015z"/>
+<path id="path11904_1_" inkscape:randomized="0" inkscape:rounded="0" inkscape:flatsided="true" sodipodi:arg2="1.5663437" sodipodi:arg1="0.51914611" sodipodi:r2="5.631465" sodipodi:r1="11.26293" sodipodi:sides="3" sodipodi:cy="278.89285" sodipodi:cx="137.37112" sodipodi:type="star" stroke="#000000" d="
+	M294.056,596.48l20.729-0.111l-10.284,21.51L294.056,596.48z"/>
+<path fill="none" stroke="#000000" d="M76.808,183.791"/>
+<path fill="none" stroke="#000000" d="M56.79,150.939"/>
+<path fill="none" stroke="#000000" d="M469.79,588.458"/>
+<path fill="none" stroke="#000000" d="M469.79,401.939"/>
+<path fill="none" stroke="#000000" d="M587.79,386.219"/>
+<text transform="matrix(1 0 0 1 579.79 302.1426)" font-family="'MyriadPro-Regular'" font-size="20">Real</text>
+<text transform="matrix(1 0 0 1 248.79 26.4688)" font-family="'MyriadPro-Regular'" font-size="20">Imag</text>
+<circle stroke="#000000" cx="84.868" cy="390.46" r="15"/>
+<circle stroke="#000000" cx="517.867" cy="389.69" r="15"/>
+<text transform="matrix(1 0 0 1 56.3604 86.499)" font-family="'ArialMT'" font-size="26">0000</text>
+<text transform="matrix(1 0 0 1 202.8398 86.499)" font-family="'ArialMT'" font-size="26">0100</text>
+<text transform="matrix(1 0 0 1 348.8398 88.499)" font-family="'ArialMT'" font-size="26">1100</text>
+<text transform="matrix(1 0 0 1 488.8398 89.1055)" font-family="'ArialMT'" font-size="26">1000</text>
+<circle stroke="#000000" cx="229.868" cy="390.46" r="15"/>
+<circle stroke="#000000" cx="374.868" cy="389.69" r="15"/>
+<path fill="none" stroke="#000000" d="M230.868,318.46"/>
+<path fill="none" stroke="#000000" d="M80.868,318.46"/>
+<circle stroke="#000000" cx="85.868" cy="102.46" r="15"/>
+<circle stroke="#000000" cx="517.867" cy="104.69" r="15"/>
+<circle stroke="#000000" cx="230.868" cy="102.46" r="15"/>
+<circle stroke="#000000" cx="374.868" cy="104.69" r="15"/>
+<circle stroke="#000000" cx="85.868" cy="245.46" r="15"/>
+<circle stroke="#000000" cx="517.867" cy="247.69" r="15"/>
+<circle stroke="#000000" cx="230.868" cy="245.46" r="15"/>
+<circle stroke="#000000" cx="374.868" cy="247.69" r="15"/>
+<circle stroke="#000000" cx="85.92" cy="535.46" r="15"/>
+<circle stroke="#000000" cx="518.919" cy="537.69" r="15"/>
+<circle stroke="#000000" cx="229.92" cy="536.46" r="15"/>
+<circle stroke="#000000" cx="374.921" cy="537.69" r="15"/>
+<text transform="matrix(1 0 0 1 56.2598 229.46)" font-family="'ArialMT'" font-size="26">0001</text>
+<text transform="matrix(1 0 0 1 202.8398 229.46)" font-family="'ArialMT'" font-size="26">0101</text>
+<text transform="matrix(1 0 0 1 348.8398 229.46)" font-family="'ArialMT'" font-size="26">1101</text>
+<text transform="matrix(1 0 0 1 488.8398 231.6904)" font-family="'ArialMT'" font-size="26">1001</text>
+<text transform="matrix(1 0 0 1 56.2598 373.6904)" font-family="'ArialMT'" font-size="26">0011</text>
+<text transform="matrix(1 0 0 1 202.8398 373.6904)" font-family="'ArialMT'" font-size="26">0111</text>
+<text transform="matrix(1 0 0 1 348.8398 373.6904)" font-family="'ArialMT'" font-size="26">1111</text>
+<text transform="matrix(1 0 0 1 488.8398 373.6904)" font-family="'ArialMT'" font-size="26">1011</text>
+<text transform="matrix(1 0 0 1 56.3604 518.2988)" font-family="'ArialMT'" font-size="26">0010</text>
+<text transform="matrix(1 0 0 1 202.8398 518.2988)" font-family="'ArialMT'" font-size="26">0110</text>
+<text transform="matrix(1 0 0 1 348.8398 520.46)" font-family="'ArialMT'" font-size="26">1110</text>
+<text transform="matrix(1 0 0 1 488.8398 520.46)" font-family="'ArialMT'" font-size="26">1010</text>
+</svg>

@@ -1,0 +1,109 @@
+\contentsline {chapter}{Preface}{7}{chapter*.2}
+\contentsline {chapter}{Acknowledgements}{9}{chapter*.3}
+\contentsline {chapter}{\numberline {1}Introduction}{11}{chapter.1}
+\contentsline {section}{\numberline {1.1}High-level Synthesis (HLS)}{11}{section.1.1}
+\contentsline {section}{\numberline {1.2}FPGA Architecture}{13}{section.1.2}
+\contentsline {section}{\numberline {1.3}FPGA Design Process}{19}{section.1.3}
+\contentsline {section}{\numberline {1.4}Design Optimization}{20}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Performance Characterization}{20}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Area/Throughput Tradeoffs}{22}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.3}Restrictions on Processing Rate}{26}{subsection.1.4.3}
+\contentsline {subsection}{\numberline {1.4.4}Coding Style}{27}{subsection.1.4.4}
+\contentsline {section}{\numberline {1.5}Restructured Code}{28}{section.1.5}
+\contentsline {section}{\numberline {1.6}Book Organization}{28}{section.1.6}
+\contentsline {chapter}{\numberline {2}Finite Impulse Response (FIR) Filters}{31}{chapter.2}
+\contentsline {section}{\numberline {2.1}Overview}{31}{section.2.1}
+\contentsline {section}{\numberline {2.2}Background}{32}{section.2.2}
+\contentsline {section}{\numberline {2.3}Base FIR Architecture}{33}{section.2.3}
+\contentsline {section}{\numberline {2.4}Calculating Performance}{35}{section.2.4}
+\contentsline {section}{\numberline {2.5}Operation Chaining}{36}{section.2.5}
+\contentsline {section}{\numberline {2.6}Code Hoisting}{38}{section.2.6}
+\contentsline {section}{\numberline {2.7}Loop Fission}{39}{section.2.7}
+\contentsline {section}{\numberline {2.8}Loop Unrolling}{40}{section.2.8}
+\contentsline {section}{\numberline {2.9}Loop Pipelining}{43}{section.2.9}
+\contentsline {section}{\numberline {2.10}Bitwidth Optimization}{47}{section.2.10}
+\contentsline {section}{\numberline {2.11}Complex FIR Filter}{49}{section.2.11}
+\contentsline {section}{\numberline {2.12}Conclusion}{52}{section.2.12}
+\contentsline {chapter}{\numberline {3}CORDIC}{55}{chapter.3}
+\contentsline {section}{\numberline {3.1}Overview}{55}{section.3.1}
+\contentsline {section}{\numberline {3.2}Background}{56}{section.3.2}
+\contentsline {section}{\numberline {3.3}Calculating Sine and Cosine}{61}{section.3.3}
+\contentsline {section}{\numberline {3.4}Cartesian to Polar Conversion}{63}{section.3.4}
+\contentsline {section}{\numberline {3.5}Number Representation}{66}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Binary and Hexadecimal Numbers}{66}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Negative numbers}{69}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Overflow, Underflow, and Rounding}{70}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.4}Binary arithmetic}{72}{subsection.3.5.4}
+\contentsline {subsection}{\numberline {3.5.5}Representing Arbitrary Precision Integers in C and C++}{73}{subsection.3.5.5}
+\contentsline {subsection}{\numberline {3.5.6}Floating Point}{75}{subsection.3.5.6}
+\contentsline {section}{\numberline {3.6}Further Optimizations}{75}{section.3.6}
+\contentsline {section}{\numberline {3.7}Conclusion}{76}{section.3.7}
+\contentsline {chapter}{\numberline {4}Discrete Fourier Transform}{77}{chapter.4}
+\contentsline {section}{\numberline {4.1}Fourier Series}{77}{section.4.1}
+\contentsline {section}{\numberline {4.2}\gls {dft} Background}{79}{section.4.2}
+\contentsline {section}{\numberline {4.3}Matrix-Vector Multiplication Optimizations}{82}{section.4.3}
+\contentsline {section}{\numberline {4.4}Pipelining and Parallelism}{83}{section.4.4}
+\contentsline {section}{\numberline {4.5}Storage Tradeoffs and Array Partitioning}{87}{section.4.5}
+\contentsline {section}{\numberline {4.6}Baseline Implementation}{92}{section.4.6}
+\contentsline {section}{\numberline {4.7}\gls {dft} optimization}{94}{section.4.7}
+\contentsline {section}{\numberline {4.8}Conclusion}{97}{section.4.8}
+\contentsline {chapter}{\numberline {5}Fast Fourier Transform}{99}{chapter.5}
+\contentsline {section}{\numberline {5.1}Background}{99}{section.5.1}
+\contentsline {section}{\numberline {5.2}Baseline Implementation}{108}{section.5.2}
+\contentsline {section}{\numberline {5.3}Bit Reversal}{111}{section.5.3}
+\contentsline {section}{\numberline {5.4}Task Pipelining}{113}{section.5.4}
+\contentsline {section}{\numberline {5.5}Conclusion}{116}{section.5.5}
+\contentsline {chapter}{\numberline {6}Sparse Matrix Vector Multiplication}{117}{chapter.6}
+\contentsline {section}{\numberline {6.1}Background}{117}{section.6.1}
+\contentsline {section}{\numberline {6.2}Baseline Implementation}{119}{section.6.2}
+\contentsline {section}{\numberline {6.3}Testbench}{120}{section.6.3}
+\contentsline {section}{\numberline {6.4}Specifying Loop Properties}{122}{section.6.4}
+\contentsline {section}{\numberline {6.5}C/RTL Cosimulation}{123}{section.6.5}
+\contentsline {section}{\numberline {6.6}Loop Optimizations and Array Partitioning}{124}{section.6.6}
+\contentsline {section}{\numberline {6.7}Conclusion}{128}{section.6.7}
+\contentsline {chapter}{\numberline {7}Matrix Multiplication}{129}{chapter.7}
+\contentsline {section}{\numberline {7.1}Background}{129}{section.7.1}
+\contentsline {section}{\numberline {7.2}Complete Matrix Multiplication}{130}{section.7.2}
+\contentsline {section}{\numberline {7.3}Block Matrix Multiplication}{133}{section.7.3}
+\contentsline {section}{\numberline {7.4}Conclusion}{144}{section.7.4}
+\contentsline {chapter}{\numberline {8}Prefix Sum and Histogram}{145}{chapter.8}
+\contentsline {section}{\numberline {8.1}Prefix Sum}{145}{section.8.1}
+\contentsline {section}{\numberline {8.2}Histogram}{148}{section.8.2}
+\contentsline {section}{\numberline {8.3}Histogram Optimization and False Dependencies}{149}{section.8.3}
+\contentsline {section}{\numberline {8.4}Increasing Histogram Performance}{152}{section.8.4}
+\contentsline {section}{\numberline {8.5}Conclusion}{156}{section.8.5}
+\contentsline {chapter}{\numberline {9}Video Systems}{157}{chapter.9}
+\contentsline {section}{\numberline {9.1}Background}{157}{section.9.1}
+\contentsline {subsection}{\numberline {9.1.1}Representing Video Pixels}{158}{subsection.9.1.1}
+\contentsline {subsection}{\numberline {9.1.2}Digital Video Formats}{158}{subsection.9.1.2}
+\contentsline {subsection}{\numberline {9.1.3}Video Processing System Architectures}{161}{subsection.9.1.3}
+\contentsline {section}{\numberline {9.2}Implementation}{164}{section.9.2}
+\contentsline {subsection}{\numberline {9.2.1}Line Buffers and Frame Buffers}{164}{subsection.9.2.1}
+\contentsline {subsection}{\numberline {9.2.2}Causal Filters}{166}{subsection.9.2.2}
+\contentsline {subsection}{\numberline {9.2.3}Boundary Conditions}{168}{subsection.9.2.3}
+\contentsline {section}{\numberline {9.3}Conclusion}{171}{section.9.3}
+\contentsline {chapter}{\numberline {10}Sorting Algorithms}{173}{chapter.10}
+\contentsline {section}{\numberline {10.1}Introduction}{173}{section.10.1}
+\contentsline {section}{\numberline {10.2}Insertion Sort}{174}{section.10.2}
+\contentsline {subsection}{\numberline {10.2.1}Basic Insertion Sort Implementation}{175}{subsection.10.2.1}
+\contentsline {subsection}{\numberline {10.2.2}Parallelising Insertion Sort}{178}{subsection.10.2.2}
+\contentsline {subsection}{\numberline {10.2.3}Explicit Systolic Array For Insertion Sort}{180}{subsection.10.2.3}
+\contentsline {section}{\numberline {10.3}Merge Sort}{185}{section.10.3}
+\contentsline {subsection}{\numberline {10.3.1}Basic Merge Sort}{186}{subsection.10.3.1}
+\contentsline {subsection}{\numberline {10.3.2}Restructured Merge Sort}{189}{subsection.10.3.2}
+\contentsline {section}{\numberline {10.4}Conclusion}{192}{section.10.4}
+\contentsline {chapter}{\numberline {11}Huffman Encoding}{195}{chapter.11}
+\contentsline {section}{\numberline {11.1}Background}{195}{section.11.1}
+\contentsline {section}{\numberline {11.2}Implementation}{199}{section.11.2}
+\contentsline {subsection}{\numberline {11.2.1}Filter}{202}{subsection.11.2.1}
+\contentsline {subsection}{\numberline {11.2.2}Sort}{203}{subsection.11.2.2}
+\contentsline {subsection}{\numberline {11.2.3}Create Tree}{207}{subsection.11.2.3}
+\contentsline {subsection}{\numberline {11.2.4}Compute Bit Length}{211}{subsection.11.2.4}
+\contentsline {subsection}{\numberline {11.2.5}Truncate Tree}{213}{subsection.11.2.5}
+\contentsline {subsection}{\numberline {11.2.6}Canonize Tree}{215}{subsection.11.2.6}
+\contentsline {subsection}{\numberline {11.2.7}Create Codeword}{217}{subsection.11.2.7}
+\contentsline {subsection}{\numberline {11.2.8}Testbench}{220}{subsection.11.2.8}
+\contentsline {section}{\numberline {11.3}Conclusion}{223}{section.11.3}
+\contentsline {chapter}{Bibliography}{225}{chapter*.142}
+\contentsline {chapter}{Glossary}{231}{section*.143}
+\contentsline {chapter}{Acronyms}{235}{section*.145}

@@ -1,0 +1,446 @@
+\begin{thebibliography}{64}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abdelhadi and Lemieux(2014)]{Abdelhadi2014multiport}
+Ameer~M.S. Abdelhadi and Guy~G.F. Lemieux.
+\newblock Modular multi-ported {SRAM}-based memories.
+\newblock In \emph{Proceedings of the International Symposium on Field
+  Programmable Gate Arrays (FPGA)}, pages 35--44. ACM, 2014.
+\newblock ISBN 978-1-4503-2671-1.
+\newblock \doi{10.1145/2554688.2554773}.
+\newblock URL \url{http://doi.acm.org/10.1145/2554688.2554773}.
+
+\bibitem[Acc(2017)]{systemc}
+\emph{{SystemC}}.
+\newblock Accellera, 2.3.2 edition, October 2017.
+\newblock URL \url{http://www.accellera.org/downloads/standards/systemc}.
+
+\bibitem[Ahmed et~al.(1982)Ahmed, Delosme, and Morf]{ahmed1982highly}
+Hassan~M. Ahmed, Jean-Marc Delosme, and Martin Morf.
+\newblock Highly concurrent computing structures for matrix arithmetic and
+  signal processing.
+\newblock \emph{IEEE Computer}, 15\penalty0 (1):\penalty0 65--82, 1982.
+
+\bibitem[Andraka(1996)]{andraka1996building}
+Raymond~J. Andraka.
+\newblock Building a high performance bit-serial processor in an {FPGA}.
+\newblock In \emph{Proceedings of Design SuperCon}, volume~96, pages 1--5,
+  1996.
+
+\bibitem[Arcas-Abella et~al.(2014)]{arcas2014empirical}
+Oriol Arcas-Abella et~al.
+\newblock An empirical evaluation of high-level synthesis languages and tools
+  for database acceleration.
+\newblock In \emph{Proceedings of the International Field Programmable Logic
+  and Applications Conference (FPL)}, pages 1--8. IEEE, 2014.
+
+\bibitem[ARM(2013)]{ARMAXI4}
+\emph{{AMBA} {AXI} and {ACE} Protocol Specification}.
+\newblock ARM Limited, v1.0 edition, 2013.
+\newblock URL
+  \url{http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.ihi0022e/index.html}.
+\newblock ARM IHI 0022E.
+
+\bibitem[Bayer(1976)]{bayer76}
+Bryce~E. Bayer.
+\newblock Color imaging array, July 1976.
+\newblock US 3971065.
+
+\bibitem[Bayliss and Constantinides(2012)]{bayliss12sdram}
+Samuel Bayliss and George~A. Constantinides.
+\newblock Optimizing {SDRAM} bandwidth for custom {FPGA} loop accelerators.
+\newblock In \emph{Proceedings of the International Symposium on Field
+  Programmable Gate Arrays (FPGA)}, pages 195--204. ACM, February 2012.
+
+\bibitem[Bednara et~al.(2000)]{bednara2000tradeoff}
+Marcus Bednara et~al.
+\newblock Tradeoff analysis and architecture design of a hybrid
+  hardware/software sorter.
+\newblock In \emph{Proceedings of the International Conference on
+  Application-specific Systems, Architectures and Processors (ASAP)}, pages
+  299--308. IEEE, 2000.
+
+\bibitem[Betz and Rose(1997)]{betz1997vpr}
+Vaughn Betz and Jonathan Rose.
+\newblock {VPR}: A new packing, placement and routing tool for {FPGA} research.
+\newblock In \emph{Proceedings of the International Field Programmable Logic
+  and Applications Conference (FPL)}, pages 213--222. Springer, 1997.
+
+\bibitem[Blelloch(1990)]{blelloch1990prefix}
+Guy~E. Blelloch.
+\newblock Prefix sums and their applications.
+\newblock Technical Report CMU-CS-90-190, School of Computer Science, Carnegie
+  Mellon University, November 1990.
+
+\bibitem[Brown and Rose(1996)]{brown1996fpga}
+Stephen Brown and Jonathan Rose.
+\newblock {FPGA} and {CPLD} architectures: A tutorial.
+\newblock \emph{IEEE Design and Test of Computers}, 13\penalty0 (2):\penalty0
+  42--57, 1996.
+
+\bibitem[Canis et~al.(2011)Canis, Choi, Aldham, Zhang, Kammoona, Anderson,
+  Brown, and Czajkowski]{canis2011legup}
+Andrew Canis, Jongsok Choi, Mark Aldham, Victor Zhang, Ahmed Kammoona, Jason~H
+  Anderson, Stephen Brown, and Tomasz Czajkowski.
+\newblock {LegUp}: high-level synthesis for {FPGA}-based processor/accelerator
+  systems.
+\newblock In \emph{Proceedings of the International Symposium on Field
+  Programmable Gate Arrays (FPGA)}, pages 33--36. ACM, 2011.
+
+\bibitem[Chen et~al.(2012)Chen, Cong, Yan, and Zou]{chen2012fpga}
+Jianwen Chen, Jason Cong, Ming Yan, and Yi~Zou.
+\newblock {FPGA}-accelerated {3D} reconstruction using compressive sensing.
+\newblock In \emph{Proceedings of the International Symposium on Field
+  Programmable Gate Arrays (FPGA)}, pages 163--166. ACM, 2012.
+
+\bibitem[Cong et~al.(2011)Cong, Liu, Neuendorffer, Noguera, Vissers, and
+  Zhang]{cong2011high}
+Jason Cong, Bin Liu, Stephen Neuendorffer, Juanjo Noguera, Kees Vissers, and
+  Zhiru Zhang.
+\newblock High-level synthesis for fpgas: From prototyping to deployment.
+\newblock \emph{IEEE Transactions on Computer-aided Design of Integrated
+  Circuits and Systems (TCAD)}, 30\penalty0 (4):\penalty0 473--491, 2011.
+
+\bibitem[Cooley and Tukey(1965)]{cooley65}
+James~W. Cooley and John~W. Tukey.
+\newblock An algorithm for the machine calculation of complex fourier series.
+\newblock \emph{Mathematics of Computation}, 19\penalty0 (90):\penalty0
+  297--301, 1965.
+\newblock ISSN 00255718.
+\newblock URL \url{http://www.jstor.org/stable/2003354}.
+
+\bibitem[Cormen et~al.(2009)Cormen, Leiserson, Rivest, and Stein]{CLR}
+Thomas~H. Cormen, Charles~E. Leiserson, Ronald~L. Rivest, and Clifford Stein.
+\newblock \emph{Introduction to Algorithms, Third Edition}.
+\newblock MIT Press, 3rd edition, 2009.
+\newblock ISBN 0262033844, 9780262033848.
+
+\bibitem[Coussy and Morawiec(2010)]{coussy2010high}
+Philippe Coussy and Adam Morawiec.
+\newblock \emph{High-level synthesis}, volume~1.
+\newblock Springer, 2010.
+
+\bibitem[Dai et~al.(2017)Dai, Zhao, Liu, Srinath, Gupta, Batten, and
+  Zhang]{dai17dynamic}
+Steve Dai, Ritchie Zhao, Gai Liu, Shreesha Srinath, Udit Gupta, Christopher
+  Batten, and Zhiru Zhang.
+\newblock Dynamic hazard resolution for pipelining irregular loops in
+  high-level synthesis.
+\newblock In \emph{Proceedings of the International Symposium on Field
+  Programmable Gate Arrays (FPGA)}, pages 189--194, 2017.
+\newblock ISBN 978-1-4503-4354-1.
+\newblock \doi{10.1145/3020078.3021754}.
+\newblock URL \url{http://doi.acm.org/10.1145/3020078.3021754}.
+
+\bibitem[Dean and Ghemawat(2008)]{dean08mapreduce}
+Jeffrey Dean and Sanjay Ghemawat.
+\newblock {MapReduce}: Simplified data processing on large clusters.
+\newblock \emph{Communications of the ACM}, 51\penalty0 (1):\penalty0 107--113,
+  January 2008.
+\newblock ISSN 0001-0782.
+\newblock \doi{10.1145/1327452.1327492}.
+\newblock URL \url{http://doi.acm.org/10.1145/1327452.1327492}.
+
+\bibitem[Despain(1974)]{despain1974fourier}
+Alvin~M. Despain.
+\newblock Fourier transform computers using {CORDIC} iterations.
+\newblock \emph{IEEE Transactions on Computers}, 100\penalty0 (10):\penalty0
+  993--1001, 1974.
+
+\bibitem[Detrey and de~Dinechin(2007)]{detrey07hotbm}
+J.~Detrey and F.~de~Dinechin.
+\newblock Floating-point trigonometric functions for {FPGA}s.
+\newblock In \emph{Proceedings of the International Field Programmable Logic
+  and Applications Conference (FPL)}, pages 29--34, August 2007.
+\newblock \doi{10.1109/FPL.2007.4380621}.
+
+\bibitem[Deutsch(1996)]{deutsch1996deflate}
+L~Peter Deutsch.
+\newblock {DEFLATE} compressed data format specification version 1.3.
+\newblock 1996.
+
+\bibitem[Duprat and Muller(1993)]{duprat1993cordic}
+Jean Duprat and Jean-Michel Muller.
+\newblock The {CORDIC} algorithm: new results for fast {VLSI} implementation.
+\newblock \emph{IEEE Transactions on Computers}, 42\penalty0 (2):\penalty0
+  168--178, 1993.
+
+\bibitem[Flannery et~al.(1992)Flannery, Press, Teukolsky, and
+  Vetterling]{flannery1992numerical}
+Brian~P. Flannery, William~H. Press, Saul~A. Teukolsky, and William Vetterling.
+\newblock \emph{Numerical recipes in {C}}.
+\newblock Press Syndicate of the University of Cambridge, New York, 1992.
+
+\bibitem[Gajski et~al.(2012)Gajski, Dutt, Wu, and Lin]{gajski2012high}
+Daniel~D. Gajski, Nikil~D. Dutt, Allen~C.H. Wu, and Steve~Y.L. Lin.
+\newblock \emph{High-Level Synthesis: Introduction to Chip and System Design}.
+\newblock Springer Science \& Business Media, 2012.
+
+\bibitem[Gentleman and Sande(1966)]{gentleman1966fast}
+W~Morven Gentleman and Gordon Sande.
+\newblock Fast fourier transforms: for fun and profit.
+\newblock In \emph{Proceedings of the November 7-10, 1966, fall joint computer
+  conference}, pages 563--578. ACM, 1966.
+
+\bibitem[George et~al.(2014)George, Lee, Novo, Rompf, Brown, Sujeeth, Odersky,
+  Olukotun, and Ienne]{george2014hardware}
+Nivia George, HyoukJoong Lee, David Novo, Tiark Rompf, Kevin~J. Brown,
+  Arvind~K. Sujeeth, Martin Odersky, Kunle Olukotun, and Paolo Ienne.
+\newblock Hardware system synthesis from domain-specific languages.
+\newblock In \emph{Proceedings of the International Field Programmable Logic
+  and Applications Conference (FPL)}, pages 1--8. IEEE, 2014.
+
+\bibitem[Gupta et~al.(2004)Gupta, Gupta, Dutt, and Nicolau]{gupta2004spark}
+Sumit Gupta, Rajesh Gupta, Nikil Dutt, and Alexandru Nicolau.
+\newblock \emph{{SPARK}: A Parallelizing Approach to the High-level Synthesis
+  of Digital Circuits}.
+\newblock Kluwer, 2004.
+\newblock ISBN 1-4020-7837-4.
+
+\bibitem[Hauck and DeHon(2010)]{hauck2010reconfigurable}
+Scott Hauck and Andre DeHon.
+\newblock \emph{Reconfigurable computing: the theory and practice of
+  {FPGA}-based computation}, volume~1.
+\newblock Morgan Kaufmann, 2010.
+
+\bibitem[Hegarty et~al.(2016)Hegarty, Daly, DeVito, Ragan-Kelley, Horowitz, and
+  Hanrahan]{hegarty2016rigel}
+James Hegarty, Ross Daly, Zachary DeVito, Jonathan Ragan-Kelley, Mark Horowitz,
+  and Pat Hanrahan.
+\newblock Rigel: Flexible multi-rate image processing hardware.
+\newblock \emph{ACM Trans. Graph.}, 35\penalty0 (4):\penalty0 85:1--85:11, July
+  2016.
+\newblock ISSN 0730-0301.
+\newblock \doi{10.1145/2897824.2925892}.
+\newblock URL \url{http://doi.acm.org/10.1145/2897824.2925892}.
+
+\bibitem[Heideman et~al.(1984)Heideman, Johnson, and Burrus]{heideman84}
+M.~Heideman, D.~Johnson, and C.~Burrus.
+\newblock Gauss and the history of the fast fourier transform.
+\newblock \emph{ASSP Magazine, IEEE}, 1\penalty0 (4):\penalty0 14--21, October
+  1984.
+\newblock ISSN 0740-7467.
+\newblock \doi{10.1109/MASSP.1984.1162257}.
+
+\bibitem[Huffman(1952)]{huffman1952method}
+David~A. Huffman.
+\newblock A method for the construction of minimum-redundancy codes.
+\newblock \emph{Proceedings of the IRE}, 40\penalty0 (9):\penalty0 1098--1101,
+  1952.
+
+\bibitem[Kastner et~al.(2010)Kastner, Hosangadi, and
+  Fallah]{kastner2010arithmetic}
+Ryan Kastner, Anup Hosangadi, and Farzan Fallah.
+\newblock \emph{Arithmetic optimization techniques for hardware and software
+  design}.
+\newblock Cambridge University Press, 2010.
+
+\bibitem[Knapp(1996)]{knapp96bc}
+David Knapp.
+\newblock \emph{Behavioral Synthesis: Digital System Design using the
+  {Synopsys} Behavioral Compiler}.
+\newblock Prentice-Hall, 1996.
+\newblock ISBN 0-13-569252-0.
+
+\bibitem[Knuth(1998)]{knuth1998art}
+Donald~Ervin Knuth.
+\newblock \emph{The art of computer programming: sorting and searching},
+  volume~3.
+\newblock Pearson Education, 1998.
+
+\bibitem[Laforest et~al.(2014)Laforest, Li, O'rourke, Liu, and
+  Steffan]{Laforest2014multiport}
+Charles~Eric Laforest, Zimo Li, Tristan O'rourke, Ming~G. Liu, and J.~Gregory
+  Steffan.
+\newblock Composing multi-ported memories on {FPGA}s.
+\newblock \emph{ACM Transactions on Reconfigurable Technology and Systems
+  (TRETS)}, 7\penalty0 (3):\penalty0 16:1--16:23, September 2014.
+\newblock ISSN 1936-7406.
+\newblock \doi{10.1145/2629629}.
+\newblock URL \url{http://doi.acm.org/10.1145/2629629}.
+
+\bibitem[Langdon~Jr et~al.(1990)Langdon~Jr, Mitchell, Pennebaker, and
+  Rissanen]{langdon1990arithmetic}
+Glen~G. Langdon~Jr, Joan~L. Mitchell, William~B. Pennebaker, and Jorma~J.
+  Rissanen.
+\newblock Arithmetic coding encoder and decoder system, February~27 1990.
+\newblock US Patent 4,905,297.
+
+\bibitem[Lee et~al.(2014)Lee, Matai, Weals, and Kastner]{lee250high}
+Dajung Lee, Janarbek Matai, Brad Weals, and Ryan Kastner.
+\newblock High throughput channel tracking for {JTRS} wireless channel
+  emulation.
+\newblock In \emph{Proceedings of the International Field Programmable Logic
+  and Applications Conference (FPL)}. IEEE, 2014.
+
+\bibitem[Lee and Messerschmitt(1987)]{lee87sdfArchitecture}
+Edward~A. Lee and David~G. Messerschmitt.
+\newblock Pipeline interleaved programmable {DSP}s: Architecture.
+\newblock \emph{IEEE Transactions on Acoustics, Speech, and Signal Processing
+  (TASSP)}, 35\penalty0 (9):\penalty0 1320--1333, September 1987.
+
+\bibitem[Lee and Varaiya(2011)]{lee2011signalsandsystems}
+Edward~A. Lee and Pravin Varaiya.
+\newblock \emph{Structure and Interpretation of Signals and Systems, Second
+  Edition}.
+\newblock 2011.
+\newblock ISBN 0578077191.
+\newblock URL \url{LeeVaraiya.org}.
+
+\bibitem[Lee(2017)]{lee2017plato}
+Edward~Ashford Lee.
+\newblock \emph{Plato and the Nerd: The Creative Partnership of Humans and
+  Technology}.
+\newblock MIT Press, 2017.
+\newblock ISBN 978-0262036481.
+
+\bibitem[Leiserson et~al.(1993)Leiserson, Rose, and Saxe]{leiserson93}
+C.~Leiserson, F.~Rose, and J.~Saxe.
+\newblock Optimizing synchronous circuitry by retiming.
+\newblock In \emph{Third Caltech Conference On VLSI}, 1993.
+
+\bibitem[Liu et~al.(2017)Liu, Tan, Dai, Zhao, and Zhang]{liu17elasticflow}
+G.~Liu, M.~Tan, S.~Dai, R.~Zhao, and Z.~Zhang.
+\newblock Architecture and synthesis for area-efficient pipelining of irregular
+  loop nests.
+\newblock \emph{IEEE Transactions on Computer-aided Design of Integrated
+  Circuits and Systems (TCAD)}, 36\penalty0 (11):\penalty0 1817--1830, November
+  2017.
+\newblock ISSN 0278-0070.
+\newblock \doi{10.1109/TCAD.2017.2664067}.
+
+\bibitem[Marcelino et~al.(2008)]{marcelino2008sorting}
+Rui Marcelino et~al.
+\newblock Sorting units for {FPGA}-based embedded systems.
+\newblock In \emph{Distributed Embedded Systems: Design, Middleware and
+  Resources}, pages 11--22. Springer, 2008.
+
+\bibitem[Matai et~al.(2012)Matai, Meng, Wu, Weals, and Kastner]{mataidesigning}
+Janarbek Matai, Pingfan Meng, Lingjuan Wu, Brad~T Weals, and Ryan Kastner.
+\newblock Designing a hardware in the loop wireless digital channel emulator
+  for software defined radio.
+\newblock In \emph{Proceedings of the International Conference on
+  Field-Programmable Technology (FPT)}. IEEE, 2012.
+
+\bibitem[Matai et~al.(2014{\natexlab{a}})Matai, Kim, and Kastner]{matai2energy}
+Janarbek Matai, Joo-Young Kim, and Ryan Kastner.
+\newblock Energy efficient canonical huffman encoding.
+\newblock In \emph{Proceedings of the International Conference on
+  Application-specific Systems, Architectures and Processors (ASAP)}. IEEE,
+  2014{\natexlab{a}}.
+
+\bibitem[Matai et~al.(2014{\natexlab{b}})Matai, Richmond, Lee, and
+  Kastner]{matai2014enabling}
+Janarbek Matai, Dustin Richmond, Dajung Lee, and Ryan Kastner.
+\newblock Enabling {FPGA}s for the masses.
+\newblock \emph{arXiv preprint arXiv:1408.5870}, 2014{\natexlab{b}}.
+
+\bibitem[Matai et~al.(2016)Matai, Richmond, Lee, Blair, Wu, Abazari, and
+  Kastner]{matai2016sorting}
+Janarbek Matai, Dustin Richmond, Dajung Lee, Zac Blair, Qiongzhi Wu, Amin
+  Abazari, and Ryan Kastner.
+\newblock {Resolve}: Generation of high-performance sorting architectures from
+  high-level synthesis.
+\newblock In \emph{Proceedings of the International Symposium on Field
+  Programmable Gate Arrays (FPGA)}, pages 195--204. ACM, 2016.
+\newblock ISBN 978-1-4503-3856-1.
+\newblock \doi{10.1145/2847263.2847268}.
+\newblock URL \url{http://doi.acm.org/10.1145/2847263.2847268}.
+
+\bibitem[Mead and Conway(1980)]{mead1980introduction}
+Carver Mead and Lynn Conway.
+\newblock \emph{Introduction to {VLSI} systems}, volume 1080.
+\newblock Addison-Wesley Reading, MA, 1980.
+
+\bibitem[Micheli(1994)]{micheli1994synthesis}
+Giovanni~De Micheli.
+\newblock \emph{Synthesis and optimization of digital circuits}.
+\newblock McGraw-Hill Higher Education, 1994.
+
+\bibitem[Mirzaei et~al.(2007)Mirzaei, Hosangadi, and Kastner]{mirzaei2007fpga}
+Shahnam Mirzaei, Anup Hosangadi, and Ryan Kastner.
+\newblock {FPGA} implementation of high speed fir filters using add and shift
+  method.
+\newblock In \emph{Computer Design, 2006. ICCD 2006. International Conference
+  on}, pages 308--313. IEEE, 2007.
+
+\bibitem[MISRA(2013)]{misra2012}
+MISRA.
+\newblock \emph{Guidelines for the Use of the C Language in Critical Systems}.
+\newblock March 2013.
+\newblock ISBN 978-1-906400-10-1.
+\newblock URL \url{https://www.misra.org.uk}.
+
+\bibitem[Mueller et~al.(2012)]{mueller2012sorting}
+Rene Mueller et~al.
+\newblock Sorting networks on {FPGA}s.
+\newblock \emph{The VLDB Journal—The International Journal on Very Large Data
+  Bases}, 21\penalty0 (1):\penalty0 1--23, 2012.
+
+\bibitem[Ortiz et~al.(2011)]{ortiz2011streaming}
+Jorge Ortiz et~al.
+\newblock A streaming high-throughput linear sorter system with contention
+  buffering.
+\newblock \emph{International Journal of Reconfigurable Computing}, 2011.
+
+\bibitem[Papaefthymiou(1991)]{papaefthymiou91}
+Marios~C. Papaefthymiou.
+\newblock Understanding retiming through maximum average-weight cycles.
+\newblock In \emph{SPAA '91: Proceedings of the third annual ACM symposium on
+  Parallel algorithms and architectures}, pages 338--348, 1991.
+
+\bibitem[Pennebaker(1992)]{pennebaker1992jpeg}
+William~B. Pennebaker.
+\newblock \emph{{JPEG}: Still image data compression standard}.
+\newblock Springer, 1992.
+
+\bibitem[Sedgewick(2001)]{sedgewickalgorithmsinC}
+Robert Sedgewick.
+\newblock \emph{Algorithms in {C}}.
+\newblock Addison-Wesley, 2001.
+\newblock ISBN 978-0201756081.
+
+\bibitem[Sherigar and Ramanujan(2004)]{sherigar2004huffman}
+Bhaskar Sherigar and Valmiki~K. Ramanujan.
+\newblock Huffman decoder used for decoding both advanced audio coding ({AAC})
+  and {MP3} audio, June~29 2004.
+\newblock US Patent App. 10/880,695.
+
+\bibitem[Winterstein et~al.(2013)Winterstein, Bayliss, and
+  Constantinides]{winterstein13dynamic}
+F.~Winterstein, S.~Bayliss, and G.~A. Constantinides.
+\newblock High-level synthesis of dynamic data structures: A case study using
+  {Vivado HLS}.
+\newblock In \emph{Proceedings of the International Symposium on Field
+  Programmable Gate Arrays (FPGA)}, pages 362--365, December 2013.
+\newblock \doi{10.1109/FPT.2013.6718388}.
+
+\bibitem[Witten et~al.(1987)Witten, Neal, and Cleary]{witten1987arithmetic}
+Ian~H. Witten, Radford~M. Neal, and John~G. Cleary.
+\newblock Arithmetic coding for data compression.
+\newblock \emph{Communications of the ACM}, 30\penalty0 (6):\penalty0 520--540,
+  1987.
+
+\bibitem[Xil(2017{\natexlab{a}})]{ug574}
+\emph{{UltraScale} Architecture Configurable Logic Block (UG574)}.
+\newblock Xilinx, v1.5 edition, February 2017{\natexlab{a}}.
+\newblock URL
+  \url{https://www.xilinx.com/support/documentation/user_guides/ug574-ultrascale-clb.pdf}.
+
+\bibitem[Xil(2017{\natexlab{b}})]{ug902}
+\emph{{Vivado} Design Suite User Guide: High-Level Synthesis (UG902)}.
+\newblock Xilinx, v2017.1 edition, April 2017{\natexlab{b}}.
+\newblock URL
+  \url{https://www.xilinx.com/support/documentation/sw\_manuals/xilinx2017\_1/ug902-vivado-high-level-synthesis.pdf}.
+
+\bibitem[Xil(2017{\natexlab{c}})]{ultrascaleArchConfig}
+\emph{{UltraScale} Architecture Configuration (UG570)}.
+\newblock Xilinx, v1.7 edition, March 2017{\natexlab{c}}.
+\newblock URL
+  \url{https://www.xilinx.com/support/documentation/user\_guides/ug570-ultrascale-configuration.pdf}.
+
+\end{thebibliography}

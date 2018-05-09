@@ -1,0 +1,436 @@
+;; xindy style file created by the glossaries package
+;; for document 'main' on 2017-9-20
+
+; required styles
+
+(require "tex.xdy")
+
+; list of allowed attributes (number formats)
+
+(define-attributes (("default"
+ "glsnumberformat" 
+ "pageglsnumberformat"
+ "textrm" 
+ "pagetextrm"
+ "textsf" 
+ "pagetextsf"
+ "texttt" 
+ "pagetexttt"
+ "textbf" 
+ "pagetextbf"
+ "textmd" 
+ "pagetextmd"
+ "textit" 
+ "pagetextit"
+ "textup" 
+ "pagetextup"
+ "textsl" 
+ "pagetextsl"
+ "textsc" 
+ "pagetextsc"
+ "emph" 
+ "pageemph"
+ "glshypernumber" 
+ "pageglshypernumber"
+ "hyperrm" 
+ "pagehyperrm"
+ "hypersf" 
+ "pagehypersf"
+ "hypertt" 
+ "pagehypertt"
+ "hyperbf" 
+ "pagehyperbf"
+ "hypermd" 
+ "pagehypermd"
+ "hyperit" 
+ "pagehyperit"
+ "hyperup" 
+ "pagehyperup"
+ "hypersl" 
+ "pagehypersl"
+ "hypersc" 
+ "pagehypersc"
+ "hyperemph" 
+ "pagehyperemph"
+ "glsignore" 
+ "pageglsignore")))
+
+; user defined alphabets
+
+
+
+; location class definitions
+
+(define-location-class "roman-page-numbers"
+   ( :sep "{}{" "roman-numbers-lowercase" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "roman-page-numbers-roman-page-numbers" 
+   ( :sep "{" "roman-numbers-lowercase" :sep "}{" "roman-numbers-lowercase" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "Roman-page-numbers-roman-page-numbers" 
+   ( :sep "{" "roman-numbers-uppercase" :sep "}{" "roman-numbers-lowercase" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "arabic-page-numbers-roman-page-numbers" 
+   ( :sep "{" "arabic-numbers" :sep "}{" "roman-numbers-lowercase" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "alpha-page-numbers-roman-page-numbers" 
+   ( :sep "{" "alpha" :sep "}{" "roman-numbers-lowercase" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "Alpha-page-numbers-roman-page-numbers" 
+   ( :sep "{" "ALPHA" :sep "}{" "roman-numbers-lowercase" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "Appendix-page-numbers-roman-page-numbers" 
+   ( :sep "{" "ALPHA" :sep "." "arabic-numbers" :sep "}{" "roman-numbers-lowercase" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "arabic-section-numbers-roman-page-numbers" 
+   ( :sep "{" "arabic-numbers" :sep "." "arabic-numbers" :sep "}{" "roman-numbers-lowercase" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "Roman-page-numbers"
+   ( :sep "{}{" "roman-numbers-uppercase" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "roman-page-numbers-Roman-page-numbers" 
+   ( :sep "{" "roman-numbers-lowercase" :sep "}{" "roman-numbers-uppercase" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "Roman-page-numbers-Roman-page-numbers" 
+   ( :sep "{" "roman-numbers-uppercase" :sep "}{" "roman-numbers-uppercase" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "arabic-page-numbers-Roman-page-numbers" 
+   ( :sep "{" "arabic-numbers" :sep "}{" "roman-numbers-uppercase" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "alpha-page-numbers-Roman-page-numbers" 
+   ( :sep "{" "alpha" :sep "}{" "roman-numbers-uppercase" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "Alpha-page-numbers-Roman-page-numbers" 
+   ( :sep "{" "ALPHA" :sep "}{" "roman-numbers-uppercase" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "Appendix-page-numbers-Roman-page-numbers" 
+   ( :sep "{" "ALPHA" :sep "." "arabic-numbers" :sep "}{" "roman-numbers-uppercase" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "arabic-section-numbers-Roman-page-numbers" 
+   ( :sep "{" "arabic-numbers" :sep "." "arabic-numbers" :sep "}{" "roman-numbers-uppercase" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "arabic-page-numbers"
+   ( :sep "{}{" "arabic-numbers" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "roman-page-numbers-arabic-page-numbers" 
+   ( :sep "{" "roman-numbers-lowercase" :sep "}{" "arabic-numbers" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "Roman-page-numbers-arabic-page-numbers" 
+   ( :sep "{" "roman-numbers-uppercase" :sep "}{" "arabic-numbers" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "arabic-page-numbers-arabic-page-numbers" 
+   ( :sep "{" "arabic-numbers" :sep "}{" "arabic-numbers" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "alpha-page-numbers-arabic-page-numbers" 
+   ( :sep "{" "alpha" :sep "}{" "arabic-numbers" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "Alpha-page-numbers-arabic-page-numbers" 
+   ( :sep "{" "ALPHA" :sep "}{" "arabic-numbers" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "Appendix-page-numbers-arabic-page-numbers" 
+   ( :sep "{" "ALPHA" :sep "." "arabic-numbers" :sep "}{" "arabic-numbers" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "arabic-section-numbers-arabic-page-numbers" 
+   ( :sep "{" "arabic-numbers" :sep "." "arabic-numbers" :sep "}{" "arabic-numbers" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "alpha-page-numbers"
+   ( :sep "{}{" "alpha" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "roman-page-numbers-alpha-page-numbers" 
+   ( :sep "{" "roman-numbers-lowercase" :sep "}{" "alpha" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "Roman-page-numbers-alpha-page-numbers" 
+   ( :sep "{" "roman-numbers-uppercase" :sep "}{" "alpha" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "arabic-page-numbers-alpha-page-numbers" 
+   ( :sep "{" "arabic-numbers" :sep "}{" "alpha" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "alpha-page-numbers-alpha-page-numbers" 
+   ( :sep "{" "alpha" :sep "}{" "alpha" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "Alpha-page-numbers-alpha-page-numbers" 
+   ( :sep "{" "ALPHA" :sep "}{" "alpha" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "Appendix-page-numbers-alpha-page-numbers" 
+   ( :sep "{" "ALPHA" :sep "." "arabic-numbers" :sep "}{" "alpha" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "arabic-section-numbers-alpha-page-numbers" 
+   ( :sep "{" "arabic-numbers" :sep "." "arabic-numbers" :sep "}{" "alpha" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "Alpha-page-numbers"
+   ( :sep "{}{" "ALPHA" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "roman-page-numbers-Alpha-page-numbers" 
+   ( :sep "{" "roman-numbers-lowercase" :sep "}{" "ALPHA" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "Roman-page-numbers-Alpha-page-numbers" 
+   ( :sep "{" "roman-numbers-uppercase" :sep "}{" "ALPHA" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "arabic-page-numbers-Alpha-page-numbers" 
+   ( :sep "{" "arabic-numbers" :sep "}{" "ALPHA" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "alpha-page-numbers-Alpha-page-numbers" 
+   ( :sep "{" "alpha" :sep "}{" "ALPHA" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "Alpha-page-numbers-Alpha-page-numbers" 
+   ( :sep "{" "ALPHA" :sep "}{" "ALPHA" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "Appendix-page-numbers-Alpha-page-numbers" 
+   ( :sep "{" "ALPHA" :sep "." "arabic-numbers" :sep "}{" "ALPHA" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "arabic-section-numbers-Alpha-page-numbers" 
+   ( :sep "{" "arabic-numbers" :sep "." "arabic-numbers" :sep "}{" "ALPHA" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "Appendix-page-numbers"
+   ( :sep "{}{" "ALPHA" :sep "." "arabic-numbers" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "roman-page-numbers-Appendix-page-numbers" 
+   ( :sep "{" "roman-numbers-lowercase" :sep "}{" "ALPHA" :sep "." "arabic-numbers" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "Roman-page-numbers-Appendix-page-numbers" 
+   ( :sep "{" "roman-numbers-uppercase" :sep "}{" "ALPHA" :sep "." "arabic-numbers" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "arabic-page-numbers-Appendix-page-numbers" 
+   ( :sep "{" "arabic-numbers" :sep "}{" "ALPHA" :sep "." "arabic-numbers" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "alpha-page-numbers-Appendix-page-numbers" 
+   ( :sep "{" "alpha" :sep "}{" "ALPHA" :sep "." "arabic-numbers" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "Alpha-page-numbers-Appendix-page-numbers" 
+   ( :sep "{" "ALPHA" :sep "}{" "ALPHA" :sep "." "arabic-numbers" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "Appendix-page-numbers-Appendix-page-numbers" 
+   ( :sep "{" "ALPHA" :sep "." "arabic-numbers" :sep "}{" "ALPHA" :sep "." "arabic-numbers" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "arabic-section-numbers-Appendix-page-numbers" 
+   ( :sep "{" "arabic-numbers" :sep "." "arabic-numbers" :sep "}{" "ALPHA" :sep "." "arabic-numbers" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "arabic-section-numbers"
+   ( :sep "{}{" "arabic-numbers" :sep "." "arabic-numbers" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "roman-page-numbers-arabic-section-numbers" 
+   ( :sep "{" "roman-numbers-lowercase" :sep "}{" "arabic-numbers" :sep "." "arabic-numbers" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "Roman-page-numbers-arabic-section-numbers" 
+   ( :sep "{" "roman-numbers-uppercase" :sep "}{" "arabic-numbers" :sep "." "arabic-numbers" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "arabic-page-numbers-arabic-section-numbers" 
+   ( :sep "{" "arabic-numbers" :sep "}{" "arabic-numbers" :sep "." "arabic-numbers" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "alpha-page-numbers-arabic-section-numbers" 
+   ( :sep "{" "alpha" :sep "}{" "arabic-numbers" :sep "." "arabic-numbers" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "Alpha-page-numbers-arabic-section-numbers" 
+   ( :sep "{" "ALPHA" :sep "}{" "arabic-numbers" :sep "." "arabic-numbers" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "Appendix-page-numbers-arabic-section-numbers" 
+   ( :sep "{" "ALPHA" :sep "." "arabic-numbers" :sep "}{" "arabic-numbers" :sep "." "arabic-numbers" :sep "}" ) 
+   :min-range-length 2
+) 
+(define-location-class "arabic-section-numbers-arabic-section-numbers" 
+   ( :sep "{" "arabic-numbers" :sep "." "arabic-numbers" :sep "}{" "arabic-numbers" :sep "." "arabic-numbers" :sep "}" ) 
+   :min-range-length 2
+) 
+
+; user defined location classes
+
+
+; define cross-reference class
+
+(define-crossref-class "see" :unverified )
+(markup-crossref-list :class "see"
+   :open "\glsseeformat" :close "{}")
+
+; define the order of the location classes
+(define-location-class-order (
+   "roman-page-numbers"
+   "arabic-page-numbers"
+   "arabic-section-numbers"
+   "alpha-page-numbers"
+   "Roman-page-numbers"
+   "Alpha-page-numbers"
+   "Appendix-page-numbers" 
+   "see" ))
+
+; define the glossary markup
+
+(markup-index
+   :open "\glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
+\providecommand*\glsXpageXglsnumberformat[2]{\setentrycounter[#1]{page}\glsnumberformat{#2}}
+\providecommand*\glsXpageXtextrm[2]{\setentrycounter[#1]{page}\textrm{#2}}
+\providecommand*\glsXpageXtextsf[2]{\setentrycounter[#1]{page}\textsf{#2}}
+\providecommand*\glsXpageXtexttt[2]{\setentrycounter[#1]{page}\texttt{#2}}
+\providecommand*\glsXpageXtextbf[2]{\setentrycounter[#1]{page}\textbf{#2}}
+\providecommand*\glsXpageXtextmd[2]{\setentrycounter[#1]{page}\textmd{#2}}
+\providecommand*\glsXpageXtextit[2]{\setentrycounter[#1]{page}\textit{#2}}
+\providecommand*\glsXpageXtextup[2]{\setentrycounter[#1]{page}\textup{#2}}
+\providecommand*\glsXpageXtextsl[2]{\setentrycounter[#1]{page}\textsl{#2}}
+\providecommand*\glsXpageXtextsc[2]{\setentrycounter[#1]{page}\textsc{#2}}
+\providecommand*\glsXpageXemph[2]{\setentrycounter[#1]{page}\emph{#2}}
+\providecommand*\glsXpageXglshypernumber[2]{\setentrycounter[#1]{page}\glshypernumber{#2}}
+\providecommand*\glsXpageXhyperrm[2]{\setentrycounter[#1]{page}\hyperrm{#2}}
+\providecommand*\glsXpageXhypersf[2]{\setentrycounter[#1]{page}\hypersf{#2}}
+\providecommand*\glsXpageXhypertt[2]{\setentrycounter[#1]{page}\hypertt{#2}}
+\providecommand*\glsXpageXhyperbf[2]{\setentrycounter[#1]{page}\hyperbf{#2}}
+\providecommand*\glsXpageXhypermd[2]{\setentrycounter[#1]{page}\hypermd{#2}}
+\providecommand*\glsXpageXhyperit[2]{\setentrycounter[#1]{page}\hyperit{#2}}
+\providecommand*\glsXpageXhyperup[2]{\setentrycounter[#1]{page}\hyperup{#2}}
+\providecommand*\glsXpageXhypersl[2]{\setentrycounter[#1]{page}\hypersl{#2}}
+\providecommand*\glsXpageXhypersc[2]{\setentrycounter[#1]{page}\hypersc{#2}}
+\providecommand*\glsXpageXhyperemph[2]{\setentrycounter[#1]{page}\hyperemph{#2}}
+\providecommand*\glsXpageXglsignore[2]{\setentrycounter[#1]{page}\glsignore{#2}}
+\begin{theglossary}\glossaryheader~n" 
+   :close "%~n\end{theglossary}\glossarypostamble~n" 
+   :tree)
+(markup-letter-group-list :sep "\glsgroupskip~n")
+(markup-indexentry :open "\relax\glsresetentrylist~n")
+(markup-locclass-list :open "{\glossaryentrynumbers{\relax "
+   :sep ", " :close "}}")
+(markup-locref-list :sep "\delimN ")
+(markup-range :sep "\delimR ")
+
+; define format to use for locations
+
+
+(markup-locref :open "~n\glsXpageXglsnumberformat" 
+ :close "" 
+ :attr "pageglsnumberformat")
+(markup-locref :open "~n\glsXpageXtextrm" 
+ :close "" 
+ :attr "pagetextrm")
+(markup-locref :open "~n\glsXpageXtextsf" 
+ :close "" 
+ :attr "pagetextsf")
+(markup-locref :open "~n\glsXpageXtexttt" 
+ :close "" 
+ :attr "pagetexttt")
+(markup-locref :open "~n\glsXpageXtextbf" 
+ :close "" 
+ :attr "pagetextbf")
+(markup-locref :open "~n\glsXpageXtextmd" 
+ :close "" 
+ :attr "pagetextmd")
+(markup-locref :open "~n\glsXpageXtextit" 
+ :close "" 
+ :attr "pagetextit")
+(markup-locref :open "~n\glsXpageXtextup" 
+ :close "" 
+ :attr "pagetextup")
+(markup-locref :open "~n\glsXpageXtextsl" 
+ :close "" 
+ :attr "pagetextsl")
+(markup-locref :open "~n\glsXpageXtextsc" 
+ :close "" 
+ :attr "pagetextsc")
+(markup-locref :open "~n\glsXpageXemph" 
+ :close "" 
+ :attr "pageemph")
+(markup-locref :open "~n\glsXpageXglshypernumber" 
+ :close "" 
+ :attr "pageglshypernumber")
+(markup-locref :open "~n\glsXpageXhyperrm" 
+ :close "" 
+ :attr "pagehyperrm")
+(markup-locref :open "~n\glsXpageXhypersf" 
+ :close "" 
+ :attr "pagehypersf")
+(markup-locref :open "~n\glsXpageXhypertt" 
+ :close "" 
+ :attr "pagehypertt")
+(markup-locref :open "~n\glsXpageXhyperbf" 
+ :close "" 
+ :attr "pagehyperbf")
+(markup-locref :open "~n\glsXpageXhypermd" 
+ :close "" 
+ :attr "pagehypermd")
+(markup-locref :open "~n\glsXpageXhyperit" 
+ :close "" 
+ :attr "pagehyperit")
+(markup-locref :open "~n\glsXpageXhyperup" 
+ :close "" 
+ :attr "pagehyperup")
+(markup-locref :open "~n\glsXpageXhypersl" 
+ :close "" 
+ :attr "pagehypersl")
+(markup-locref :open "~n\glsXpageXhypersc" 
+ :close "" 
+ :attr "pagehypersc")
+(markup-locref :open "~n\glsXpageXhyperemph" 
+ :close "" 
+ :attr "pagehyperemph")
+(markup-locref :open "~n\glsXpageXglsignore" 
+ :close "" 
+ :attr "pageglsignore")
+
+; define letter group list format
+
+(markup-letter-group-list :sep "\glsgroupskip~n")
+
+; letter group headings
+
+(markup-letter-group :open-head "\glsgroupheading{"
+   :close-head "}")
+
+; additional letter groups
+
+(define-letter-group "glsnumbers"
+   :prefixes ("0" "1" "2" "3" "4" "5" "6" "7" "8" "9")
+   :before "A")
+
+; additional sort rules
+
+

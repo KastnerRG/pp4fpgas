@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="714.24841"
+   height="376.27997"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.2 r9819"
+   sodipodi:docname="dft-time-freq.pdf">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.4638386"
+     inkscape:cx="475.85418"
+     inkscape:cy="176.6357"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:window-width="1187"
+     inkscape:window-height="719"
+     inkscape:window-x="58"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2985"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline"
+     transform="translate(-7.6229286,-1.6147461)">
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="7.7401161"
+       y="32.005371"
+       id="text4075"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4077"
+         x="7.7401161"
+         y="32.005371">Time Domain</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="350.46509"
+       y="32.128418"
+       id="text4079"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4081"
+         x="350.46509"
+         y="32.128418">Frequency Domain</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:32.50793839px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="410.80182"
+       y="113.58403"
+       id="text4203"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4205"
+         x="410.80182"
+         y="113.58403">$Re\{X\} = \cos(\omega n)$</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4276"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><flowRegion
+         id="flowRegion4278"><rect
+           id="rect4280"
+           width="283.33215"
+           height="85.432213"
+           x="445.54523"
+           y="190.47009" /></flowRegion><flowPara
+         id="flowPara4282"></flowPara></flowRoot>    <rect
+       style="fill:none"
+       id="rect3865"
+       width="20"
+       height="20"
+       x="20"
+       y="-202.86218"
+       ry="9.5"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:none"
+       id="rect3867"
+       width="20"
+       height="20"
+       x="20"
+       y="-222.86218"
+       ry="9.5"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:none"
+       id="rect3869"
+       width="20"
+       height="20"
+       x="20"
+       y="-222.86218"
+       ry="9.5"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-opacity:1"
+       id="rect3871"
+       width="30"
+       height="30"
+       x="10"
+       y="-222.86218"
+       ry="5"
+       rx="0"
+       transform="scale(1,-1)" />
+    <image
+       y="192.36218"
+       x="39"
+       id="image3894"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAIAAACQzIFuAAAAA3NCSVQICAjb4U/gAAAAL0lEQVRI
+ie3MMREAIAADsS/+PZcNB124j4DAUoC2kzo5i/dxd3d3d3d3d3f/dd+6UxcDOtUhvG4AAAAASUVO
+RK5CYII=
+"
+       height="31"
+       width="31" />
+    <image
+       y="192.36218"
+       x="159"
+       id="image3986"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAIAAACQzIFuAAAAA3NCSVQICAjb4U/gAAAAL0lEQVRI
+ie3MMREAIAADsS/+PZcNB124j4DAUoC2kzo5i/dxd3d3d3d3d3f/dd+6UxcDOtUhvG4AAAAASUVO
+RK5CYII=
+"
+       height="31"
+       width="31" />
+    <image
+       y="192.36218"
+       x="189"
+       id="image4008"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAIAAACQzIFuAAAAA3NCSVQICAjb4U/gAAAAL0lEQVRI
+ie3MMREAIAADsS/+PZcNB124j4DAUoC2kzo5i/dxd3d3d3d3d3f/dd+6UxcDOtUhvG4AAAAASUVO
+RK5CYII=
+"
+       height="31"
+       width="31" />
+    <image
+       y="192.36218"
+       x="219"
+       id="image4030"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAIAAACQzIFuAAAAA3NCSVQICAjb4U/gAAAAL0lEQVRI
+ie3MMREAIAADsS/+PZcNB124j4DAUoC2kzo5i/dxd3d3d3d3d3f/dd+6UxcDOtUhvG4AAAAASUVO
+RK5CYII=
+"
+       height="31"
+       width="31" />
+    <text
+       xml:space="preserve"
+       style="font-size:33.08562088px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="126.57394"
+       y="188.3784"
+       id="text4052"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4054"
+         x="126.57394"
+         y="188.3784">$x(n)$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="96.350792"
+       y="210.74986"
+       id="text4288"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4290"
+         x="96.350792"
+         y="210.74986">...</tspan></text>
+    <image
+       y="192.36218"
+       x="249"
+       id="image4353"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAIAAACQzIFuAAAAA3NCSVQICAjb4U/gAAAAL0lEQVRI
+ie3MMREAIAADsS/+PZcNB124j4DAUoC2kzo5i/dxd3d3d3d3d3f/dd+6UxcDOtUhvG4AAAAASUVO
+RK5CYII=
+"
+       height="31"
+       width="31" />
+    <rect
+       transform="scale(1,-1)"
+       ry="9.5"
+       y="-132.86218"
+       x="528.1311"
+       height="20"
+       width="20"
+       id="rect4388"
+       style="fill:none" />
+    <g
+       id="g4439"
+       transform="translate(-52.868897,30)">
+      <rect
+         style="fill:none"
+         id="rect4390"
+         width="20"
+         height="20"
+         x="431"
+         y="-122.86218"
+         ry="9.5"
+         transform="scale(1,-1)" />
+      <rect
+         style="fill:none"
+         id="rect4392"
+         width="20"
+         height="20"
+         x="431"
+         y="-122.86218"
+         ry="9.5"
+         transform="scale(1,-1)" />
+      <image
+         y="92.362183"
+         x="450"
+         id="image4396"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAIAAACQzIFuAAAAA3NCSVQICAjb4U/gAAAAL0lEQVRI
+ie3MMREAIAADsS/+PZcNB124j4DAUoC2kzo5i/dxd3d3d3d3d3f/dd+6UxcDOtUhvG4AAAAASUVO
+RK5CYII=
+"
+         height="31"
+         width="31" />
+      <image
+         y="92.362183"
+         x="570"
+         id="image4398"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAIAAACQzIFuAAAAA3NCSVQICAjb4U/gAAAAL0lEQVRI
+ie3MMREAIAADsS/+PZcNB124j4DAUoC2kzo5i/dxd3d3d3d3d3f/dd+6UxcDOtUhvG4AAAAASUVO
+RK5CYII=
+"
+         height="31"
+         width="31" />
+      <image
+         y="92.362183"
+         x="600"
+         id="image4400"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAIAAACQzIFuAAAAA3NCSVQICAjb4U/gAAAAL0lEQVRI
+ie3MMREAIAADsS/+PZcNB124j4DAUoC2kzo5i/dxd3d3d3d3d3f/dd+6UxcDOtUhvG4AAAAASUVO
+RK5CYII=
+"
+         height="31"
+         width="31" />
+      <text
+         xml:space="preserve"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         x="507.3508"
+         y="110.74986"
+         id="text4404"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4406"
+           x="507.3508"
+           y="110.74986">...</tspan></text>
+    </g>
+    <image
+       y="282.36218"
+       x="378.1311"
+       id="image4436"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAApCAYAAABwQGa5AAAABHNCSVQICAgIfAhkiAAAASRJREFU
+eJzt3NFNwzAUhtEYMQgjdAMyRddJuk6nCBtkBDYxz0jwi1KrF5FzpD70Ib6t3E9RJKut994n4EtP
+1R8A/jKBQCAQCAQCgUAgEAgEAoFAIBA8j1zscrmMXO4my7KUzT6Kqv3dtm2a57lk9tA7yLquU+/9
+4a91XUd+Db5Rtb/btpX9rtrIoyattani5ErV3KM52v621jyDQCIQCAQCgUAgEAgEAoFAIBAIBAKB
+QCAQCAQCwdDTvEfVWvv0/ifnhh51DfdxB4FAIBAIBAKBQOAhfYDfPCw/6hru4w4CgUAgEAgEAoFA
+IBAIBAKBQCAQCAQCgUAgGH7UxB9J/29V+1s1t/Xeh00+n8+vo9a61fV6fauafRRV+7vv+8vpdHqv
+mP0BlJxLVaM1gPcAAAAASUVORK5CYII=
+"
+       height="41"
+       width="200" />
+    <text
+       xml:space="preserve"
+       style="font-size:30.99899101px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="104.81747"
+       y="246.23447"
+       id="text4448"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4450"
+         x="104.81747"
+         y="246.23447">n samples</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:30.99899101px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="433.01694"
+       y="176.23447"
+       id="text4452"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4454"
+         x="433.01694"
+         y="176.23447">$n/2$ samples</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:30.99899101px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="437.67383"
+       y="347.02228"
+       id="text4479"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4481"
+         x="437.67383"
+         y="347.02228">$n/2$ samples</tspan></text>
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.61122143;stroke-opacity:1"
+       id="rect4491"
+       width="3.9691122"
+       height="375"
+       x="318"
+       y="2.3621826"
+       ry="6.8347158" />
+    <text
+       xml:space="preserve"
+       style="font-size:32.50793839px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="410.72369"
+       y="283.58405"
+       id="text4284"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4286"
+         x="410.72369"
+         y="283.58405">$Im\{X\} = \sin (\omega n)$</tspan></text>
+  </g>
+</svg>

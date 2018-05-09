@@ -1,0 +1,272 @@
+% !TeX root = main.tex
+
+\chapter{Video Systems}
+\glsresetall
+\label{chapter:video}
+
+\section{Background}
+\label{chapVideo}
+Video Processing is a common application for FPGAs.  One reason is that common video data rates match well the clock frequencies that can achieved with modern FPGAs.  For instance, the common High-Definition TV format known as FullHD or 1080P60 video requires
+ $1920 \unit{pixels}{line} * 1080 \unit{lines}{frame} * 60 \unit{frames}{second} = 124,416,000 \unit{pixels}{second}$.  
+
+When encoded in a digital video stream, these pixels are transmitted along with some blank pixels at 148.5 MHz, and can be processed in a pipelined FPGA circuit at that frequency.  Higher data rates can also be achieved by processing multiple samples per clock cycle.  Details on how digital video is transmitted will come in Section \ref{sec:video:formats}.  Another reason is that video is mostly processed in \term{scanline order} line-by-line from the top left pixel to the lower right pixel, as shown in Figure \ref{fig:scanlineOrder}.  This predictable order allows highly specialized memory architectures to be constructed in FPGA circuits to efficiently process video without excess storage.  Details on these architectures will come in Section \ref{sec:video:buffering}
+
+\begin{figure}
+\centering
+\includesvg{videoScanlineOrder}
+\caption{Scanline processing order for video frames.}\label{fig:scanlineOrder}
+\end{figure}
+
+Video processing is also a good target application for HLS.  Firstly, video processing is typically tolerant to processing latency.  Many applications can tolerate several frames of processing delay, although some applications may limit the overall delay to less than one frame.  As a result, highly pipelined implementations can be generated from throughput and clock constraints in HLS with little concern for processing latency.   Secondly, video algorithms are often highly non-standardized and developed based on the personal taste or intuition of an algorithm expert.  This leads them to be developed in a high-level language where they can be quickly developed and simulated on sequences of interest.  It is not uncommon for FullHD video processing algorithms to run at 60 frames per second in an FPGA system, one frame per second in synthesizable C/C++ code running on a development laptop, but only one frame per hour (or slower) in an RTL simulator.  Lastly, video processing algorithms are often easily expressed in a nested-loop programming style that is amenable to HLS.  This means that many video algorithms can be synthesized into an FPGA circuit directly from the C/C++ code that an algorithm developer would write for prototyping purposes anyway
+
+\subsection{Representing Video Pixels}
+Many video input and output systems are optimized around the way that the human vision system perceives light.  One aspect of this is that the cones in the eye, which sense color, are sensitive primarily to red, green, and blue light.  Other colors are perceived as combinations of red, green, and blue light. As a result, video cameras and displays mimic the capabilities of the human vision system and are primarily sensitive or capable of displaying red, green, and blue light and pixels are often represented in the RGB colorspace as a combination of red, green, and blue components.  Most commonly each component is represented with 8 bits for a total of 24 bits per pixel, although other combinations are possible, such as 10 or even 12 bits per pixel in high-end systems. 
+
+A second aspect is that the human visual system interprets brightness with somewhat higher resolution than color. Hence, within a video processing system it is common to convert from the RGB colorspace to the YUV colorspace, which describes pixels as a combination of Luminance (Y) and Chrominance (U and V).  This allows the color information contained in the U and V components to be represented independently of the brightness information in the Y component. One common video format, known as YUV422, represents two horizontally adjacent pixels with two Y values, one U value and one V value.  This format essentially includes a simple form of video compression called \term{chroma subsampling}.  Another common video format, YUV420, represents four pixels in a square with 4 Y values, one U value and one V value, further reducing the amount of data required.  Video compression is commonly performed on data in the YUV colorspace.
+
+A third aspect is that the rods and codes in eye are more sensitive to green light than red or blue light and that the brain primarily interprets brightness primarily from green light. As a result, solid-state sensors and displays commonly use a mosaic pattern, such as the \term{Bayer} pattern\cite{bayer76} which consists of 2 green pixels for every red or blue pixel.  The end result is that higher resolution images can be produced for the same number of pixel elements, reducing the manufacturing cost of sensors and displays.
+
+\begin{aside}
+Video systems have been engineered around the human visual system for many years.  The earliest black and white video cameras were primarily sensitive to blue-green light to match the eye's sensitivity to brightness in that color range.  However, they were unfortunately not very sensitive to red light, as a result red colors (such as in makeup) didn't look right on camera.  The solution was decidedly low-tech: actors wore garish green and blue makeup.
+\end{aside}
+
+\subsection{Digital Video Formats}
+\label{sec:video:formats}
+
+In addition to representing individual pixels, digital video formats must also encode the organization of pixels into video frames.  In many cases, this is done with synchronization or \term{sync} signals that indicate the start and stop of the video frame in an otherwise continuous sequence of pixels.  In some standards (such as the Digital Video Interface or \term{DVI}) sync signals are represented as physically separate wires.  In other standards (such as the Digital Television Standard BTIR 601/656) the start and stop of the sync signal is represented by special pixel values that don't otherwise occur in the video signal.
+
+Each line of video (scanned from left to right) is separated by a \term{Horizontal Sync Pulse}.  The horizontal sync is active for a number of cycles between each video line.  In addition, there are a small number of pixels around the pulse where the horizontal sync is not active, but there are not active video pixels.  These regions before and after the horizontal sync pulse are called the \term{Horizontal Front Porch} and \term{Horizontal Back Porch}, respectively.  Similarly, each frame of video (scanned from top to bottom) is separated by a \term{Vertical Sync Pulse}.  The vertical sync is active for a number of lines between each video frame.  Note that the vertical sync signal only changes at the start of the horizontal sync signal.  There are also usually corresponding \term{Vertical Front Porch} and \term{Vertical Back Porch} areas consisting of video lines where the vertical sync is not active, but there are not active video pixels either.  In addition, most digital video formats include a Data Enable signal that indicates the active video pixels.  Together, all of the video pixels that aren't active are called the \term{Horizontal Blanking Interval}
+ and \term{Vertical Blanking Interval}.  These signals are shown graphically in Figure \ref{fig:video_syncs}.
+
+\begin{figure}
+\centering
+\includesvg{video_syncs}
+\caption{Typical synchronization signals in a 1080P60 high definition video signal.}\label{fig:video_syncs}
+\end{figure}
+
+\begin{aside}
+The format of digital video signals is, in many ways, an artifact of the original analog television standards, such as NTSC in the United States and PAL in many European countries.  Since the hardware for analog scanning of Cathode Ray Tubes contained  circuits with limited slew rates, the horizontal and vertical sync intervals allowed time for the scan recover to the beginning of the next line.  These sync signals were represented by a large negative value in the video signal.  In addition, since televisions were not able to effectively display pixels close to the strong sync signal, the front porches and the back porches were introduced to increase the amount of the picture that could be shown.  Even then, many televisions were designed with \term{overscan}, where up to 20\% of the pixels at the edge the frame were not visible.
+\end{aside}
+
+The typical 1080P60 video frame shown in Figure \ref{fig:video_syncs} contains a total of $2200*1125$ data samples.  At 60 frames per second, this corresponds to an overall sample rate of 148.5 Million samples per second.   This is quite a bit higher than the average rate of active video pixels in a frame, $1920*1080*60 = 124.4$ Million pixels per second. Most modern FPGAs can comfortably process at this clock rate, often leading to 1 sample-per-clock cycle architectures.  Systems that use higher resolutions, such as 4K by 2K for digital cinema, or higher frame rates, such as 120 or even 240 frames per second often require more the one sample to be processed per clock cycle. Remember that such architectures can often be generated by unrolling loops in HLS (see Section \ref{sec:filterThroughputTradeoffs}).  Similarly, when processing lower resolutions or frame rates, processing each sample over multiple clocks may be preferable, enabling operator sharing.  Such architectures can often be generated by increasing the II of loops. %%or $1920*1080$ active video pixels
+\note{Insert something here about handling syncs.}
+
+\begin{figure}
+\lstinputlisting{examples/video_simple.c}
+\caption{Code implementing a simple video filter.}\label{fig:videoSimple}
+\end{figure}
+
+For instance, the code shown in Figure \ref{fig:videoSimple} illustrates a simple video processing application that processes one sample per clock cycle with the loop implemented at II=1.  The code is written with a nested loop over the pixels in the image, following the scanline order shown in \ref{fig:scanlineOrder}.  An II=3 design could share the rescale function computed for each component, enabling reduced area usage.  Unrolling the inner loop by a factor of 2 and partitioning the input and the output arrays by an appropriate factor of 2 could enable processing 2 pixels every clock cycle in an II=1 design.  This case is relatively straightforward, since the processing of each component and of individual pixels is independent.  More complicated functions might not benefit from resource sharing, or might not be able to process more than one pixel simultaneously.
+
+\begin{exercise}
+A high-speed computer vision application processes small video frames of 200 * 180 pixels at 10000 frames per second.  This application uses a high speed sensor interfaced directly to the FPGA and requires no sync signals.  How many samples per clock cycle would you attempt to process?  Is this a good FPGA application?  Write the nested loop structure to implement this structure using HLS.  
+\end{exercise}
+
+\subsection{Video Processing System Architectures}
+\label{sec:video:architectures}
+Up to this point, we have focused on building video processing applications without concern for how they are integrated into a system.  In many cases, such as the example code in Figure \ref{fig:video:2Dfilter_linebuffer_extended}, the bulk of the processing occurs within a loop over the pixels and can process one pixel per clock when the loop is active.  In this section we will discuss some possibilities for system integration.
+
+By default, \VHLS generates a simple memory interface for interface arrays.  This interface consists of address and data signals and a write enable signal in the case of a write interface.  Each read or write of data is associated with a new address and the expected latency through the memory is fixed.  It is simple to integrate such an interface with on-chip memories created from Block RAM resources as shown in Figure \ref{fig:video:BRAM_interface}.  However Block RAM resources are generally a poor choice for storing video data because of the large size of each frame, which would quickly exhaust the Block RAM resources even in large expensive devices.
+
+\begin{figure}
+\centering
+\framebox{\includesvg{video_BRAM_interface}}
+\begin{lstlisting}
+void video_filter(rgb_pixel pixel_in[MAX_HEIGHT][MAX_WIDTH],
+				rgb_pixel pixel_out[MAX_HEIGHT][MAX_WIDTH]) {
+#pragma HLS interface ap_memory port = pixel_out // The default
+#pragma HLS interface ap_memory port = pixel_in // The default
+\end{lstlisting}
+\caption{Integration of a video design with BRAM interfaces.}\label{fig:video:BRAM_interface}
+\end{figure}
+
+\begin{exercise}
+For 1920x1080 frames with 24 bits per pixel, how many Block RAM resources are required to store each video frame?  How many frames can be stored in the Block RAM of the FPGA you have available?
+\end{exercise}
+
+A better choice for most video systems is to store video frames in external memory, typically some form of double-data-rate (DDR) memory.  Typical system integration with external memory is shown in Figure \ref{fig:video:DDR_interface}.   An FPGA component known as \term{external memory controller} implements the external DDR interface and provides a standardized interface to other FPGA components through a common interface, such as the ARM AXI4 slave interface \cite{ARMAXI4}.   FPGA components typically implement a complementary master interface which can be directly connected to the slave interface of the external memory controller or connected through specialized \term{AXI4 interconnect} components.  The AXI4 interconnect allows multiple multiple master components to access a number of slave components.  This architecture abstracts the details of the external memory, allowing different external memory components and standards to be used interchangeably without modifying other FPGA components.   
+
+\begin{figure}
+\centering
+\framebox{\includesvg{video_DDR_interface}}
+\begin{lstlisting}
+void video_filter(pixel_t pixel_in[MAX_HEIGHT][MAX_WIDTH],
+				pixel_t pixel_out[MAX_HEIGHT][MAX_WIDTH]) {
+#pragma HLS interface m_axi port = pixel_out
+#pragma HLS interface m_axi port = pixel_in
+\end{lstlisting}
+\caption{Integration of a video design with external memory interfaces.}\label{fig:video:DDR_interface}
+\end{figure}
+
+Although most processor systems are built with caches and require them for high performance processing, it is typical to implement FPGA-based video processing systems as shown in \ref{fig:video:DDR_interface} without on-chip caches.  In a processor system, the cache provides low-latency access to previously accessed data and improves the bandwidth of access to external memory by always reading or writing complete cache lines. Some processors also use more complex mechanisms, such as prefetching and speculative reads in order to reduce external memory latency and increase external memory bandwidth.  For most FPGA-based video processing systems simpler techniques leveraging line buffers and window buffers are sufficient to avoid fetching any data from external memory more than once, due to the predictable access patterns of most video algorithms.  Additionally, \VHLS is capable of scheduling address transactions sufficiently early to avoid stalling computation due to external memory latency and is capable of statically inferring burst accesses from consecutive memory accesses.
+
+\begin{figure}
+\centering
+\framebox{\includesvg{video_DDR_DMA_interface}}
+\begin{lstlisting}
+void video_filter(pixel_t pixel_in[MAX_HEIGHT][MAX_WIDTH],
+				pixel_t pixel_out[MAX_HEIGHT][MAX_WIDTH]) {
+#pragma HLS interface s_axi port = pixel_out
+#pragma HLS interface s_axi port = pixel_in
+\end{lstlisting}
+\caption{Integration of a video design with external memory interfaces through a DMA component.}\label{fig:video:DDR_DMA_interface}
+\end{figure}
+
+An alternative external memory architecture is shown in Figure \ref{fig:video:DDR_DMA_interface}.  In this architecture, an accelerator is connected to an external Direct Memory Access (DMA) component that performs the details of generating addresses to the memory controller.  The DMA provides a stream of data to the accelerator for processing and consumes the data produced by the accelerator and writes it back to memory.  In \VHLS, there are multiple coding styles that can generate a streaming interface, as shown in Figure \ref{fig:video:stream_interfaces}.  One possibility is to model the streaming interfaces as arrays.  In this case, the C code is very similar to the code seen previously, but different interface directives are used.  An alternative is to model the streaming interface explicitly, using the \code{hls::stream<>} class.  In either case, some care must be taken that the order of data generated by the DMA engine is the same as the order in which the data is accessed in the C code.
+
+\begin{figure}
+\centering
+\begin{lstlisting}
+void video_filter(pixel_t pixel_in[MAX_HEIGHT][MAX_WIDTH],
+									pixel_t pixel_out[MAX_HEIGHT][MAX_WIDTH]) {
+#pragma HLS interface ap_hs port = pixel_out
+#pragma HLS interface ap_hs port = pixel_in
+\end{lstlisting}
+\begin{lstlisting}
+void video_filter(hls::stream<pixel_t> &pixel_in,
+									hls::stream<pixel_t> &pixel_out) {
+\end{lstlisting}
+
+%\framebox{\includesvg{video_buffers}}
+\caption{Coding styles for modelling streaming interfaces in HLS.}\label{fig:video:stream_interfaces}
+\end{figure}
+
+One advantage of streaming interfaces is that they allow multiple accelerators to be composed in a design without the need to store intermediate values in external memory.  In some cases, FPGA systems can be built without external memory at all, by processing pixels as they are received on an input interface (such as HDMI) and sending them directly to an output interface, as shown in Figure \ref{fig:video:streaming_interface}.  Such designs typically have accelerator throughput requirements that must achieved in order to meet the strict real-time constraints at the external interfaces.   Having at least one frame buffer in the system provides more flexibility to build complex algorithms that may be hard to construct with guaranteed throughput.  A frame buffer can also simplify building systems where the input and output pixel rates are different or potentially unrelated (such as a system that receives an arbitrary input video format and outputs an different arbitrary format).
+
+\begin{figure}
+\centering
+\framebox{\includesvg{video_streaming_interface}}
+\begin{lstlisting}
+void video_filter(pixel_t pixel_in[MAX_HEIGHT][MAX_WIDTH],
+				pixel_t pixel_out[MAX_HEIGHT][MAX_WIDTH]) {
+#pragma HLS interface ap_hs port = pixel_out
+#pragma HLS interface ap_hs port = pixel_in
+\end{lstlisting}
+\caption{Integration of a video design with streaming interfaces.}\label{fig:video:streaming_interface}
+\end{figure}
+
+\section{Implementation}
+
+When actually processing video in a system it is common to factor out the system integration aspects from the implementation of video processing algorithms.  For the remainder of this chapter we will assume that input pixels are arriving in a stream of pixels and must be processed in scanline order.  The actual means by which this happens is largely unimportant, as long as HLS meets the required performance goals. 
+
+\subsection{Line Buffers and Frame Buffers}
+\label{sec:video:buffering}
+
+Video processing algorithms typically compute an output pixel or value from a nearby region of input pixels, often called a \term{window}.   Conceptually, the window scans across the input image, selecting a region of pixels that can be used to compute the corresponding output pixel.  For instance, Figure \ref{fig:video:2Dfilter} shows code that implements a 2-dimensional filter on a video frame.  This code reads a window of data from the input video frame (stored in an array) before computing each output pixel.  
+
+\begin{figure}
+\lstinputlisting[format=none, firstline=3]{examples/video_2dfilter.c}
+\caption{Code implementing a 2D filter without an explicit line buffer.}\label{fig:video:2Dfilter}
+\end{figure}
+
+\begin{exercise}
+In Figure \ref{fig:video:2Dfilter}, there is the code \lstinline{int wi = row+i-1; int wj = col+j-1;}.  Explain why these expressions include a '-1'.  Hint: Would the number change if the filter were 7x7 instead of 3x3?
+\end{exercise}
+
+Note that in this code, multiple reads of \lstinline|pixel_in| must occur to populate the \lstinline|window| memory and compute one output pixel.  If only one read can be performed per cycle, then this code is limited in the pixel rate that it can support.  Essentially this is a 2-Dimensional version of the one-tap-per-cycle filter from Figure \ref{fig:FIR}.  In addition, the interfacing options are limited, because the input is not read in normal scan-line order.  (This topic will be dealt with in more detail in Section \ref{sec:video:architectures}.
+
+A key observation about adjacent windows is that they often overlap, implying a high locality of reference.  This means that pixels from the input image can be buffered locally or cached and accessed multiple times.  By refactoring the code to read each input pixel exactly once and store the result in a local memory, a better result can be achieved.  In video systems, the local buffer is also called a \term{line buffer}, since it typically stores several lines of video around the window.   Line buffers are typically implemented in \gls{bram} resources, while window buffers are implemented using \gls{ff} resources.  Refactored code using a line buffer is shown in Figure \ref{fig:video:2Dfilter_linebuffer}.
+Note that for an NxN image filter, only N-1 lines need to be stored in line buffers.  
+
+\begin{figure}
+\lstinputlisting[format=none,firstline=20]{examples/video_2dfilter_linebuffer.c}
+\caption{Code implementing a 2D filter with an explicit line buffer.}\label{fig:video:2Dfilter_linebuffer}
+\end{figure}
+
+The line buffer and window buffer memories implemented from the code in Figure \ref{fig:video:2Dfilter_linebuffer} are shown in Figure \ref{fig:video:video_buffers}.    Each time through the loop, the window is shifted and filled with one pixel coming from the input and two pixels coming from the line buffer.  Additionally, the input pixel is shifted into the line buffer in preparation to repeat the process on the next line.  Note that in order to process one pixel each clock cycle, most elements of the window buffer must be read from and written to every clock cycle. In addition, after the 'i' loop is unrolled, each array index to the \lstinline|window| array is a constant.  In this case, \VHLS will convert each element of the array into a scalar variable (a process called \term{scalarization}).  Most of the elements of the \lstinline|window| array will be subsequently implemented as Flip Flops.  Similarly, each row of the \lstinline|line_buffer| is accessed twice (being read once and written once).  The code explicitly directs each row of the \lstinline|line_buffer| array to be partitioned into a separate memory.  For most interesting values of \lstinline|MAX_WIDTH| the resulting memories will be implemented as one or more Block RAMs.  Note that each Block RAM can support two independent accesses per clock cycle.
+
+\begin{figure}
+\centering
+\includesvg{video_buffers}
+\caption{ Memories implemented by the code in Figure \ref{fig:video:2Dfilter_linebuffer}.  These memories store a portion of the input image shown in the diagram on the right at the end of a particular iteration of the loop.  The pixels outlined in black are stored in the line buffer and the pixels outlined in red are stored in the window buffer.}\label{fig:video:video_buffers}
+\label{fig:dft-visualization}
+\end{figure}
+
+%\begin{figure}
+%\centering
+%\framebox{\includesvg{video_buffers}}
+%\caption{Memories implemented in Figure \ref{fig:video:2Dfilter_linebuffer}.}\label{fig:video:video_buffers}
+%\end{figure}
+
+\begin{aside}
+Line buffers are a special case of a more general concept known as a \term{reuse buffer}, which is often used in stencil-style computations.  High-level synthesis of reuse buffers and line buffers from code like Figure \ref{fig:video:2Dfilter} is an area of active research.  See, for instance \cite{bayliss12sdram}\cite{hegarty2016rigel}.
+\end{aside}
+\begin{aside}
+\VHLS includes \lstinline|hls::line_buffer<>| and \lstinline|hls::window_buffer<>| classes that simplify the management of window buffers and line buffers.  
+\end{aside}
+
+\begin{exercise}
+For a 3x3 image filter, operating on 1920x1080 images with 4 bytes per pixel, How many FPGA Block RAMs are necessary to store each video line?
+\end{exercise}
+
+\subsection{Causal Filters}
+
+The filter implemented in Figure \ref{fig:video:2Dfilter_linebuffer} reads a single input pixel and produces a single output pixel each clock cycle, however the behavior is not quite the same as the code in Figure \ref{fig:video:2Dfilter}.  The output is computed from the window of previously read pixels, which is 'up and to the left' of the pixel being produced. As a result, the output image is shifted 'down and to the right' relative to the input image.  The situation is analogous to the concept of causal and non-causal filters in signal processing.  Most signal processing theory focuses on causal filters because only causal filters are practical for time sampled signals (e.g. where x[n] = x(n*T) and y[n] = y(n*T)).
+
+\begin{aside}
+A \term{causal} filter $h[n]$ is a filter where $\forall k < 0, h[k] = 0$.
+A finite filter $h[n]$ which is not causal can be converted to a causal filter $\hat{h}[n]$ by delaying the taps of the filter so that $\hat{h}[n] = h[n-D]$. The output of the new filter $\hat{y} = x \otimes \hat{h}$ is the same as a delayed output of the old filter $y = x \otimes h$.  Specifically,  $\hat{y}[n] = y[n-D]$.
+\end{aside}
+
+\begin{exercise}
+Prove the fact in the previous aside using the definition of the convolution for
+
+$y = x \otimes h$: y[n] = $\sum\limits_{k=-\infty}^\infty x[k] *h[n-k]$
+\end{exercise}
+
+For the purposes of this book, most variables aren't time-sampled signals and the times that individual inputs and outputs are created may be determined during the synthesis process.  For systems involving time-sampled signals, we treat timing constraints as a constraint during the HLS implementation process.  As long as the required task latency is achieved, then the design is correct.
+
+In most video processing algorithms, the spatial shift introduced in the code above is undesirable and needs to be eliminated.  Although there are many ways to write code that solves this problem, a common way is known as \term{extending the iteration domain}.  In this technique, the loop bounds are increased by a small amount so that the first input pixel is read on the first loop iteration, but the first output pixel is not written until later in the iteration space.  A modified version of the filter code is shown in Figure \ref{fig:video:2Dfilter_linebuffer_extended}.  The behavior of this code is shown in Figure \ref{fig:video:timelines}, relative to the original linebuffer code in Figure \ref{fig:video:2Dfilter_linebuffer}.  After implementation with HLS, we see that the data dependencies are satisfied in exactly the same way and that the implemented circuit is, in fact, implementable.
+
+\begin{figure}
+\lstinputlisting[format=none,firstline=21]{examples/video_2dfilter_linebuffer_extended.c}
+\caption{Code implementing a 2D filter with an explicit line buffer.  The iteration space is extended by 1 to allow the filter to be implemented without a spatial shift.}\label{fig:video:2Dfilter_linebuffer_extended}
+\end{figure}
+
+\begin{figure}
+\centering
+\includesvg{filter2d_results_withshifting}
+\caption{Results of different filter implementations. The reference output in image b is produced by the code in Figure \ref{fig:video:2Dfilter}.  The shifted output in image c is produced by the code in Figure \ref{fig:video:2Dfilter_linebuffer}.  The output in image d is produced by the code in Figure \ref{fig:video:2Dfilter_linebuffer_extended} and is identical to image b.}\label{fig:video:filter2D_results_withshifting}
+\end{figure}
+
+\begin{figure}
+\centering
+\includesvg{video_timelines}
+\caption{Timeline of execution of code implemented with line buffers.  The top timeline shows the behavior of the code in  Figure \ref{fig:video:2Dfilter_linebuffer}.  The bottom timeline shows the behavior of the code in  Figure \ref{fig:video:2Dfilter_linebuffer_extended}.  The pixel marked in red is output on the same cycle in both implementations.  In the first case it is interpreted to be the second pixel of the second line and in the second case, it is interpreted as the first pixel of the first line.}\label{fig:video:timelines}
+\end{figure}
+
+\subsection{Boundary Conditions}
+
+In most cases, the processing window contains a region of the input image.  However, near the boundary of the input image, the filter may extend beyond the boundary of the input image.  Depending on the requirements of different applications, there are many different ways of accounting for the behavior of the filter near the boundary.  Perhaps the simplest way to account for the boundary condition is to compute a smaller output image that avoids requiring the values of input pixels outside of the input image.  However, in applications where the output image size is fixed, such as Digital Television, this approach is generally unacceptable.  In addition, if a sequence of filters is required, dealing with a large number images with slightly different sizes can be somewhat cumbersome.  The code in Figure \ref{fig:video:2Dfilter_linebuffer} creates an output with the same size as the input by padding the smaller output image with a known value (in this case, the color black).   Alternatively, the missing values can be synthesized, typically in one of several ways.
+\begin{itemize}
+\item Missing input values can be filled with a constant
+\item Missing input values can be filled from the boundary pixel of the input image.
+\item Missing input values can be reconstructed by reflecting pixels from the interior of the input image.
+\end{itemize}
+Of course, more complicated and typically more computationally intensive schemes are also used.
+
+\begin{figure}
+\centering
+\includesvg{filter2d_results_boundary_conditions}
+\caption{Examples of the effect of different kinds of boundary conditions.}\label{fig:video:boundary_conditions}
+\end{figure}
+
+One way of writing code to handle boundary conditions is shown in Figure \ref{fig:video:boundaryConditionExtendBad}.  This code computes an offset address into the window buffer for each pixel in the window buffer.  However, there is a significant disadvantage in this code since each read from the window buffer is at a variable address.  This variable read results in multiplexers before the filter is computed.  For an N-by-N tap filter, there will be approximately N*N multiplexers with N inputs each.  For simple filters, the cost of these multiplexers (and the logic required to compute the correct indexes) can dominate the cost of computing the filter.
+
+\begin{figure}
+\lstinputlisting[format=none,firstline=22]{examples/video_2dfilter_linebuffer_extended_constant.c}
+\caption{Code implementing a 2D filter with an explicit line buffer and constant extension to handle the boundary condition.   Although correct, this code is relatively expensive to implement.}\label{fig:video:boundaryConditionExtendBad}
+\end{figure}
+
+An alternative technique is to handle the boundary condition when data is written into the window buffer and to shift the window buffer in a regular pattern.  In this case, there are only N multiplexers, instead of N*N, resulting in significantly lower resource usage.  
+
+\begin{exercise}
+Modify the code in Figure \ref{fig:video:boundaryConditionExtendBad} to read from the window buffer using constant addresses.  How many hardware resources did you save?
+\end{exercise}
+
+%An alternative technique with reduced resource usage is shown in Figure \ref{fig:boundaryConditionConstant}.  In this code, the boundary condition is handled when data is written into the window buffer and the window buffer is shifted in a regular pattern.  In this case, there are only N multiplexers, instead of N*N, resulting in significantly lower resource usage.  
+
+\section{Conclusion}
+
+Video processing is a common FPGA application and are highly amenable to HLS implementation.  A key aspect of most video processing algorithms is a high degree of data-locality enabling either streaming implementations or applications with local buffering and a minimum amount of external memory access.
+

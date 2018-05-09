@@ -1,0 +1,117 @@
+APPS=video_simple video_2dfilter video_2dfilter_linebuffer video_2dfilter_linebuffer_extended
+
+ROOT_DIR:=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
+
+#C_SOURCES = video_file_utils.c
+#CPP_SOURCES_${APP} = ${APP}.c
+
+PLATFORM = zc706
+SDSFLAGS = -sds-pf ${PLATFORM}
+# SDSACCFLAGS = \
+# 	-sds-hw image_filter top.cpp -clkid 1 -sds-end \
+# 	-poll-mode 1 -dmclkid 1
+
+
+XSDK := $(shell dirname $(shell dirname $(shell which xsdk)))
+ARM_OPENCV := $(XSDK)/data/embeddedsw/ThirdParty/opencv
+ARM_LIBS := -lavcodec -lavformat -lavutil -lswscale -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_objdetect -lopencv_photo -lopencv_stitching -lopencv_video -lopencv_videostab
+
+SDCC = sdscc ${SDSFLAGS}
+SDCXX = sds++ ${SDSFLAGS}
+
+ARMCC = arm-xilinx-linux-gnueabi-gcc
+ARMCXX = arm-xilinx-linux-gnueabi-g++
+
+ARMCFLAGS = -DHLS_NO_XIL_FPO_LIB -I$(ARM_OPENCV)/include -I$(ARM_OPENCV)/include/opencv
+ARMLFLAGS = -L$(ARM_OPENCV)/lib $(ARM_LIBS)
+
+CC = gcc
+CXX = g++
+
+CFLAGS = -g -O3 -c -I.
+LFLAGS = 
+
+CLEAN = 
+BUILDDIR = build
+
+# CPP_OBJECTS := $(CPP_SOURCES:.cpp=.o)
+# C_OBJECTS := $(C_SOURCES:.c=.o)
+# CLEAN += ${EXECUTABLE} ${CPP_OBJECTS} ${C_OBJECTS}
+
+# SW_CPP_OBJECTS := $(CPP_SOURCES:.cpp=.sw.o)
+# SW_C_OBJECTS := $(C_SOURCES:.c=.sw.o)
+# SW_EXECUTABLE := $(EXECUTABLE:.elf=.sw.elf)
+# CLEAN += ${SW_EXECUTABLE} ${SW_CPP_OBJECTS} ${SW_C_OBJECTS}
+
+# HOST_CPP_OBJECTS := $(CPP_SOURCES:.cpp=.host.o)
+# HOST_C_OBJECTS := $(C_SOURCES:.c=.host.o)
+# HOST_EXECUTABLE := $(EXECUTABLE:.elf=.host.elf)
+# CLEAN += ${HOST_EXECUTABLE} ${HOST_CPP_OBJECTS} ${HOST_C_OBJECTS}
+
+.PHONY: all
+
+define rules
+APP := $1
+C_SOURCES_$1 = $1.c $1-top.c bitmap.c
+EXECUTABLE_$1 = $1.elf
+SW_OBJECTS_$1 = \
+	$$(addprefix $(BUILDDIR)/$1/,$$(C_SOURCES_$1:.c=.o)) \
+	$$(addprefix $(BUILDDIR)/$1/,$$(CPP_SOURCES_$1:.cpp=.o))
+
+HOST_EXECUTABLE_$1 = $1.host.elf
+HOST_OBJECTS_$1 = \
+	$$(addprefix $(BUILDDIR)/$1/,$$(C_SOURCES_$1:.c=.host.o)) \
+	$$(addprefix $(BUILDDIR)/$1/,$$(CPP_SOURCES_$1:.cpp=.host.o))
+
+all: $(BUILDDIR)/$1/$${EXECUTABLE_$1} $(BUILDDIR)/$${HOST_EXECUTABLE_$1}
+
+$(BUILDDIR)/$1/.touch:
+	mkdir -p $(BUILDDIR)/$1; touch $(BUILDDIR)/$1/.touch
+
+$(BUILDDIR)/$1/$${EXECUTABLE_$1}: $${SW_OBJECTS_$1}
+	cd $(BUILDDIR)/$1; ${SDCXX} ${LFLAGS} $$(notdir $$^) -o $${EXECUTABLE_$1}
+
+$(BUILDDIR)/$1/%.o: %.cpp $(BUILDDIR)/$1/.touch
+	cd $(BUILDDIR)/$1; ${SDCXX} $(SDSACCFLAGS) ${ARMCFLAGS} ${CFLAGS} $$(addprefix $(ROOT_DIR)/,$$<) -o $$*.o
+
+$(BUILDDIR)/$1/%.o: %.c $(BUILDDIR)/$1/.touch
+	cd $(BUILDDIR)/$1; ${SDCC} -std=c99 $(SDSACCFLAGS) ${ARMCFLAGS} ${CFLAGS} $$(addprefix $(ROOT_DIR)/,$$<) -o $$*.o
+
+$(BUILDDIR)/$${HOST_EXECUTABLE_$1}: $${HOST_OBJECTS_$1}
+	${CXX} ${LFLAGS} $$^ -o $$@
+
+$(BUILDDIR)/$1/%.host.o: %.cpp $(BUILDDIR)/$1/.touch
+	${CXX} ${CFLAGS} $$(addprefix $(ROOT_DIR)/,$$<) -o $$@
+
+$(BUILDDIR)/$1/%.host.o: %.c $(BUILDDIR)/$1/.touch
+	${CC} -std=c99 ${CFLAGS} $$(addprefix $(ROOT_DIR)/,$$<) -o $$@
+
+endef
+
+$(foreach app,$(APPS),$(eval $(call rules,$(app))))
+
+# # sd_card/${SW_EXECUTABLE} ${SW_EXECUTABLE}: ${SW_CPP_OBJECTS} ${SW_C_OBJECTS}
+# # 	${SDCXX} ${LFLAGS} $^ -o $@
+
+# %.sw.o: %.cpp
+# 	${SDCXX} ${CFLAGS} $< -o $@
+
+# %.sw.o: %.c
+# 	${SDCC} ${CFLAGS} $< -o $@
+
+# # sd_card/${EXECUTABLE} ${EXECUTABLE}: ${CPP_OBJECTS} ${C_OBJECTS}
+# # 	${SDCXX} $(SDSACCFLAGS) ${LFLAGS} $^ -o $@
+
+# build/%.o: %.cpp
+# 	${SDCXX} $(SDSACCFLAGS) ${CFLAGS} $< -o $@
+
+# build/%.o: %.c
+# 	${SDCC} $(SDSACCFLAGS) ${CFLAGS} $< -o $@
+
+clean:
+	${RM} ${CLEAN}
+
+ultraclean:
+	${RM} -rf _sds sd_card *.bit ${CLEAN} prj *.log
+
+

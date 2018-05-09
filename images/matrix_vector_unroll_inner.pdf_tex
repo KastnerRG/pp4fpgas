@@ -1,0 +1,71 @@
+%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'matrix_vector_unroll_inner.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{271.22851562bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.80788375)%
+    \put(0,0){\includegraphics[width=\unitlength]{matrix_vector_unroll_inner.pdf}}%
+    \put(0.15232341,0.77567353){\makebox(0,0)[rb]{\smash{V\_In[0]}}}%
+    \put(0.15232341,0.7314304){\makebox(0,0)[rb]{\smash{M[i][0]}}}%
+    \put(0.15232341,0.67243955){\makebox(0,0)[rb]{\smash{V\_In[1]}}}%
+    \put(0.15232341,0.62819641){\makebox(0,0)[rb]{\smash{M[i][1]}}}%
+    \put(0.15232341,0.56920557){\makebox(0,0)[rb]{\smash{V\_In[2]}}}%
+    \put(0.15232341,0.52496243){\makebox(0,0)[rb]{\smash{M[i][2]}}}%
+    \put(0.15232341,0.46597158){\makebox(0,0)[rb]{\smash{V\_In[3]}}}%
+    \put(0.15232341,0.42172845){\makebox(0,0)[rb]{\smash{M[i][3]}}}%
+    \put(0.15232341,0.3627376){\makebox(0,0)[rb]{\smash{V\_In[4]}}}%
+    \put(0.15232341,0.31849446){\makebox(0,0)[rb]{\smash{M[i][4]}}}%
+    \put(0.15232341,0.25950362){\makebox(0,0)[rb]{\smash{V\_In[5]}}}%
+    \put(0.15232341,0.21526037){\makebox(0,0)[rb]{\smash{M[i][5]}}}%
+    \put(0.15232341,0.15626958){\makebox(0,0)[rb]{\smash{V\_In[6]}}}%
+    \put(0.15232341,0.11202644){\makebox(0,0)[rb]{\smash{M[i][6]}}}%
+    \put(0.15232341,0.05303559){\makebox(0,0)[rb]{\smash{V\_In[7]}}}%
+    \put(0.15232341,0.00879246){\makebox(0,0)[rb]{\smash{M[i][7]}}}%
+    \put(0.83071816,0.37748531){\makebox(0,0)[lb]{\smash{V\_Out[i]}}}%
+  \end{picture}%
+\endgroup%

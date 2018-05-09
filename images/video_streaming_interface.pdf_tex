@@ -1,0 +1,61 @@
+%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'video_streaming_interface.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{448.04208984bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.13018251)%
+    \put(0,0){\includegraphics[width=\unitlength]{video_streaming_interface.pdf}}%
+    \put(0.30186896,0.01968842){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Accelerator 1}}}%
+    \put(0.5241695,0.01904706){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Accelerator 2}}}%
+    \put(0.10039482,0.0173159){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Video Input}}}%
+    \put(0.74785106,0.02072101){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Video Output}}}%
+    \put(0.00430345,0.04490959){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{HDMI}}}%
+    \put(0.92450486,0.04327346){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{HDMI}}}%
+    \put(0.01259211,0.0893559){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textit{Dataflow}}}}%
+  \end{picture}%
+\endgroup%

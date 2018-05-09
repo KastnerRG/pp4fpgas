@@ -1,0 +1,73 @@
+%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'dft_behavior_baseline.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{439.91640625bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.2900116)%
+    \put(0,0){\includegraphics[width=\unitlength]{dft_behavior_baseline.pdf}}%
+    \put(0.11704849,0.21427078){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{sample[i]}}}%
+    \put(0.11365796,0.02837287){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{sample[i]}}}%
+    \put(0.100019,0.17385506){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{double}}}%
+    \put(0.11365796,0.11929924){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{sin/cos}}}%
+    \put(0.11365796,0.19204033){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{int to double}}}%
+    \put(0.100019,0.08292869){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{double}}}%
+    \put(0.09938107,0.06602629){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{double}}}%
+    \put(0.100019,0.10111396){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{double}}}%
+    \put(0.100019,0.04655814){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{double}}}%
+    \put(0.16366746,0.25932584){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Compute w}}}%
+    \put(0.40007601,0.25568879){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Run inner loop}}}%
+    \put(0.80924465,0.27569247){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Run remaining
+}}}%
+    \put(0.9456342,0.25568879){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Copy Result}}}%
+    \put(0.80924465,0.2575072){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{iterations
+}}}%
+    \put(0.100019,0.13748451){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{double}}}%
+    \put(0.11365796,0.15566978){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{int to double}}}%
+    \put(0.65466983,0.25932573){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Compute w}}}%
+  \end{picture}%
+\endgroup%

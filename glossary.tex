@@ -1,0 +1,383 @@
+% !TeX root = main.tex
+
+%%% The glossary entry the acronym links to   
+\newglossaryentry{hlsg}
+{
+	name={HLS},
+    	description={High-level synthesis is a hardware design process that translates an algorithmic description (which is decoupled from the cycle to cycle behavior) into a register transfer level (RTL) hardware description language which specifies the exact behavior of the circuit on a cycle-by-cycle basis}
+}
+
+\newglossaryentry{rtlg}
+{
+	name={RTL},
+    	description={Register-transfer level (RTL) is a hardware design abstraction which models a synchronous digital circuit using logical operations that occur between between hardware registers. It is common design entry for modern digital design}
+}
+
+\newglossaryentry{asicg}
+{
+	name={ASIC},
+    	description={An application-specific integrated circuit (ASIC) is a circuit created for a particular use, e.g., an audio decoder or a wireless modem. }
+}
+
+\newglossaryentry{edag}
+{
+	name={EDA},
+    	description={Electronic design automation (EDA) are a set of software tools used to aid the hardware design process.  }
+}
+
+\newglossaryentry{fpgag}
+{
+	name={FPGA},
+    	description={A field-programmable gate array (FPGA) is an integrated circuit that can be customized or programmed after it is manufactured (``in the field''). }
+}
+
+\newglossaryentry{lutg}
+{
+	name={LUT},
+    	description={A lookup table (LUT) is a memory where the address signal are the inputs and the corresponding outputs are contained in the memory entries. It is a key computational component of modern \gls{fpga}s.}
+}
+
+\newglossaryentry{ffg}
+{
+	name={FF},
+    	description={A flip-flop (FF) is a circuit that can store information. We typically think of it as storing one bit of data and are a fundamental building block for creating memories in digital circuits.}
+}
+
+\newglossaryentry{bramg}
+{
+	name={BRAM},
+    	description={A block RAM is a configurable random access memory that is embedded throughout an FPGA for data storage and communication.}
+}
+
+\newglossaryentry{romg}
+{
+	name={ROM},
+    	description={A Read-only Memory is a memory which is initialized to a particular value and then read but never written.  In many cases the storage for ROMs can be highly optimized because their value never changes.}
+}
+\newglossaryentry{crsg}
+{
+	name={Compressed Row Storage},
+    	description={Compressed Row Storage is a technique for representing a sparse matrix.  It allows large matrices with a small number of elements to be stored and operated on efficiently.}
+}
+\newglossaryentry{ssag}
+{
+	name={Static Single Assignment},
+    	description={Static Single Assignment is an intermediate representation in compilers where each variable is assigned only once.  This form makes many common optimizations simpler to write.}
+}
+
+\newglossaryentry{core}
+{
+	name={IP~core},
+	description={An RTL-level component with well-defined interfaces enabling it to be incorporated into a larger design.  Often used as a way of hiding the `intellectual property' from another company, hence the name.}
+} 
+
+\newglossaryentry{synth}
+{
+	name={logic~synthesis},
+	description={The process of converting an gls{rtl} design into a netlist of device-level primitives.}
+}
+
+\newglossaryentry{parg}
+{
+	name={place and route},
+	description={The process of converting a netlist of device-level primitives into the configuration of a particular device.}
+} 
+
+\newglossaryentry{fftg}
+{
+	name={Fast Fourier Transform},
+    	description={An optimized version of the \gls{dft} which requires fewer operations.}
+}
+
+\newglossaryentry{dftg}
+{
+	name={Discrete Fourier Transform},
+    	description={An transformation that takes a discrete signal and converts it to a freqeuncy-domain representation.}
+}
+
+\newglossaryentry{netlist}
+{
+	name={netlist},
+	description={An intermediate design artifact consisting of device-level primitive elements and the connections between them.  In FPGA designs, the primitive elements include \glspl{lut},\glspl{ff}, and \glspl{bram}.}
+} 
+
+\newglossaryentry{looppipelining}
+{
+	name={loop~pipelining},
+	description={Enabling multiple iterations of a loop to run concurrently sharing the same functional units.}
+} 
+
+\newglossaryentry{arraypartitioning}
+{
+	name={array~partitioning},
+	description={Dividing a single logical array into multiple physical memories.}
+} 
+
+\newglossaryentry{recurrence}
+{
+	name={recurrence},
+	description={A code structure that results in a feedback loop when implemented in a circuit.  Recurrences limit the throughput of the circuit.}
+} 
+\newglossaryentry{loopinterchange}
+{
+	name={loop~interchange},
+	description={A code transformation that changes the order of loop operations.   This transformation is often a useful approach to addressing recurrences in code.}
+} 
+\newglossaryentry{taskpipelining}
+{
+	name={task~pipelining},
+	description={Being able to execute more than one task concurrently on the same accelerator in a pipelined fashion.}
+} 
+\newglossaryentry{peg}
+{
+	name={processing element},
+	description={A coarse-grained concurrently executing component in a design.  In HLS, this is often used in the context of a dataflow design.}
+} 
+\newglossaryentry{routingchannel}
+{
+	name={routing channel},
+	plural={routing channels},
+	description={A routing channel provides a flexible set of connections between the FPGA programmable logic elements. }
+}
+
+\newglossaryentry{switchbox}
+{
+	name={switchbox},
+	plural={switchboxes},
+	description={A switchbox connects \gls{routingchannel}s to provide a flesible routing structure for data routed between the programmable logic and \gls{ioblock}. }
+}
+
+\newglossaryentry{ioblock}
+{
+	name={I/O block},
+	plural={I/O blocks},
+	description={An I/O block provides the interface between the FPGA fabric and the remainder of the system. I/O blocks can talk to memories (e.g., on-chip caches and off-chip DRAM, microprocessors (using AXI or other protocols), sensors, actuators, etc.. }
+}
+
+
+\newglossaryentry{bitstream}
+{
+	name={bitstream},
+	plural={bitstreams},
+	description={The configuration data used to program the functionality of an FPGA}
+}
+
+\newglossaryentry{slice}
+{
+	name={slice},
+	plural={slices},
+	description={A (typically small) set of \glspl{lut}, \glspl{ff} and multiplexors. These are often reported in \gls{fpga} resource utilization reports. }
+}
+
+
+\newglossaryentry{task}
+{
+	name={task},
+	plural={tasks},
+	description={A fundamental atomic unit of behavior or high-level synthesis computation; this corresponds to a function invocation in high-level synthesis}
+}
+
+\newglossaryentry{task-latency}
+{
+	name={task~latency},
+	description={The time between when a task starts and when it finishes}
+}
+
+
+\newglossaryentry{task-interval} 
+{
+	name={task~interval},
+	description={The time between when one task starts and the next starts or the difference between the start times of two consecutive tasks}
+}
+
+\newglossaryentry{data-rate} 
+{
+	name={data~rate},
+	description={The frequency at which a task can process the input data. This is often expressed in bits/second and thus also depends on the size of the input data}
+}
+
+\newglossaryentry{fir} 
+{
+	name={finite impulse response},
+	description={A common digital signal processing task that performs a convolution on the input signal with a fixed signal that is defined by its coefficients. The FIR is often performed in hardware and can be efficiently implemented}
+}
+
+\newglossaryentry{process} 
+{
+	name={process},
+	plural={processes},
+	description={An individual component in a dataflow architecture}
+}
+
+\newglossaryentry{partial_loop_unrolling} 
+{
+	name={partial loop unrolling},
+	description={A transformation where the body of a loop is replicated multiple times.  This is often used in processor systems to reduce loop condition overhead or to provide opportunities for vectorization.  In HLS, it can have a similar effect, enabling more operations from the same loop nest to be considered in scheduling.  This can improve the performance of a design.}
+}
+
+\newglossaryentry{cosimulation} 
+{
+	name={C/RTL cosimulation},
+	description={The process of verifying an \gls{rtl} design generated by HLS using testvectors captured from the C testbench.}
+}
+
+\newglossaryentry{stable_sort} 
+{
+	name={stable sort},
+	description={A sorting algorithm that keeps different elements with the same sorting key in their original sequence after sorting.}
+}
+
+\newglossaryentry{sorting_cell} 
+{
+	name={sorting cell},
+	description={An simple stateful component that forms part of a larger sorting network or algorithm.  Commonly a cell performs a compare-and-swap operation between two elements.}
+}
+
+\newglossaryentry{systolic_array} 
+{
+	name={systolic array},
+	description={An array of processing elements that coordinate to perform a more complex algorithm.  Systolic arrays are usually designed so that each processing element encapsulates some local information and only communicates with its local neighbors.  This often enables systolic arrays to easily scale to large problem sizes by increasing the size of the array.}
+}
+
+
+
+%%% define the acronym and use the see= option
+\newglossaryentry{hls}
+{
+	type=\acronymtype, 
+	name={HLS}, 
+	description={high-level synthesis}, 
+	first={high-level synthesis (HLS)\glsadd{hlsg}}, 
+	see=[Glossary:]{hlsg}
+}
+
+\newglossaryentry{rtl}
+{
+	type=\acronymtype, 
+	name={RTL}, 
+	description={register-transfer level}, 
+	first={register-transfer level (RTL)\glsadd{rtlg}}, 
+	see=[Glossary:]{rtlg}
+}
+
+\newglossaryentry{asic}
+{
+	type=\acronymtype, 
+	name={ASIC}, 
+	description={application-specific integrated circuit}, 
+	first={application-specific integrated circuit (ASIC)\glsadd{asicg}}, 
+	see=[Glossary:]{asicg}
+}
+
+\newglossaryentry{eda}
+{
+	type=\acronymtype, 
+	name={EDA}, 
+	description={electronic design automation}, 
+	first={electronic design automation (EDA)\glsadd{edag}}, 
+	see=[Glossary:]{edag}
+}
+
+\newglossaryentry{fpga}
+{
+	type=\acronymtype, 
+	name={FPGA}, 
+	description={field-programmable gate array}, 
+	first={field-programmable gate array (FPGA)\glsadd{fpgag}}, 
+	plural={FPGAs},
+	see=[Glossary:]{fpgag}
+}
+
+\newglossaryentry{lut}
+{
+	type=\acronymtype, 
+	name={LUT}, 
+	description={lookup table}, 
+	first={lookup table (LUT)\glsadd{lutg}}, 
+	plural={LUTs},
+	see=[Glossary:]{lutg}
+}
+
+\newglossaryentry{par}
+{
+	type=\acronymtype, 
+	name={PAR}, 
+	description={place and route}, 
+	first={place and route (PAR)\glsadd{parg}}, 
+	see=[Glossary:]{parg}
+}
+
+\newglossaryentry{ff}
+{
+	type=\acronymtype, 
+	name={FF}, 
+	description={flip-flop}, 
+	first={flip-flop (FF)\glsadd{ffg}}, 
+	plural={FFs},
+	see=[Glossary:]{ffg}
+}
+
+\newglossaryentry{bram}
+{
+	type=\acronymtype, 
+	name={BRAM}, 
+	description={block RAM}, 
+	first={block RAM (BRAM)\glsadd{bramg}}, 
+	plural={BRAMs},
+	see=[Glossary:]{bramg}
+}
+
+\newglossaryentry{rom}
+{
+	type=\acronymtype, 
+	name={ROM}, 
+	description={Read-only Memory}, 
+	first={Read-only Memory (ROM)\glsadd{romg}}, 
+	plural={ROMs},
+	see=[Glossary:]{romg}
+}
+
+\newglossaryentry{pe}
+{
+	type=\acronymtype, 
+	name={PE}, 
+	description={Processing Element}, 
+	first={Processing Element (PE)\glsadd{peg}}, 
+	plural={PEs},
+	see=[Glossary:]{peg}
+}
+
+\newglossaryentry{fft}
+{
+	type=\acronymtype, 
+	name={FFT}, 
+	description={Fast Fourier Transform}, 
+	first={Fast Fourier Transform (FFT)\glsadd{fftg}}, 
+	plural={FFTs},
+	see=[Glossary:]{fftg}
+}
+\newglossaryentry{dft}
+{
+	type=\acronymtype, 
+	name={DFT}, 
+	description={Discrete Fourier Transform}, 
+	first={Discrete Fourier Transform (DFT)\glsadd{dftg}}, 
+	plural={DFTs},
+	see=[Glossary:]{dftg}
+}
+\newglossaryentry{crs}
+{
+	type=\acronymtype, 
+	name={CRS}, 
+	description={compressed row storage}, 
+	first={compressed row storage (CRS)\glsadd{crsg}}, 
+	see=[Glossary:]{crsg}
+}
+\newglossaryentry{ssa}
+{
+	type=\acronymtype, 
+	name={SSA}, 
+	description={static single assigment}, 
+	first={static single assignment (SSA)\glsadd{ssag}}, 
+	see=[Glossary:]{ssag}
+}

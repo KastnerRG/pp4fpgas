@@ -1,0 +1,85 @@
+%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'matrix_vector_poor_scaling.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{482.55814911bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.50545814)%
+    \put(0,0){\includegraphics[width=\unitlength]{matrix_vector_poor_scaling.pdf}}%
+    \put(0.12807749,0.39894901){\makebox(0,0)[rb]{\smash{V\_In[1]}}}%
+    \put(0.12807749,0.34092492){\makebox(0,0)[rb]{\smash{V\_In[2]}}}%
+    \put(0.12807749,0.28290082){\makebox(0,0)[rb]{\smash{V\_In[3]}}}%
+    \put(0.12807749,0.22487673){\makebox(0,0)[rb]{\smash{V\_In[4]}}}%
+    \put(0.12807749,0.16685263){\makebox(0,0)[rb]{\smash{V\_In[5]}}}%
+    \put(0.12807749,0.10882851){\makebox(0,0)[rb]{\smash{V\_In[6]}}}%
+    \put(0.12807749,0.05080441){\makebox(0,0)[rb]{\smash{V\_In[7]}}}%
+    \put(0.12770482,0.4568743){\makebox(0,0)[rb]{\smash{V\_In[0]}}}%
+    \put(0.22518335,0.4174198){\makebox(0,0)[b]{\smash{M[][0]}}}%
+    \put(0.22518335,0.30137156){\makebox(0,0)[b]{\smash{M[][2]}}}%
+    \put(0.22518335,0.35939571){\makebox(0,0)[b]{\smash{M[][1]}}}%
+    \put(0.22518335,0.24334747){\makebox(0,0)[b]{\smash{M[][3]}}}%
+    \put(0.22518335,0.18532338){\makebox(0,0)[b]{\smash{M[][4]}}}%
+    \put(0.22518335,0.12729934){\makebox(0,0)[b]{\smash{M[][5]}}}%
+    \put(0.22518335,0.06927526){\makebox(0,0)[b]{\smash{M[][6]}}}%
+    \put(0.22518335,0.01125117){\makebox(0,0)[b]{\smash{M[][7]}}}%
+    \put(0.00336747,0.49003092){\makebox(0,0)[rb]{\smash{i}}}%
+    \put(0.41731656,0.38252261){\makebox(0,0)[lb]{\smash{To Adders}}}%
+    \put(0.41761467,0.20895519){\makebox(0,0)[lb]{\smash{To Adders}}}%
+    \put(0.41782531,0.06728389){\makebox(0,0)[lb]{\smash{To Adders}}}%
+    \put(0.76397852,0.25163666){\makebox(0,0)[b]{\smash{M[][0-2]}}}%
+    \put(0.76397852,0.13558842){\makebox(0,0)[b]{\smash{M[][6-7]}}}%
+    \put(0.76397852,0.19361257){\makebox(0,0)[b]{\smash{M[][3-5]}}}%
+    \put(0.65821083,0.32424773){\makebox(0,0)[rb]{\smash{i,j%3}}}%
+    \put(0.89902172,0.27348212){\makebox(0,0)[lb]{\smash{To Adders}}}%
+    \put(0.90061761,0.21664553){\makebox(0,0)[lb]{\smash{To Adders}}}%
+    \put(0.89969814,0.15853719){\makebox(0,0)[lb]{\smash{To Adders}}}%
+    \put(0.64163252,0.26622363){\makebox(0,0)[b]{\smash{V\_In[0-2]}}}%
+    \put(0.64163252,0.20819954){\makebox(0,0)[b]{\smash{V\_In[3-5]}}}%
+    \put(0.64163252,0.15017546){\makebox(0,0)[b]{\smash{V\_In[6-7]}}}%
+    \put(0.54216264,0.32424773){\makebox(0,0)[rb]{\smash{j%3}}}%
+  \end{picture}%
+\endgroup%

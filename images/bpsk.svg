@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg1333" sodipodi:docbase="C:\Documents and Settings\Matt\My Documents\PhD\Images\Modulation schemes\Constellations" inkscape:version="0.43" sodipodi:version="0.32" sodipodi:docname="BPSKSVG.svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://web.resource.org/cc/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="622.9px"
+	 height="643.879px" viewBox="0 0 622.9 643.879" enable-background="new 0 0 622.9 643.879" xml:space="preserve">
+<circle opacity="0.1" fill="#0A0707" stroke="#000000" enable-background="new    " cx="306.08" cy="330.158" r="225"/>
+<sodipodi:namedview  inkscape:window-y="-4" inkscape:window-x="-4" inkscape:window-height="966" inkscape:window-width="1400" inkscape:grid-points="true" inkscape:grid-bbox="true" inkscape:current-layer="layer1" inkscape:pageshadow="2" inkscape:pageopacity="0.0" inkscape:document-units="px" gridempspacing="5" gridtolerance="1px" gridspacingy="5px" gridspacingx="5px" showgrid="true" inkscape:cy="321.94021" inkscape:cx="313.77055" inkscape:zoom="1.2409137" borderopacity="1.0" bordercolor="#666666" pagecolor="#ffffff" id="base">
+	</sodipodi:namedview>
+<g id="layer1" inkscape:groupmode="layer" inkscape:label="Layer 1">
+	<path id="path1344" fill="none" stroke="#000000" stroke-width="3" d="M605,328.879c-598.84,0-598.84,0-598.84,0"/>
+	<path id="path3965" fill="none" stroke="#000000" stroke-width="3" d="M306.5,28.541c0,598.839,0,598.839,0,598.839"/>
+	
+		<path id="path1437" inkscape:randomized="0" inkscape:rounded="0" inkscape:flatsided="true" sodipodi:arg2="1.5663437" sodipodi:arg1="0.51914611" sodipodi:r2="5.631465" sodipodi:r1="11.26293" sodipodi:sides="3" sodipodi:cy="278.89285" sodipodi:cx="137.37112" sodipodi:type="star" stroke="#000000" d="
+		M594.741,338.689l-0.11-20.729l21.51,10.283L594.741,338.689z"/>
+	
+		<path id="path11904" inkscape:randomized="0" inkscape:rounded="0" inkscape:flatsided="true" sodipodi:arg2="1.5663437" sodipodi:arg1="0.51914611" sodipodi:r2="5.631465" sodipodi:r1="11.26293" sodipodi:sides="3" sodipodi:cy="278.89285" sodipodi:cx="137.37112" sodipodi:type="star" stroke="#000000" d="
+		M316.309,35.86l-20.728,0.11l10.284-21.51L316.309,35.86z"/>
+	<text transform="matrix(1 0 0 1 322.2705 35.9697)" font-family="'ArialMT'" font-size="20">Q</text>
+	<text transform="matrix(1 0 0 1 594.6309 362.4395)" font-family="'Verdana'" font-size="20">I</text>
+</g>
+<path id="path1437_1_" inkscape:randomized="0" inkscape:rounded="0" inkscape:flatsided="true" sodipodi:arg2="1.5663437" sodipodi:arg1="0.51914611" sodipodi:r2="5.631465" sodipodi:r1="11.26293" sodipodi:sides="3" sodipodi:cy="278.89285" sodipodi:cx="137.37112" sodipodi:type="star" stroke="#000000" d="
+	M27.56,318.516l0.11,20.729L6.16,328.959L27.56,318.516z"/>
+<path id="path11904_1_" inkscape:randomized="0" inkscape:rounded="0" inkscape:flatsided="true" sodipodi:arg2="1.5663437" sodipodi:arg1="0.51914611" sodipodi:r2="5.631465" sodipodi:r1="11.26293" sodipodi:sides="3" sodipodi:cy="278.89285" sodipodi:cx="137.37112" sodipodi:type="star" stroke="#000000" d="
+	M295.216,605.981l20.729-0.111l-10.284,21.51L295.216,605.981z"/>
+<path fill="none" stroke="#000000" d="M77.968,193.292"/>
+<path fill="none" stroke="#000000" d="M57.95,160.44"/>
+<path fill="none" stroke="#000000" d="M470.95,597.959"/>
+<path fill="none" stroke="#000000" d="M470.95,411.44"/>
+<path fill="none" stroke="#000000" d="M588.95,395.72"/>
+<text transform="matrix(1 0 0 1 580.9502 311.6436)" font-family="'MyriadPro-Regular'" font-size="20">Real</text>
+<text transform="matrix(1 0 0 1 249.9502 35.9697)" font-family="'MyriadPro-Regular'" font-size="20">Imag</text>
+<circle stroke="#000000" cx="81.08" cy="327.961" r="15"/>
+<circle stroke="#000000" cx="531.08" cy="330.191" r="15"/>
+<text transform="matrix(1 0 0 1 524.9502 306.9395)" font-family="'MyriadPro-Regular'" font-size="24">1</text>
+<text transform="matrix(1 0 0 1 72.9678 306.9395)" font-family="'MyriadPro-Regular'" font-size="24">0</text>
+</svg>

@@ -1,0 +1,263 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% NOTE: This uses /write18 to invoke inkscape through a shell command.  This enables
+% .svg files to automatically be converted into .pdf files.  This may require passing
+% -shell-escape to pdflatex when compiling.
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[11pt]{book} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions 
+
+% for paper
+\geometry{letterpaper, margin=1in}
+
+% for "boxed paper"
+%\geometry{letterpaper,showframe,showcrop, margin=1in}
+
+% for ebook
+%\geometry{papersize={120mm, 150mm},margin=2mm, nohead}
+
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage[numbers,square]{natbib}
+\usepackage{tabularx}
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{marginnote}
+\usepackage{makeidx}
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+\usepackage{caption} % needed for making listing a figure when breaking across multiple pages
+% Code listings
+\usepackage[formats]{listings}
+\usepackage{tikz}
+\usetikzlibrary{arrows,tikzmark,shadows}
+%Below would be nice, but it barfs on lstinputlistings containing names with underscores
+%\usetikzmarklibrary{listings}
+\tikzset{
+  comment/.style={
+    draw,
+    fill=blue!70,
+    text=white,
+    rounded corners,
+    drop shadow,
+    align=left,
+  },
+}
+
+\usepackage{amsmath}
+\usepackage{xspace}
+%\usepackage[rgb]{xcolor} Already included by tikz
+\usepackage[draft]{pdfcomment}
+\usepackage{marginnote}
+\usepackage{framed}
+
+% listings doesn't handle tab vs. space indenting very well.  The format mechanism isn't terribly
+% intelligent, but it seems easier to get consistency from it than trying to get emacs to be consistent about how it indents.
+% In some cases, the format mechanism is utterly braindead, however.  This seems to happen with firstline= mostly.
+% In those cases, you can explicitly specify format=none to get the old formatting.
+\lstdefineformat{none}{}
+\lstdefineformat{c}{%
+\{=\string\newline\indent,%
+\}=[;\ ]\newline\noindent\string\newline,%
+\}\ =\noindent\string,%
+\};=\newline\noindent\string\newline,%
+;=[\ ]\string\space}
+
+%\lstset{language=c,columns=spaceflexible,basicstyle=\sffamily,identifierstyle=\sffamily}
+%\lstset{language=c,columns=fullflexible,basewidth=1em,basicstyle=\ttfamily\footnotesize,identifierstyle=\ttfamily}
+\lstset{
+language=c,
+format=c,
+morekeywords={AP,resource,interface, array\_partition,array\_reshape,array\_map,pipeline, dependence,dataflow,loop_tripcount,unroll,HLS},
+morecomment=[l][\color{blue}]{\#pragma\ },
+columns=fullflexible,
+basewidth=.75em,
+tabsize=1,
+basicstyle=\sffamily,
+identifierstyle=\sffamily}
+
+
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\chaptermark}[1]{\markboth{\small\uppercase{#1}}{}}
+\renewcommand{\sectionmark}[1]{}
+%\renewcommand{\headrulewidth}{0pt} % customise the layout...
+%\lhead{}\chead{}\rhead{}
+%\lfoot{}\cfoot{\thepage}\rfoot{}
+\setlength{\headheight}{14pt}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+%%% END Article customizations
+
+%%% The "real" document content comes below...
+\usepackage{url}
+\usepackage{framed,color}
+\usepackage{import}
+\usepackage{todonotes}
+
+\definecolor{shadecolor}{rgb}{.75,.9,.9}
+\definecolor{asidecolor}{rgb}{.75,.75,.75}
+\definecolor{exercisecolor}{rgb}{.75,.9,.9}
+
+\newcommand{\executeiffilenewer}[3]{%
+\ifnum\pdfstrcmp{\pdffilemoddate{#1}}{\pdffilemoddate{#2}}>0%
+{\immediate\write18{#3}}\fi%
+
+}
+\newcommand{\dexecuteiffilenewer}[3]{%
+\immediate\write18{#3}%
+}
+\newcommand{\includesvg}[1]{%
+\executeiffilenewer{#1.svg}{images/#1.pdf}%
+{inkscape -z -D --file=#1.svg %
+--export-pdf=images/#1.pdf --export-latex}%
+\subimport{./images/}{#1.pdf_tex}%
+}
+\newcommand{\includesvgimg}[1]{%
+\executeiffilenewer{#1.svg}{images/#1.pdf}%
+{inkscape -z -D --file=#1.svg %
+--export-pdf=images/#1.pdf}%
+\includegraphics{./images/#1.pdf}%
+}
+
+%Enable notes
+%\newcommand{\note}[1]{{\color{red}{\textbf{#1}}}}
+%Disable nodes
+\newcommand{\note}[1]{}
+
+\newcommand{\sym}[1]{\texttt{#1}}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\term}[1]{{\color{blue}\textit{#1}}\index{#1}}  % FIXME: add an index/glossary here.
+\newcommand{\vivado}{Vivado\textsuperscript{\textregistered}}
+\newcommand{\VHLS}{Vivado\textsuperscript{\textregistered} HLS\xspace}
+\newcommand{\tabspace}{\vspace{1em}}
+\newcommand{\stevecomment}[1]{\pdfmargincomment[color=red,icon=Insert,author={steve}]}
+
+\newcommand{\unit}[2]{{\frac{\texttt{#1}}{\texttt{#2}}}}
+%\tabspace{}\hrulefill\\
+\newenvironment{tabularpad}[1]{\parskip=0pt\par\noindent\begin{minipage}{\textwidth}\parskip=0.5em\hfill\par\hspace{2em}\begin{tabular}{#1}}{\end{tabular}\hfill\par\hfill\end{minipage}}
+\newenvironment{padbox}[1]{\parskip=0pt\par\noindent\begin{minipage}{\textwidth}\parskip=0.5em\hfill\par\hspace{2em}\begin{minipage}{#1}}{\end{minipage}\hfill\par\hfill\end{minipage}}
+
+\newlength{\boxwidth}
+\newenvironment{coloredbox}[1]{
+\def\FrameCommand{\fboxsep=\FrameSep \fboxrule=\FrameRule \fcolorbox{black}{#1}}%
+  \MakeFramed {\setlength{\boxwidth}{\textwidth}
+  \addtolength{\boxwidth}{-2\FrameSep}
+  \addtolength{\boxwidth}{-2\FrameRule}
+  \setlength{\hsize}{\boxwidth} \FrameRestore}}%
+ {\endMakeFramed}
+
+\newenvironment{aside}{\begin{coloredbox}{asidecolor}}{\end{coloredbox} }
+\newenvironment{exercise}{\begin{coloredbox}{exercisecolor}}{\end{coloredbox} }
+
+%%% add in glossary (terms go into glossary.tex)
+%\usepackage[utf8]{inputenc}
+\usepackage[toc,acronym]{glossaries}
+
+\makenoidxglossaries
+\input{glossary}
+
+
+\title{Parallel Programming for FPGAs}
+\author{Ryan Kastner, Janarbek Matai, and Stephen Neuendorffer\\\note{Notes are enabled}}
+%\date{} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+         
+         
+\makeindex
+
+         
+\begin{document}
+%uncomment this to see overfull hbox's
+%\overfullrule=1mm
+\setlength{\emergencystretch}{5em}
+% Settings for \mybox and Mybox
+\setlength{\fboxrule}{1pt}
+\setlength{\fboxsep}{9pt}
+
+% Additional settings for MyBox
+\setlength{\FrameRule}{\fboxrule}
+\setlength{\FrameSep}{\fboxsep}
+
+
+\maketitle
+\vspace*{\stretch{1.0}} \ \\
+\begin{center}
+\setlength{\parskip}{0.5\baselineskip}
+Copyright 2011-\the\year.
+\end{center}
+\vspace*{20mm} \ \\
+\begin{minipage}{\linewidth}
+This work is licensed under the Creative Commons Attribution 4.0 International License.
+
+To view a copy of this license, visit \url{http://creativecommons.org/licenses/by/3.0/}. 
+\end{minipage}
+\vspace*{20mm} \ \\
+\begin{minipage}{\linewidth}
+The newest version of this book can be found at \url{http://hlsbook.ucsd.edu}.  The authors welcome your feedback and suggestions.
+\end{minipage}
+\vspace*{\stretch{2.0}} \ \\
+\newpage
+\tableofcontents
+\newpage
+\input{preface}
+\input{acknowledgements}
+%\note{Add section describing formatting used to denote matrices, vector, math, etc.?}
+%\part{Basic Concepts}
+\input{intro}
+\input{fir}
+\input{cordic}
+\input{dft}
+\input{fft}
+\input{sparse_matrix_vector}
+\input{matrix_multiplication}
+\input{prefix_histogram}
+\input{video}
+\input{sorting}
+\input{huffman_encoding}
+
+
+%\part{Appendix: Wireless Systems Projects}
+%\label{wirelessProjects}
+%\input{wirelessBasics}
+%\input{projects}
+
+\bibliographystyle{plainnat}
+\bibliography{all} 
+%\printindex
+\printnoidxglossaries
+
+\end{document}

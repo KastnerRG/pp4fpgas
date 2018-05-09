@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+The style file: plainnat.bst
+Database file #1: all.bib
+Warning--empty journal in deutsch1996deflate
+Warning--empty publisher in lee2011signalsandsystems
+Warning--empty publisher in misra2012
+You've used 64 entries,
+            2773 wiz_defined-function locations,
+            1049 strings with 18186 characters,
+and the built_in function-call counts, 30308 in all, are:
+= -- 2771
+> -- 1656
+< -- 57
++ -- 571
+- -- 504
+* -- 2365
+:= -- 4544
+add.period$ -- 243
+call.type$ -- 64
+change.case$ -- 345
+chr.to.int$ -- 61
+cite$ -- 131
+duplicate$ -- 1465
+empty$ -- 2527
+format.name$ -- 598
+if$ -- 6519
+int.to.chr$ -- 4
+int.to.str$ -- 1
+missing$ -- 71
+newline$ -- 364
+num.names$ -- 236
+pop$ -- 787
+preamble$ -- 1
+purify$ -- 296
+quote$ -- 0
+skip$ -- 1093
+stack$ -- 0
+substring$ -- 973
+swap$ -- 249
+text.length$ -- 23
+text.prefix$ -- 5
+top$ -- 0
+type$ -- 624
+warning$ -- 3
+while$ -- 254
+width$ -- 0
+write$ -- 903
+(There were 3 warnings)
