@@ -349,7 +349,7 @@ The answer to the question lies in the tolerance of the application. In many dig
 
 %\note{Describe how you can make functions and use the real FIR to create a complex FIR using two instances of the real FIR. Use to motivate hierarchical design.}
 
-To this point, we have solely looked at filtering real numbers. Many digital wireless communication systems deal with complex numbers using in-phase (I) and quadrature (Q) components (see Chapter \ref{chap:Wireless} for more details). Fortunately, it is possible to create a complex FIR filter using real FIR filter as we describe in the following.
+To this point, we have solely looked at filtering real numbers. Many digital wireless communication systems deal with complex numbers using in-phase (I) and quadrature (Q) components. Fortunately, it is possible to create a complex FIR filter using real FIR filter as we describe in the following.
 
 To understand how to build a complex FIR filter from real FIR filters consider Equation \ref{eq:complex_fir}. Assume that $(I_{in}, Q_{in})$ is one sample of the input data that we wish to filter.  And one of the complex FIR filter coefficients is denoted as $(I_{fir}, Q_{fir})$. There will be more than one input sample and complex coefficient, but let us not worry about that for now.
 
@@ -408,4 +408,4 @@ Creating an optimum architecture requires a basic understanding about how the HL
 
 Additionally, we presented some basic HLS optimizations (including loop and bitwidth optimizations). We highlighted their benefits and potential drawbacks using the FIR filter as an example. These are common optimizations that can be applied across a wide range of applications. We provide more details about these optimizations in subsequent chapters as we walk through the implementation of other more complex applications. 
 
-Finally, there is an entire project devoted to further optimizing the FIR filter. This is located in the Appendix in Chapter \ref{chapter:FIR_Project}. 
+%Finally, there is an entire project devoted to further optimizing the FIR filter. This is located in the Appendix in Chapter \ref{chapter:FIR_Project}. 

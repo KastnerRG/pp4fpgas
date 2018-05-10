@@ -4,7 +4,7 @@
 \glsresetall
 \label{chapter:fft}
 
-Performing the \gls{dft} directly using matrix-vector multiply requires $\mathcal{O}(n^2)$ multiply and add operations, for an input signal with $n$ samples.  It is possible to reduce the complexity by exploiting the structure of the constant coefficients in the matrix.  This $S$ matrix encodes the coefficients of the \gls{dft}; each row of this matrix corresponds to a fixed number of rotations around the complex unit circle (please refer to Chapter \ref{sec:dft_background} for more detailed information). These values have a significant amount of redundancy, and that can be exploited to reduce the complexity of the algorithm. 
+Performing the \gls{dft} directly using matrix-vector multiply requires $\mathcal{O}(n^2)$ multiply and add operations, for an input signal with $n$ samples.  It is possible to reduce the complexity by exploiting the structure of the constant coefficients in the matrix.  This $S$ matrix encodes the coefficients of the \gls{dft}; each row of this matrix corresponds to a fixed number of rotations around the complex unit circle (please refer to Chapter \ref{sec:DFTbackground} for more detailed information). These values have a significant amount of redundancy, and that can be exploited to reduce the complexity of the algorithm. 
 
 \begin{aside}
 The 'Big O' notation used here describes the general order of complexity of an algorithm based on the size of the input data.  For a complete description of Big O notation and its use in analyzing algorithms, see \cite{CLR}.
@@ -20,7 +20,7 @@ The focus of this chapter is to provide the reader with a good understanding of 
 
 \section{Background}
 
-The \gls{fft} brings about a reduction in complexity by taking advantage of symmetries in the \gls{dft} calculation. To better understand how to do this, let us look at \gls{dft} with a small number of points, starting with the 2 point \gls{dft}.  Recall that the \gls{dft} performs a matrix vector multiplication, i.e., $G[] = S[][] \cdot g[]$, where $g[]$ is the input data, $G[]$ is the frequency domain output data, and $S[][]$ are the \gls{dft} coefficients. We follow the same notation for the coefficient matrix, and the input and output vectors as described in Chapter \ref{sec:dft_background}.
+The \gls{fft} brings about a reduction in complexity by taking advantage of symmetries in the \gls{dft} calculation. To better understand how to do this, let us look at \gls{dft} with a small number of points, starting with the 2 point \gls{dft}.  Recall that the \gls{dft} performs a matrix vector multiplication, i.e., $G[] = S[][] \cdot g[]$, where $g[]$ is the input data, $G[]$ is the frequency domain output data, and $S[][]$ are the \gls{dft} coefficients. We follow the same notation for the coefficient matrix, and the input and output vectors as described in Chapter \ref{sec:DFTbackground}.
 
 For a 2 point \gls{dft}, the values of $S$ are:
 \begin{equation}
@@ -30,7 +30,7 @@ S =
   W^{1 0}_2 & W^{1 1}_2 \\
  \end{bmatrix}
  \end{equation}
-Here we use the notation $W = e^{-j 2 \pi}$. The superscript on $W$ denotes values that are added to the numerator and the subscript on the $W$ indicates those values added in the denominator of the complex exponential. For example, $W^{2 3}_4 = e^{\frac{-j 2 \pi \cdot 2 \cdot 3}{4}}$. This is similar to the $s$ value used in the \gls{dft} discussion (Chapter \ref{sec:dft_background}) where $s = e^{\frac{-j 2 \pi}{N}}$. The relationship between $s$ and $W$ is $s = W_N$.
+Here we use the notation $W = e^{-j 2 \pi}$. The superscript on $W$ denotes values that are added to the numerator and the subscript on the $W$ indicates those values added in the denominator of the complex exponential. For example, $W^{2 3}_4 = e^{\frac{-j 2 \pi \cdot 2 \cdot 3}{4}}$. This is similar to the $s$ value used in the \gls{dft} discussion (Chapter \ref{sec:DFTbackground}) where $s = e^{\frac{-j 2 \pi}{N}}$. The relationship between $s$ and $W$ is $s = W_N$.
 
 \begin{aside}
 The $e^{-j 2 \pi}$ or $W$ terms are often called \term{twiddle factors}. This term has its origin in the 1966 paper by Gentleman and Sande \cite{gentleman1966fast}.
@@ -440,7 +440,8 @@ The overall goal is to create the most optimal design, which is a function of yo
 
 In general, there is no one algorithm on how to optimize your design. It is a complex function of the application, design constraints, and the inherent abilities of the designer himself. Yet, it is important that the designer have a deep understanding of the application itself, the design constraints, and the abilities of the synthesis tool. 
 
-We attempted to illustrate these bits of wisdom in this chapter. While the \gls{fft} is a well studied algorithm, with a large number of known hardware implementation tricks, it still serves as a good exemplar for high-level synthesis. We certainly did not give all of the tricks for optimization; we leave that as an exercise in Chapter \ref{chapter:ofdm} where we task the designer to create an simple orthogonal frequency-division multiplexing receiver. The core of this an \gls{fft}.  Regardless, we attempted to provide some insight into the key optimizations here, which we hope serve as a guide to how to optimize the \gls{fft} using the \VHLS tool.
+We attempted to illustrate these bits of wisdom in this chapter. While the \gls{fft} is a well studied algorithm, with a large number of known hardware implementation tricks, it still serves as a good exemplar for high-level synthesis. We certainly did not give all of the tricks for optimization. %e leave that as an exercise in Chapter \ref{chapter:ofdm} where we task the designer to create an simple orthogonal frequency-division multiplexing receiver. The core of this an \gls{fft}.  
+Regardless, we attempted to provide some insight into the key optimizations here, which we hope serve as a guide to how to optimize the \gls{fft} using the \VHLS tool.
 
 First and foremost, understand the algorithm. We spent a lot of time explaining the basics of the \gls{fft}, and how it relates to the \gls{dft}. We hope that the reader understands that this is the most important part of building optimal hardware. Certainly, the designer could translate C/MATLAB/Java/Python code into \VHLS and get an working implementation. And that same designer could somewhat blindly apply directives to achieve better results. But that designer is not going to get anywhere close to optimal results without a deep understanding of the algorithm itself.
 
