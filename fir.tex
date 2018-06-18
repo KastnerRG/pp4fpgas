@@ -28,7 +28,7 @@ Note that to compute a single value of the output of an N-tap filter requires N 
 %\note{Talk about moving average filters to introduce FIR}
 \term{Moving average filters} are a simple form of lowpass FIR filter where all the coefficients are identical and sum to one. For instance in the case of the three point moving filter, the coefficients are $h = [\frac{1}{3}, \frac{1}{3}, \frac{1}{3}]$.  It is also called a \term{box car filter} due to the shape of its convolution kernel.  Alternatively, you can think of a moving average filter as taking the average of several adjacent samples of the input signal and averaging them together. We can see that this equivalence by substituting $1/N$ for $h[j]$ in the convolution equation above and rearranging to arrive at the familiar equation for an average of $N$ elements:
 \begin{equation}
-y[i] = \frac{1}{N} \displaystyle\sum\limits_{j=0}^{N} x[i-j]
+y[i] = \frac{1}{N} \displaystyle\sum\limits_{j=0}^{N-1} x[i-j]
 \end{equation}
 
 Each sample in the output signal can be computer by the above equation using $N-1$ additions and one final multiplication by $1/N$.  Even the final multiplication can often be regrouped and merged with other operations.  As a result, moving average filters are simpler to compute than a general FIR filter.  Specifically, when $N = 3$ we perform this operation to calculate $y[12]$:
