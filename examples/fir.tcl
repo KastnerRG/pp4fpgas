@@ -11,7 +11,5 @@ set_part xc7k70tfbg676-1
 
 create_clock -period 5
 
-elaborate
-autosyn
-#automg -export
+csynth_design
 
