@@ -1,3 +1,4 @@
+VHLS = $(shell vivado_hls -r)
 EXAMPLES = $(shell ls *-top.c)
 EXAMPLES_CPP = $(shell ls *-top.cpp)
 EXAMPLES_BIN = $(patsubst %.c,%,$(EXAMPLES))
@@ -28,10 +29,10 @@ video_2dfilter_linebuffer_extended_constant-top.log: video_2dfilter_linebuffer_e
 	./$< $(INPUTFILE) video_2dfilter_linebuffer_extended_constant.bmp > $@
 
 %-top.bin: %-top.c %.c bitmap.c
-	gcc -std=c99 $? -g -o $@
+	gcc -I$(VHLS)/include -std=c99 $? -g -o $@
 
 %-top.bin: %-top.cpp %.cpp
-	g++ $? -g -o $@
+	g++ -I$(VHLS)/include $? -g -o $@
 
  #: %-top.bin
 %.tcl:
