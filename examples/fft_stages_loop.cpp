@@ -64,12 +64,15 @@ void fft_stage(int stage, DTYPE X_R[SIZE], DTYPE X_I[SIZE],
 void fft_streaming(DTYPE X_R[SIZE], DTYPE X_I[SIZE], DTYPE OUT_R[SIZE], DTYPE OUT_I[SIZE])
 {
   #pragma HLS dataflow
-  DTYPE Stage1_R[SIZE], Stage1_I[SIZE],
-    Stage2_R[SIZE], Stage2_I[SIZE],
-    Stage3_R[SIZE], Stage3_I[SIZE];
+  DTYPE Stage_R[M][SIZE], Stage_I[M][SIZE];
+  #pragma HLS array_partition variable=Stage_R dim=1 complete
+  #pragma HLS array_partition variable=Stage_I dim=1 complete
   
-  bit_reverse(X_R, X_I, Stage1_R, Stage1_I);
-  fft_stage(1, Stage1_R, Stage1_I, Stage2_R, Stage2_I);
-  fft_stage(2, Stage2_R, Stage2_I, Stage3_R, Stage3_I);
-  fft_stage(3, Stage3_R, Stage3_I, OUT_R, OUT_I);
+  bit_reverse(X_R, X_I, Stage_R[0], Stage_I[0]);
+ stage_loop:
+  for (int stage = 1; stage < M; stage++) { // Do M-1 stages of butterflies
+    #pragma HLS unroll
+    fft_stage(stage, Stage_R[stage-1], Stage_I[stage-1], Stage_R[stage], Stage_I[stage]);
+  }
+  fft_stage(M, Stage_R[M-1], Stage_I[M-1], OUT_R, OUT_I);
 }
