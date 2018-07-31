@@ -276,21 +276,14 @@ How would the answer change if we performed one more rotation? How about two (th
 \begin{exercise}
 Is it possible to get worse accuracy by performing more rotations? Provide an example when this would occur.
 \end{exercise}
-%\begin{figure}
-%\lstinputlisting{examples/cordic.c}
-%\caption{CORDIC code implementing the sine and cosine of a given angle.}\label{fig:cordic_code}
-%\end{figure}
 
 \begin{figure}
-\lstinputlisting{examples/cordic.c}
+\lstinputlisting{examples/cordic.cpp}
 \caption{CORDIC code implementing the sine and cosine of a given angle.}
 \label{fig:cordic_code}
 \end{figure}
 
 Figure \ref{fig:cordic_code} provides code that implements sine and cosine calculation using the CORDIC algorithm. It takes as input a target angle, and outputs the sine and cosine values corresponding to that angle. The code uses an array \lstinline{cordic_phase} as a lookup table that holds the angle of rotation for each iteration. This corresponds to the values in the ``Rotating Angle'' column in Table \ref{table:cordic}. We assume that the \lstinline{cordic.h} file defines the different data types (i.e., \lstinline{COS_SIN_TYPE} and \lstinline{THETA_TYPE}) and sets \lstinline{NUM_ITERATIONS} to some constant value. The data types can be changed to different fixed or floating point types, and \lstinline{NUM_ITERATIONS} set depending on our desired accuracy, area, and throughput. 
-\begin{aside}
-Notice that the variable \lstinline{sigma} is set as a two bit integer. Since we know that this will only take the value of $\pm 1$ we can change its data type which will result in smaller area and better performance than if we were to use the current \lstinline{int} data type. We discuss data types and how to specify them in \VHLS shortly.
-\end{aside}  
 
 This code is close to a ``software'' version. It can be optimized in many ways to increase its performance and reduce its area. We will discuss how to optimize this code later in the chapter.
 
@@ -382,7 +375,7 @@ There is an issue with the final radial value of the rotated vector; its magnitu
 \section{Number Representation}
 \label{sec:number_representation}
 
-The \lstinline{cordic} function uses currently uses common types for the variables. For example, the variable \lstinline{sigma} is defined as an \lstinline{int} and other variables use custom data types (e.g., \lstinline{THETA_TYPE} and \lstinline{COS_SIN_TYPE}). In many cases, HLS tools are able to further optimize the representation of these values to simplify the generated hardware.  For instance, in Figure \ref{fig:cordic_code}, the variable \lstinline{sigma} is restricted to be either \lstinline{1} or \lstinline{-1}.  Even though the variable is declared as an \lstinline{int} type of at least 32 bits, many fewer bits can be used to implement the variable without changing the behavior of the program. In other cases, particularly function inputs, memories, and variables that appear in recurrences, the representation cannot be automatically optimized.  In these cases, modifying the code to use smaller datatypes is a key optimization to avoid unnecessary resource usage.
+The \lstinline{cordic} function uses currently uses common types for the variables. For example, the variable \lstinline{sigma} is defined as an \lstinline{int} and other variables are defined to use custom data types (e.g., \lstinline{THETA_TYPE} and \lstinline{COS_SIN_TYPE}).  It is sometimes convenient to think that such types represent arbitrary numbers, when in actuality they don't.  In practice, it digital representation of numbers has a huge impact on the complexity of the logic to compute with those numbers.   In many cases, HLS tools are able to optimize the representation of each value to simplify the generated hardware.  For instance, in Figure \ref{fig:cordic_code}, the variable \lstinline{sigma} is restricted to be either \lstinline{1} or \lstinline{-1}.  Even though the variable is declared as an \lstinline{int} type of at least 32 bits, many fewer bits can be used to implement the variable without changing the behavior of the program. In other cases, particularly function inputs, memories, and variables that appear in recurrences, the representation cannot be automatically optimized.  In these cases, modifying the code to use smaller datatypes is a key optimization to avoid unnecessary resource usage.
 
 Although reducing the size of variables is generally a good idea, this optimization can change the behavior of the program. A data type with fewer number of bits will not be able to express as much information as a data type with more bits and no finite binary representation can represent all real numbers with infinite accuracy. Fortunately, as designers we can pick numeric representations that are tuned to accuracy requirements of particular applications and tradeoff between accuracy, resource usage, and performance.
 
@@ -723,26 +716,33 @@ The standard technique for high-level synthesis starts with a floating point rep
 Change all of the variables in the CORDIC from \lstinline{float} to \lstinline{int}. How does this effect the resource usage? How does it change the latency? How about the throughput? Does the accuracy change?
 \end{exercise} 
 
-\section{Further Optimizations}
+\section{Cordic Optimizations}
 
 In this section, we provide some brief thoughts and suggestions on the best way to optimize the CORDIC function. We focus on how the different optimizations change the precision of the result while providing the ability tradeoff between throughput, precision, and area. 
 
-Ultimately, CORDIC produces an approximation. The error on that approximation generally decreases as the number of iterations increases. This corresponds to the number of times that we execute the \lstinline{for} loop in the \lstinline{cordic} function, which is set by \lstinline{NUM_ITERATIONS}.  Even if we perform a very large number of iterations, we may still have an approximation. One reason for this is that we may approach but never exactly match the desired target angle. We can, however, tune precision by choosing to perform greater or fewer iterations. All that needs to change in the algorithm is to modify the value of \lstinline{NUM_ITERATIONS}. The choice of \lstinline{NUM_ITERATIONS} depends on the number of digits of precision required by application using this CORDIC core.
+One important decision when implementing the CORDIC function is to select the type used to represent angles and the results.  While the original code can operate with either floating-point types, e.g. \lstinline{float}, and fixed-point types, CORDIC is most commonly used with fixed-point types with the specific goal of eliminating multipliers.  When efficient means of multiplication are available, other methods for computing trigonometric functions are often preferred.   Looking at the original code in Figure \ref{fig:cordic_code}, it contains several multiply operators  related to the \lstinline{sigma} and \lstinline{factor} variables.  By restricting the code to only work with fixed-point types we can remove these multiplications, converting them into shifts and adds.  Code that does this is shown in Figure \ref{fig:cordic_fixed_code}.
+
+\begin{figure}
+\lstinputlisting{examples/cordic_fixed.cpp}
+\caption{Fixed-point CORDIC code implementing the sine and cosine of a given angle.}\label{fig:cordic_fixed_code}
+\end{figure}
 
 \begin{exercise}
-How do the area, throughput, and precision of the sine and cosine results change as you vary the data type?
+How do the area, throughput, and precision of the sine and cosine results change as you vary the data type?  Do you see a significant difference when \lstinline{THETA_TYPE} and \lstinline{COS_SIN_TYPE} are floating point types vs. \lstinline{ap_fixed<>} types?  What about using the code from Figure \ref{fig:cordic_code} and Figure \ref{fig:cordic_fixed_code}?
 \end{exercise}
+
+Ultimately, CORDIC produces an approximation. The error on that approximation generally decreases as the number of iterations increases. This corresponds to the number of times that we execute the \lstinline{for} loop in the \lstinline{cordic} function, which is set by \lstinline{NUM_ITERATIONS}.  Even if we perform a very large number of iterations, we may still have an approximation. One reason for this is that we may approach but never exactly match the desired target angle. We can, however, tune precision by choosing to perform greater or fewer iterations. All that needs to change in the algorithm is to modify the value of \lstinline{NUM_ITERATIONS}. The choice of \lstinline{NUM_ITERATIONS} depends on the number of digits of precision required by application using this CORDIC core.
 
 \begin{exercise}
 How does the constant \lstinline{NUM_ITERATIONS} affect the area, throughput, and precision? How does this affect the initial values of \lstinline{current_cos} and \lstinline{current_sin}? Do you need to modify the array \lstinline{cordic_phase}? Can you optimize the data types depending on the value of \lstinline{NUM_ITERATIONS}?
 \end{exercise}
 
 \begin{exercise}
-The computations in the $for$ loop occupy most of the overall time. How do you best perform code transforms and/or use pragmas to optimize it?
+Ultimately, most applications imply requirements on the precision of the final result and a designer must determine how to build the best circuit given particular precision requirements.  To achieve a given precision in the final result, what value of \lstinline{NUM_ITERATIONS} and what data types are required?
 \end{exercise}
 
 \begin{exercise}
-Setting the variable $sigma$ can be efficient in hardware using a two input multiplexer. Can you transform the code so that the high level synthesis tool implements it in this manner?
+The computations in the $for$ loop occupy most of the overall time. How do you best perform code transforms and/or use pragmas to optimize it?
 \end{exercise}
 
 \begin{exercise}
