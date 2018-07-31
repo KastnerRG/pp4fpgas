@@ -9,9 +9,9 @@ void merge(DTYPE in[SIZE], int i1, int i2, int i3, DTYPE out[SIZE]) {
     for(int index = i1; index < i3; index++) {
 #pragma HLS pipeline II=1
         DTYPE t1 = in[f1];
-        DTYPE t2 = in[f2];
+        DTYPE t2 = (f2 == i3) ? 0 : in[f2];
         // Select the smallest available element.
-        if((f1 < i2 && t1 <= t2) || f2 == i3) {
+        if(f2 == i3 || (f1 < i2 && t1 <= t2)) {
             out[index] = t1;
             f1++;
         } else {

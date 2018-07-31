@@ -12,8 +12,8 @@ void merge_arrays(DTYPE in[SIZE], int width, DTYPE out[SIZE]) {
   for (int i = 0; i < SIZE; i++) {
 #pragma HLS pipeline II=1
       DTYPE t1 = in[f1];
-      DTYPE t2 = in[f2];
-	if((f1 < i2 && t1 <= t2) || f2 == i3) {
+      DTYPE t2 = (f2 == i3) ? 0 : in[f2];
+    if(f2 == i3 || (f1 < i2 && t1 <= t2)) {
 	  out[i] = t1;
 	  f1++;
 	} else {

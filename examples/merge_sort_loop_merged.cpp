@@ -15,8 +15,8 @@ void merge_sort(DTYPE A[SIZE]) {
         for (int i = 0; i < SIZE; i++) {
 #pragma HLS pipeline II=1
             DTYPE t1 = A[f1];
-            DTYPE t2 = A[f2];
-            if((f1 < i2 && t1 <= t2) || f2 == i3) {
+            DTYPE t2 = (f2 == i3) ? 0 : A[f2];
+            if(f2 == i3 || (f1 < i2 && t1 <= t2)) {
                 temp[i] = t1;
                 f1++;
             } else {

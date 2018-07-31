@@ -7,7 +7,7 @@ void merge(DTYPE in[SIZE], int i1, int i2, int i3, DTYPE out[SIZE]) {
     // Foreach element that needs to be sorted...
     for(int index = i1; index < i3; index++) {
         // Select the smallest available element.
-        if((f1 < i2 && in[f1] <= in[f2]) || f2 == i3) {
+        if(f2 == i3 || (f1 < i2 && in[f1] <= in[f2])) {
             out[index] = in[f1];
             f1++;
         } else {
