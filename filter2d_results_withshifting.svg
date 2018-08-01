@@ -1,0 +1,2741 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="585"
+   height="225"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="filter2d_results_withshifting.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend"
+       style="overflow:visible">
+      <path
+         id="path5068"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend"
+       style="overflow:visible">
+      <path
+         id="path5050"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Send"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Send"
+       style="overflow:visible">
+      <path
+         id="path5056"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend"
+       style="overflow:visible">
+      <path
+         id="path5044"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-5"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5068-7"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-4"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5068-4"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-42"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5068-9"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-0"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5068-77"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-7"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5068-3"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-3"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5068-8"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-52"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5068-0"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-2"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5068-97"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-34"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5068-32"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-1"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5068-325"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-12"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5068-2"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-40"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5068-70"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-400"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5068-5"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-10"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5068-6"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker6740"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6742"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker6744"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6746"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker6748"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6750"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-6"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5068-20"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker7103"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path7105"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-51"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5068-06"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker7291"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path7293"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker7295"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path7297"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-08"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5068-91"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-47"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5068-46"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-528"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5068-1"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-14"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5068-35"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker7915"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path7917"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker7919"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path7921"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker7923"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path7925"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-33"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5068-62"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker8552"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path8554"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker8556"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path8558"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker8560"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path8562"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-8"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5068-01"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker8915"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path8917"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-24"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5068-58"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker8915-8"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path8917-1"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <filter
+       id="filter9924"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood9926"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend9928"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite9930"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite9932"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter9934"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood9936"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend9938"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite9940"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite9942"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter9944"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood9946"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend9948"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite9950"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite9952"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter9954"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood9956"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend9958"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite9960"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite9962"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter9964"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood9966"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend9968"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite9970"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite9972"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter9974"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood9976"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend9978"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite9980"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite9982"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter9984"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood9986"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend9988"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite9990"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite9992"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter9994"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood9996"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend9998"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10000"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10002"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10004"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10006"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10008"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10010"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10012"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10014"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10016"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10018"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10020"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10022"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10024"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10026"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10028"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10030"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10032"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10034"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10036"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10038"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10040"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10042"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10044"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10046"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10048"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10050"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10052"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10054"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10056"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10058"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10060"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10062"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10064"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10066"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10068"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10070"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10072"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10074"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10076"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10078"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10080"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10082"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10084"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10086"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10088"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10090"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10092"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10094"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10096"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10098"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10100"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10102"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10104"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10106"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10108"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10110"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10112"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10114"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10116"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10118"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10120"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10122"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10124"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10126"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10128"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10130"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10132"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10134"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10136"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10138"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10140"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10142"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10144"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10146"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10148"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10150"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10152"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10154"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10156"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10158"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10160"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10162"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10164"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10166"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10168"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10170"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10172"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10174"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10176"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10178"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10180"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10182"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10184"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10186"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10188"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10190"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10192"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10194"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10196"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10198"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10200"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10202"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10204"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10206"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10208"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10210"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10212"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10214"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10216"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10218"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10220"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10222"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10224"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10226"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10228"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10230"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10232"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10234"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10236"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10238"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10240"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10242"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10244"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10246"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10248"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10250"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10252"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10254"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10256"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10258"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10260"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10262"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10264"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10266"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10268"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10270"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10272"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10274"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10276"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10278"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10280"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10282"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10284"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10286"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10288"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10290"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10292"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10294"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10296"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10298"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10300"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10302"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10304"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10306"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10308"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10310"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10312"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10314"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10316"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10318"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10320"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10322"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10324"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10326"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10328"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10330"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10332"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10334"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10336"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10338"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10340"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10342"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10344"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10346"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10348"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10350"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10352"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10354"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10356"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10358"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10360"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10362"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10364"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10366"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10368"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10370"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10372"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10374"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10376"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10378"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10380"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10382"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10384"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10386"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10388"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10390"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10392"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10394"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10396"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10398"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10400"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10402"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10404"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10406"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10408"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10410"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10412"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10414"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10416"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10418"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10420"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10422"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10424"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10426"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10428"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10430"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10432"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10434"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10436"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10438"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10440"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10442"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10444"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10446"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10448"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10450"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10452"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <filter
+       id="filter10454"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10456"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10458"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         id="feComposite10460"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite10462"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath11579">
+      <rect
+         style="opacity:0.73451329;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.13742352;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="rect11581"
+         width="40"
+         height="33.000008"
+         x="-230"
+         y="908.36389" />
+    </clipPath>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-27"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5068-61"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker5173"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5175"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <filter
+       id="filter10454-4"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:label="Lightness-Contrast"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Increase or decrease lightness and contrast"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood10456-2"
+         result="result1"
+         flood-opacity="0"
+         flood-color="rgb(128,128,128)" />
+      <feBlend
+         id="feBlend10458-3"
+         in2="SourceGraphic"
+         mode="normal"
+         result="result2" />
+      <feComposite
+         k4="0"
+         k3="0"
+         k1="0"
+         id="feComposite10460-2"
+         in2="SourceGraphic"
+         k2="1"
+         operator="arithmetic"
+         result="result3" />
+      <feComposite
+         id="feComposite10462-2"
+         in2="SourceGraphic"
+         operator="in" />
+    </filter>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-71"
+       style="overflow:visible">
+      <path
+         id="path5068-26"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-49"
+       style="overflow:visible">
+      <path
+         id="path5068-460"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-62"
+       style="overflow:visible">
+      <path
+         id="path5068-45"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-9"
+       style="overflow:visible">
+      <path
+         id="path5068-82"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.1274989"
+     inkscape:cx="237.76981"
+     inkscape:cy="108.27344"
+     inkscape:document-units="in"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="in"
+     objecttolerance="20"
+     inkscape:window-width="1920"
+     inkscape:window-height="1103"
+     inkscape:window-x="1911"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2987"
+       empspacing="2"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       spacingx="2.5px"
+       spacingy="2.5px" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-827.36389)">
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-1.9734812"
+       y="-1.0669044"
+       id="text3995"
+       sodipodi:linespacing="125%"
+       transform="translate(0,872.3639)"><tspan
+         sodipodi:role="line"
+         id="tspan3997"
+         x="-1.9734812"
+         y="-1.0669044" /></text>
+    <image
+       y="847.36389"
+       x="10"
+       id="image3427"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAIAAAAiOjnJAAAAA3NCSVQICAjb4U/gAAAIvElEQVR4 nO3dy29cdxnG8Rn7+JIZ329J3FyIk5QQUSWhUKGwaBEF0RVIFhKwYYkQ4iKBBBILKgESC4q4rJC6 QpFaAqILWKStKpRFIyJAokqBxM2dVLEdZ+zxTHwbz5i/gG8lV8/u+9k+GnsyfnIWv/POe8q1R43S /7e99k1Id9o3Ib3SOQbptzaeh3QPZKVSo/xdSLd2/gbp0RszkP7uJy9DWi7Tu6rPzVLcdQ3Cf+yc hvQrW7+BtILvqtT5GqU7lyH84IkPQfr6a69D2oVvStoli6UIi6UIi6UIi6UIi6UIi6UIi6UIi6WI 8lMvvQDxdzr7IH2wWoO0u7sb0sWFh5BOTExAurxMv7dU2oGsWqlCulJbgbSMR+8jw8OQrq09grRU op9cGRyCdP7+fUiHhgYhbbe3IT106Aikp07/CVKvWIqwWIqwWIqwWIqwWIqwWIqwWIqwWIqwWIoo dnBieu6d65BOTeO5/OIDSJurq5AOVCqQtja3IB0ZGYH0uc8+B+m7d9+FlE/epw9OQ3rhwgVIl5eX Ie3bpn/vNqatFqVTU1OQ3rxJ32k4fYbucHjFUoTFUoTFUoTFUoTFUoTFUoTFUoTFUoTFUkTR29cP 8Z5+monutDuQHj58GNLFxUVIDxw4AOna2hqkY2NjkK7W6cR/9gdfgLTU1Ybw1V++BunMDG25WVpa grRapTl9xmfrzWYT0v5+6kat9xCkXrEUYbEUYbEUYbEUYbEUYbEUYbEUYbEUYbEUURTNdYirAwOQ 9vX1QXr79m1IGw3aL9/VRY3n1z54QLP2vKv93A9/u+vXzi/MQzo3Nwfp+jr9FQYHaWPM/Dz9Xv7J 09M0pz8yQPddfrZKe+29YinCYinCYinCYinCYinCYinCYinCYinCYimiePkybSP59Vgd0o0m7y4n fObLe953dmjPCe8uLw+MQzry+BlIq1WaAW/c+hekO9euQspn6zx7PoB3R3iPTa1GG/MH99CTbttt 2uPvFUsRFksRFksRFksRFksRFksRFksRFksRFksRRaungHgST8Af9dLMe6dDu2jOnj0LKZ9Enz9/ HtLjJ5+A9C+v/AHST36KdtH0fOLTkPYfpOeRjk89Bul/b9M+/XabttwUBf0FefcO38MYrtKTXbe6 6fsBXrEUYbEUYbEUYbEUYbEUYbEUYbEUYbEUYbEUUZRKdPbawZPZ94N3wvAm9x48a+6dPgppa5VO 7SfKtLml3EVT3p3//BvS+hptyOnp6YG0u5t+L792a4u+08D4j98qvQ2pVyxFWCxFWCxFWCxFWCxF WCxFWCxFWCxFWCxFFH+evwHx6CmaTO/Fk2jWarV2nU5O7YV0dZMmxAc7dAJ+C7exn3vxc5B+fZbS jXu0i2b0wElIeTKdVSqVXf/kwQp982C8SXt7vGIpwmIpwmIpwmIpwmIpwmIpwmIpwmIpwmIpovj9 Au05+XLrY5DW67QFfnNzE1J+huoe3DDexIn4h2/9HdLurQ1I37z8T0hHK7RR/dGNdyBdWqF96zvV FUirVTo956l23vPO8/JFP3234IUf/xRSr1iKsFiKsFiKsFiKsFiKsFiKsFiKsFiKsFiKKJ55+mmI T56kWey+PtrzfvUqPVP03r17kL7HE0erlHZdeQvSmT302j9eX4R09vMfgfRqD91puH6FztanDu3+ f/j7+fbA0aO0mWfm+Ayk3c/SubxXLEVYLEVYLEVYLEVYLEVYLEVYLEVYLEVYLEUUr154E+KBgSqk tdru56mbzSakPE1fwnn5rvk7kA5/mJ44OnqX9ryP9dF0+V9XaBL/40+dgnRjgybx+ZN8P+kcbte5 v7QA6Wdewb8CZNKuWSxFWCxFWCxFWCxFWCxFWCxFWCxFWCxFFF+aPQfxY0cuQjqF+9b5uaCXLl2C dHt7G9IncVL76htvQLr3A/sg/erhg5T+4iX6yWeOQXrimWchnRmh6fJGg3bTr6+vQ3rwIP2LOp0O pP0DtF2nq/pzSiGTds1iKcJiKcJiKcJiKcJiKcJiKcJiKcJiKaJYX6dT3Tt3aH680aApbz55v3v3 LqT85M/JqSlIR56g6fLGwhKkmwWdYr/4I9p6/6BJT3Zd7aPdLNeu0ez50BBtyOF9+tev0x5/Vh0e hvTYFjXHK5YiLJYiLJYiLJYiLJYiLJYiLJYiLJYiLJYiChx6Lq2urkK6vk7bV/gZqmNjtPWlv78f 0go+f7X78XFIb12jfesrTXpK6v5D9J6P7DsB6cWbdHpeqdBn1dvbCylvqlnDp9G+hzLdS/je1vOQ esVShMVShMVShMVShMVShMVShMVShMVShMVSRNHVcxvifePTkDYatKudZ7GncG59//79+Htp2po3 yE8cfxLSj44ehnSnSpP4l+/Rv2i5RjvTS6UyZEVB3x6o1WqQjoyMQMpn+qOjdLfgYXkSUq9YirBY irBYirBYirBYirBYirBYirBYirBYiih6Rr8Pcb3+RUjHxuhUd2GBz5pJuUwn0ZyyjQ3aJ3Pxbbpb wOfj42OP6JXl3f8fzn0ao6OjkNbrdKZfFDcg9YqlCIulCIulCIulCIulCIulCIulCIulCIuliKIo aK9LA5/e2enQTPTevbt//mpPTw+kk5M0bT2M28nZ9DTN+C8vL0PKG3LGx2kHDm+M4a33vLdnYmIC Un7C6sZGC9Lurl9B6hVLERZLERZLERZLERZLERZLERZLERZLERZLEQWf+Q7hKfbKCu1Mb7Xo3LZe r0PK28l5RwrvseEz/XW808Bb73mvfV9fH6T8SfLfiN9zu0272vnTGBoagnRzk+4HeMVShMVShMVS hMVShMVShMVShMVShMVShMVSRPkb356FeHjgJKSbm3QizCfRPG3Nr+X9Kjwhzq8dxrPmpVF6V0td 9LzZoW167WCbTsAH8bVV+rWl4R26SzHQok9jorsCafsY3eHwiqUIi6UIi6UIi6UIi6UIi6UIi6UI i6UIi6WI/wFehCSJ3EanqAAAAABJRU5ErkJggg== "
+       height="135"
+       width="135" />
+    <image
+       y="847.36389"
+       x="445"
+       id="image3438"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAIAAAAiOjnJAAAAA3NCSVQICAjb4U/gAAAHAUlEQVR4 nO3dXXLTdhiFcVmy5S8SJ9CkdFo65YYuj1V0Ed1Et9MN9ANCIGD8JcuSu4NHM0nPDBfP7/adOLY5 6OLon1dFIUmSJEmSJEmS/j8jHv/+x28wXXU9TO+aCUz/PV7CtBnRG+vOdzCtyz1MX3Y3ML29v4Xp YgfDoujew/Drlt7zXTuD6bue3tW6bWFalh9gupg3MH39mt7V27eUjRJm0qMZLEUYLEUYLEUYLEUY LEUYLEUYLEUYLEWMefzhbgrTY1vDtMVGeNWu6W2NqbUvS2rtV5c/wXS+XMD0vqWe+mEFw+Lm6keY dttrmI6/fIHpDx3dS3hxpO+5qui7qmv6F1xebGDKvGIpwmApwmApwmApwmApwmApwmApwmApwmAp YqB5P+Oh+BFOq7KiV67OMK0n1LyPx/S2ZzM6qd0XHUw/rKl5Z8+vnsOU31XT0NlzvofB+Lvi6aGY P/r3esVShMFShMFShMFShMFShMFShMFShMFShMFSxEDzXjbUnjenI0xzfTG/8m5HS2HmKzoD/urV rzAdlXinYUznx7cbOuPPn6jr6G4B/+zpdIIpn3nfz5cwZV6xFGGwFGGwFGGwFGGwFGGwFGGwFGGw FGGwFDHQvF9uqFv/eKItKCXuar++pu0rfEJ8v6ffu2/oPc8LOk3/8y9vYLpY0bqZr/e05339+U+Y cnve97RP/ym9fHuk72o7o/suzCuWIgyWIgyWIgyWIgyWIgyWIgyWIgyWIgyWIgaa96KiE9Ojjrr1 +Zx2ldzc0JNOJ7ht5v7TA0x3B9rc8vUj7ZO5WF3B9PLme5jWz+g0/bimewm0eWdIVVE/zq39CO+O FKV73vWNMViKMFiKMFiKMFiKMFiKMFiKMFiKMFiKGGjeR2NqZmcltcnTKT2dlffJ8Hn5sqZXLlo6 A35Y38F0/Rf11NWYOu4TPum0O2xhyt17WdL/f75LwT/Lu/iPE37PxCuWIgyWIgyWIgyWIgyWIgyW IgyWIgyWIgyWIgaa9/2ZGuEJtudn/Fnexs69fI9HxE8nbMDXH2H6z8M7mL5/R+fll7ghp8Wd+KMR fd5qQnca+FQ74/Pyl+2zR7+yVyxFGCxFGCxFGCxFGCxFGCxFGCxFGCxFGCxFDDTv84I2m3e4i+Zw OMD04YE2xtR4Xv7QUtd8fKBuvbmn9ny7o/0qkwu6W3C8oJ76NKKOu1zSlpt5Rafa+Rmq3MtPanrl 29MtTJlXLEUYLEUYLEUYLEUYLEUYLEUYLEUYLEUYLEUMNO+zJTXguxPudcHmnZ+Sys0775MpHqhb L7fUrVc9tdjTOe3AOdbUcW8PNF3gN1njM1Sf0rzznvflGf8VkFcsRRgsRRgsRRgsRRgsRRgsRRgs RRgsRRgsRQw077s1tefFgta+8CaT7ZZ2iHfYNc+wTZ631OlfLOgj1/g/bXOiVz509HnrJf31AD+N lnfvcHv+lF00ze7+0T/rFUsRBksRBksRBksRBksRBksRBksRBksRBksRQ9tmZrRBpSnx/Dg2703T wPTY0q72xbSG6Qw3qFzjTpjliLaxbzdrmJa4fn51cUO/d7qA6bmn///8DFXu5auKAtC1n2HKvGIp wmApwmApwmApwmApwmApwmApwmApwmApYugJq3vabN6MacrPUN1sqLXnNnk1fQHT0bNLmJ4L2s2y rOkk/hs6tl60C2r8Wzy3fjzRyfS+o06f/z6Ad9GUeHekPNB9COYVSxEGSxEGSxEGSxEGSxEGSxEG SxEGSxEGSxEDzfsXOphenHGvy/FIve1kQj0171cpajrzfpzQdvKvR9qfczmh5v3lDb1yW38H07/X 9J7bI7XnZyreB75nnpYVbtc50A4c5hVLEQZLEQZLEQZLEQZLEQZLEQZLEQZLEQZLEQPN+3hKW1/K cgbTHrev8C6aGrv1Cnv5wwi3ryzovHyDv/dLR6+8317AdLOjz3vCc+vcvA+case/HpjP6F/wYU+f iHnFUoTBUoTBUoTBUoTBUoTBUoTBUoTBUoTBUsRA816NadP3tL56/C/G9pxPxHObPLD3fELnuLcF 7Vvf7HEnzJk+0XlEP1uWVK6fsXrnexj8Tc6weS9L/JMH5BVLEQZLEQZLEQZLEQZLEQZLEQZLEQZL EQZLEQPNe9/TPpmioOadu/W+pyaanws6ndLWl8WC2nNuovm5r01Dm1uqkt7zoqZpi0+U5Y0x3LwP 7O1Bff/p0T/rFUsRBksRBksRBksRBksRBksRBksRBksRBksRA7Vs01A/Xpypl+ctKNw1D5xbf0Iv P9BEY3veVnT2vMdz62VBr3w641NSO/omRx2epm/plcc9fc9XY+r0mVcsRRgsRRgsRRgsRRgsRRgs RRgsRRgsRRgsSZIkSZIkSZKkb95/Avy8HETxzlYAAAAASUVORK5CYII= "
+       height="135"
+       width="135" />
+    <image
+       y="847.36389"
+       x="155"
+       id="image3438-7"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAIAAAAiOjnJAAAAA3NCSVQICAjb4U/gAAAHAUlEQVR4 nO3dXXLTdhiFcVmy5S8SJ9CkdFo65YYuj1V0Ed1Et9MN9ANCIGD8JcuSu4NHM0nPDBfP7/adOLY5 6OLon1dFIUmSJEmSJEmS/j8jHv/+x28wXXU9TO+aCUz/PV7CtBnRG+vOdzCtyz1MX3Y3ML29v4Xp YgfDoujew/Drlt7zXTuD6bue3tW6bWFalh9gupg3MH39mt7V27eUjRJm0qMZLEUYLEUYLEUYLEUY LEUYLEUYLEUYLEWMefzhbgrTY1vDtMVGeNWu6W2NqbUvS2rtV5c/wXS+XMD0vqWe+mEFw+Lm6keY dttrmI6/fIHpDx3dS3hxpO+5qui7qmv6F1xebGDKvGIpwmApwmApwmApwmApwmApwmApwmApwmAp YqB5P+Oh+BFOq7KiV67OMK0n1LyPx/S2ZzM6qd0XHUw/rKl5Z8+vnsOU31XT0NlzvofB+Lvi6aGY P/r3esVShMFShMFShMFShMFShMFShMFShMFShMFSxEDzXjbUnjenI0xzfTG/8m5HS2HmKzoD/urV rzAdlXinYUznx7cbOuPPn6jr6G4B/+zpdIIpn3nfz5cwZV6xFGGwFGGwFGGwFGGwFGGwFGGwFGGw FGGwFDHQvF9uqFv/eKItKCXuar++pu0rfEJ8v6ffu2/oPc8LOk3/8y9vYLpY0bqZr/e05339+U+Y cnve97RP/ym9fHuk72o7o/suzCuWIgyWIgyWIgyWIgyWIgyWIgyWIgyWIgyWIgaa96KiE9Ojjrr1 +Zx2ldzc0JNOJ7ht5v7TA0x3B9rc8vUj7ZO5WF3B9PLme5jWz+g0/bimewm0eWdIVVE/zq39CO+O FKV73vWNMViKMFiKMFiKMFiKMFiKMFiKMFiKMFiKGGjeR2NqZmcltcnTKT2dlffJ8Hn5sqZXLlo6 A35Y38F0/Rf11NWYOu4TPum0O2xhyt17WdL/f75LwT/Lu/iPE37PxCuWIgyWIgyWIgyWIgyWIgyW IgyWIgyWIgyWIgaa9/2ZGuEJtudn/Fnexs69fI9HxE8nbMDXH2H6z8M7mL5/R+fll7ghp8Wd+KMR fd5qQnca+FQ74/Pyl+2zR7+yVyxFGCxFGCxFGCxFGCxFGCxFGCxFGCxFGCxFDDTv84I2m3e4i+Zw OMD04YE2xtR4Xv7QUtd8fKBuvbmn9ny7o/0qkwu6W3C8oJ76NKKOu1zSlpt5Rafa+Rmq3MtPanrl 29MtTJlXLEUYLEUYLEUYLEUYLEUYLEUYLEUYLEUYLEUMNO+zJTXguxPudcHmnZ+Sys0775MpHqhb L7fUrVc9tdjTOe3AOdbUcW8PNF3gN1njM1Sf0rzznvflGf8VkFcsRRgsRRgsRRgsRRgsRRgsRRgs RRgsRRgsRQw077s1tefFgta+8CaT7ZZ2iHfYNc+wTZ631OlfLOgj1/g/bXOiVz509HnrJf31AD+N lnfvcHv+lF00ze7+0T/rFUsRBksRBksRBksRBksRBksRBksRBksRBksRQ9tmZrRBpSnx/Dg2703T wPTY0q72xbSG6Qw3qFzjTpjliLaxbzdrmJa4fn51cUO/d7qA6bmn///8DFXu5auKAtC1n2HKvGIp wmApwmApwmApwmApwmApwmApwmApwmApYugJq3vabN6MacrPUN1sqLXnNnk1fQHT0bNLmJ4L2s2y rOkk/hs6tl60C2r8Wzy3fjzRyfS+o06f/z6Ad9GUeHekPNB9COYVSxEGSxEGSxEGSxEGSxEGSxEG SxEGSxEGSxEDzfsXOphenHGvy/FIve1kQj0171cpajrzfpzQdvKvR9qfczmh5v3lDb1yW38H07/X 9J7bI7XnZyreB75nnpYVbtc50A4c5hVLEQZLEQZLEQZLEQZLEQZLEQZLEQZLEQZLEQPN+3hKW1/K cgbTHrev8C6aGrv1Cnv5wwi3ryzovHyDv/dLR6+8317AdLOjz3vCc+vcvA+case/HpjP6F/wYU+f iHnFUoTBUoTBUoTBUoTBUoTBUoTBUoTBUoTBUsRA816NadP3tL56/C/G9pxPxHObPLD3fELnuLcF 7Vvf7HEnzJk+0XlEP1uWVK6fsXrnexj8Tc6weS9L/JMH5BVLEQZLEQZLEQZLEQZLEQZLEQZLEQZL EQZLEQPNe9/TPpmioOadu/W+pyaanws6ndLWl8WC2nNuovm5r01Dm1uqkt7zoqZpi0+U5Y0x3LwP 7O1Bff/p0T/rFUsRBksRBksRBksRBksRBksRBksRBksRBksRA7Vs01A/Xpypl+ctKNw1D5xbf0Iv P9BEY3veVnT2vMdz62VBr3w641NSO/omRx2epm/plcc9fc9XY+r0mVcsRRgsRRgsRRgsRRgsRRgs RRgsRRgsRRgsSZIkSZIkSZKkb95/Avy8HETxzlYAAAAASUVORK5CYII= "
+       height="135"
+       width="135" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="14.147727"
+       y="168.40909"
+       id="text3470"
+       sodipodi:linespacing="125%"
+       transform="translate(0,827.36389)"><tspan
+         sodipodi:role="line"
+         id="tspan3472" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       x="10"
+       y="1007.3639"
+       id="text4023-6-21"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="10"
+         y="1007.3639"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+         id="tspan8950-4">a) Original input</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       x="155"
+       y="1007.3639"
+       id="text4023-6-21-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="155"
+         y="1007.3639"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+         id="tspan8950-4-0">b) Reference output</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       x="300"
+       y="1007.3639"
+       id="text4023-6-21-9"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="300"
+         y="1007.3639"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+         id="tspan8950-4-4">c) Shifted output</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       x="445"
+       y="1007.3639"
+       id="text4023-6-21-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="445"
+         y="1007.3639"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+         id="tspan8950-4-8">d) Corrected output</tspan></text>
+    <image
+       y="847.36389"
+       x="300"
+       id="image5277"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAIAAAAiOjnJAAAAA3NCSVQICAjb4U/gAAAHI0lEQVR4
+nO3dzW4b9xmFcc4MZ/hlipJtJjFipx8o0nZTdNHLyy43kHvKJuiiXRUBknRR1E2dRDZlipQ4HH7k
+Dp4B7BxEi+e3PRApUsezeOfvdwYDSZIkSZIkSZL0yyk4/vyLzyB99ngL6WSwg3Qz/BDSv58vIf22
+2kC62/wL0uLmJaQvXtFv9Zfv/grp85s5pLPjN5Cuz/+B9Jvmj5D+u/sbpG/W/6f3PXwJ6aChn/3H
+P7+CtKTXld6VxVKExVKExVKExVKExVKExVKExVKExVLEkOPmD59Aej7Q5L3qaD7etjWkH+wbSBfF
+E0iP5Z8gbZ7+BtKPrpb0Wy0/gHR6B+FgcPwdhPV2BumyG9MLn15D+rijmytl+WdIp5PfQ+rkXb8C
+i6UIi6UIi6UIi6UIi6UIi6UIi6UIi6WInsn79f4G0revaHr+7LiAtOs6SBfdGtLhkN63LC/olS+e
+QzqZTSG97n6CdEUfd7C8/BjS4/YK0uHbt5A+O95D+mRP33NV0XfVNHT/g3nFUoTFUoTFUoTFUoTF
+UoTFUoTFUoTFUoTFUkTP5P10oo0xxZkm4AWusqnKCtJzdYa0qel9h0P6UOMxnR8/DY6Q/rSmyTt7
+fPkYUv6t2raFlO9hMP6uOGVesRRhsRRhsRRhsRRhsRRhsRRhsRRhsRRhsRTRM1qd34/oh7sTpO1x
+D2luXsyvfHdHS2EmCzoD/uIF7VsvSrzTMKTz49sNnfHnT3Q80t0C/tnD4QCpZ9714FgsRVgsRVgs
+RVgsRVgsRVgsRVgsRVgsRfRM3p+taPtKe3sL6ZsTzXzLgubUV1e0fYVPiN/f0/aV+5buB0wGdJr+
+k99+Cul0Qetmbq9/gHR98zWkPD0/nej+x/vM5bs9fVfMK5YiLJYiLJYiLJYiLJYiLJYiLJYiLJYi
+LJYieibvj/Bg+vBM0/MVztYnkwmkyyU96bTGbTPXb1aQ3u1oc8vta9onM19cQnqx/BDS5hGdph82
+dC+BNu/0qSra6sNT+wL/gswrliIsliIsliIsliIsliIsliIsliIsliIsliJ6Ju/3A3rCalnT9HyM
+M9/RCPfY4D4ZPi9fNvTKg47OgO/WP0K6fklz6mpIn/eATzo97raQ8uy9LOnqwHcp+Gd5Fz/ziqUI
+i6UIi6UIi6UIi6UIi6UIi6UIi6UIi6WInsn7yx1Nop8WzyGthzTzPZ9pmszb2Hkuf8Ij4ocDTsDX
+ryH9fvUK0h9e0Xn5GW7I6Q6016Uo6PNWNd1p4FPtjM/LM69YirBYirBYirBYirBYirBYirBYirBY
+irBYiuiZvO929IzNwyVOhHFuu9vtIF2taGNMg+fld/jc1/2KZuvtNU3Pt3cbSOs53S3Yzx9Beijo
+uypntOVmUtEdDn6GKs/l64ZemXnFUoTFUoTFUoTFUoTFUoTFUoTFUoTFUoTFUkTP5P1qT7vLS9xk
+wnjyzk9J5ck775MZrGi2Xm5ptl6daIo9mtAOnH1DM+7tjtLpgT5Rg89QfZ/Ju3ve9eBYLEVYLEVY
+LEVYLEVYLEVYLEVYLEVYLEX0TN5H7QLSrqPNLXVNE2E+Eb/d0t7zI86axzhNnnQ0059P6Qtp8N/h
+5kCvvDvS521m9D3z02h59w5Pz99nFw3ziqUIi6UIi6UIi6UIi6UIi6UIi6UIi6UIi6WInsn7pKY9
+J7uKzq2X5S2kPHlv2xbSPU78pyPakDPGDSpXuBNmVtA29u1mDWmJ6+cX8yW972gK6flEVwd+hirP
+5auqpx70vu/8kxKwWIqwWIqwWIqwWIqwWIqwWIqwWIqwWIroGa3WBe5IOeB+lY72nvMzVDcb2vrC
+0+TF6AmkxaMLSM8D2s0ya+gk/qd0bH3QTWni3+G59f2B/gqnI830+f8H8C6a0ies6qGxWIqwWIqw
+WIqwWIqwWIqwWIqwWIqwWIrombxvDnTKu23pzHt3pO0r+z29co0b5Hm/yqChM+/7mnbE3+7pE13U
+NHn/aEmv3DVPIf3fmn7nbk/T8zMN3nu+Z07L6t2vO16xFGGxFGGxFGGxFGGxFGGxFGGxFGGxFGGx
+FNEzeb+paOvLbERpeRxDesLtK7yLpsHZeoVz+V2B21emdF6+xfd9e6RXvt/OId3c0ec94Ll1nrz3
+nGrH/z0wGdNfkHnFUoTFUoTFUoTFUoTFUoTFUoTFUoTFUoTFUkTP5P2u/i+k8yGdTB/XuH4F8al2
+PhHP0+Sevec1Pct0O6B965t73Alzpk90xq0+ZUnD9TOO3vkeBn+TYyfvemgsliIsliIsliIsliIs
+liIsliIsliIsliJ6Ju/n4ntIT2d6LmhZ0OSdZ+unE02i+bmgoxFtfZlOaXrOk2h+7mvb0uaWqqTf
+edpQ2uETZXljDE/ee/b2vAevWIqwWIqwWIqwWIqwWIqwWIqwWIqwWIqwWJIkSZIkSZIkSQ/ez+N8
+to26PaB8AAAAAElFTkSuQmCC
+"
+       height="135"
+       width="135" />
+  </g>
+</svg>
