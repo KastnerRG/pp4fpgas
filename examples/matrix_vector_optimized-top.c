@@ -45,7 +45,7 @@ int main()
   if (system("diff -w matrix_vector_base.out.dat out.gold.8.dat")) {
 #else
   printf ("Comparing against output data \n");
-  if (system("diff -w matrix_vector_base.out.dat out.gold.dat")) {
+  if (system("diff -w matrix_vector_base.out.dat out.matrix_vector.gold.dat")) {
 #endif
 	fprintf(stdout, "*******************************************\n");
 	fprintf(stdout, "FAIL: Output DOES NOT match the golden output\n");

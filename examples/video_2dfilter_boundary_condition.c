@@ -1,4 +1,5 @@
 #include "video_common.h"
+#include "stdio.h"
 
 rgb_pixel filter(rgb_pixel window[3][3]) {
 	const char h[3][3] = {{1, 2, 1}, {2, 4, 2}, {1, 2, 1}};

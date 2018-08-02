@@ -34,6 +34,9 @@ video_2dfilter_linebuffer_extended_constant-top.log: video_2dfilter_linebuffer_e
 %-top.bin: %-top.cpp %.cpp
 	g++ -I$(VHLS)/include $? -g -o $@
 
+insertion_cell_sort-top.bin: insertion_cell_sort-top.cpp insertion_cell_sort.cpp insertion_sort.cpp
+	g++ -I$(VHLS)/include $? -g -o $@
+
  #: %-top.bin
 %.tcl:
 	rm -f $@

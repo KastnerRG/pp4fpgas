@@ -37,10 +37,9 @@ int main(int argc, char **argv)
 
     FILE *fp;
 
-	UINTYPE_12 n = 32;
-	cos_sin_TYPE s;			//sine
-	cos_sin_TYPE c;			//cos
-	theta_TYPE radian; 		//radian versuin of degree
+	COS_SIN_TYPE s;			//sine
+	COS_SIN_TYPE c;			//cos
+	THETA_TYPE radian; 		//radian versuin of degree
 
 	//zs=sin, zc=cos using math.h in VivadoHLS
 	double zs, zc; 			// sine and cos values calculated from math.
@@ -53,8 +52,8 @@ int main(int argc, char **argv)
 	fp=fopen("out.dat","w");
 	for(int i=1;i<NUM_DEGREE;i++) {
 			radian = i*M_PI/180;
-			cordic(radian, s, c, n);
-			zs= sin((double)radian);
+			cordic(radian, s, c);
+			zs = sin((double)radian);
 			zc = cos((double)radian);
 			error_sin=(abs_double((double)s-zs)/zs)*100.0;
 			error_cos=(abs_double((double)c-zc)/zc)*100.0;

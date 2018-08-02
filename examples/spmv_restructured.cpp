@@ -1,8 +1,9 @@
 #include "spmv.h"
+#include <iostream>
 
-const static int S = 8;
+const static int S = 4;
 
-void spmv(int rowPtr[NUM_ROWS+1], int columnIndex[NNZ],
+void spmv(int row_ptr[NUM_ROWS+1], int columnIndex[NNZ],
        DTYPE values[NNZ], DTYPE y[SIZE], DTYPE x[SIZE])
 {
 #pragma HLS ARRAY_PARTITION variable=row_ptr cyclic factor=16 dim=1
@@ -22,7 +23,7 @@ int flag[4];
 #pragma HLS ARRAY_PARTITION variable=element_done cyclic factor=4 dim=1
 
  Init:
- for (i=0; i<S; i++){
+ for (int i = 0; i < S; i++){
 #pragma HLS PIPELINE II=1
 	cnt[i] = i;
 	LB[i] = row_ptr[i];
@@ -30,41 +31,40 @@ int flag[4];
 	element_left[i] = UB[i] - LB[i];
 	element_done[i] = 0;
 	flag[i] = 0;
+    // std::cout << "starting row " << i << " from " << LB[i] << " to " << UB[i] << "\n";
  }
 
-	int max = 3;
+	int max = S-1;
 	int L, K;
 	int loop_bound = NNZ+4;
 
-ACC:  for(i=0; i<loop_bound/S; i++ )
-		for(j=0; j < S; j++) {
+ACC:  for(int i = 0; i < loop_bound/S; i++ )
+    for(int j = 0; j < S; j++) {
 #pragma HLS DEPENDENCE variable=y array inter false
 #pragma HLS DEPENDENCE variable=element_left array inter false
 #pragma HLS DEPENDENCE variable=element_done array inter false
 #pragma HLS PIPELINE II=1
 
-			if (flag[j] == 1){
+			if(flag[j] == 1){
 				continue;
 			}
 
-			//L = read_idx(LB, UB, j, element_done, element_left);
 			L = LB[j] + element_done[j];
 			element_left[j] -= 1;
 			element_done[j] += 1;
-			//K = write_idx(j,cnt);
 			K = cnt[j];
+            // std::cout << "Add NNZ " << L << " for row " << K << "\n";
 			y[K] += values[L] * x[columnIndex[L]];
 
-			//	reset(element_left, j, element_done);
-			if ( element_left[j] == 0) {
-				//update_counter(element_left, &max, j, cnt);
+			if(element_left[j] == 0) {
 				max += 1;
 				cnt[j] = max;
-				if (max < m){
-					// row_pointer(LB, UB, j, row_ptr, max, cnt, element_left);
+				if(max < NUM_ROWS) {
 					LB[j] = row_ptr[max];
 					UB[j] = row_ptr[max+1];
-					element_left[i_mod_4] = UB[i_mod_4] - LB[i_mod_4];
+					element_left[j] = UB[j] - LB[j];
+                    element_done[j] = 0;
+                    // std::cout << "starting row " << max << " from " << LB[j] << " to " << UB[j] << "\n";
 				} else {
 					flag[j] = 1;
 				}
