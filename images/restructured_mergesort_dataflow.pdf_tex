@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'restructured_mergesort_dataflow.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{450.22227468bp}%
+    \setlength{\unitlength}{431.83845837bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,16 +50,23 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.07257526)%
-    \put(0,0){\includegraphics[width=\unitlength]{restructured_mergesort_dataflow.pdf}}%
-    \put(0.13110516,0.03627961){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{merge\_arrays}}}%
-    \put(0.21373101,0.04516411){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{temp[0]}}}%
-    \put(0.45361253,0.04516404){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{temp[1]}}}%
-    \put(0.00003123,0.04480753){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{A[]}}}%
-    \put(0.92626795,0.04516432){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{B[]}}}%
-    \put(0.69349403,0.04516432){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{temp[2]}}}%
-    \put(0.37098667,0.03627961){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{merge\_arrays}}}%
-    \put(0.61086818,0.03627961){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{merge\_arrays}}}%
-    \put(0.85074969,0.03627961){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{merge\_arrays}}}%
+  \begin{picture}(1,0.11546947)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0.11546947){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{restructured_mergesort_dataflow.pdf}}%
+    \put(0.15105211,0.0354623){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}merge\_arrays\end{tabular}}}}%
+    \put(0.23181148,0.0441461){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}temp[0]\end{tabular}}}}%
+    \put(0.46627416,0.04414604){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}temp[1]\end{tabular}}}}%
+    \put(0.0229391,0.04379758){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}A[]\end{tabular}}}}%
+    \put(0.92825246,0.04414631){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}B[]\end{tabular}}}}%
+    \put(0.70073683,0.04414631){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}temp[2]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{restructured_mergesort_dataflow.pdf}}%
+    \put(0.38551479,0.0354623){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}merge\_arrays\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{restructured_mergesort_dataflow.pdf}}%
+    \put(0.61997746,0.0354623){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}merge\_arrays\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{restructured_mergesort_dataflow.pdf}}%
+    \put(0.85444014,0.0354623){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}merge\_arrays\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{restructured_mergesort_dataflow.pdf}}%
   \end{picture}%
 \endgroup%

@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'video_BRAM_interface.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{377.46875bp}%
+    \setlength{\unitlength}{371.34143901bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,21 +50,39 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.15385974)%
-    \put(0,0){\includegraphics[width=\unitlength]{video_BRAM_interface.pdf}}%
-    \put(0.35830781,0.02270715){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Accelerator 1}}}%
-    \put(0.13275933,0.02059644){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{BRAM}}}%
-    \put(0.01494639,0.1054){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textit{Dataflow}}}}%
-    \put(0.26882503,0.05874529){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\tiny{address}}}}%
-    \put(0.26881571,0.03517649){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\tiny{data}}}}%
-    \put(0.67320142,0.02059644){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{BRAM}}}%
-    \put(0.56882503,0.05874943){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\tiny{address}}}}%
-    \put(0.56841109,0.03729588){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\tiny{data}}}}%
-    \put(0.56779121,0.01405616){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\tiny{WE}}}}%
-    \put(0.02845778,0.05957731){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\tiny{address}}}}%
-    \put(0.02804384,0.03812376){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\tiny{data}}}}%
-    \put(0.02742396,0.01488404){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\tiny{WE}}}}%
-    \put(0.80806979,0.03445003){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\tiny{data}}}}%
-    \put(0.80774899,0.05874943){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\tiny{address}}}}%
+  \begin{picture}(1,0.40140873)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0.32902148){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{video_BRAM_interface.pdf}}%
+    \put(0.38848711,0.27754132){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Accelerator 1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{video_BRAM_interface.pdf}}%
+    \put(0.17354636,0.27552988){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}BRAM\end{tabular}}}}%
+    \put(0.64938186,-0){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{video_BRAM_interface.pdf}}%
+    \put(0.06127425,0.35634506){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\textit{Dataflow}\end{tabular}}}}%
+    \put(0.84206808,0.28309125){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{video_BRAM_interface.pdf}}%
+    \put(0.30321277,0.31188456){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\tiny{address}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{video_BRAM_interface.pdf}}%
+    \put(0.3032039,0.28942422){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\tiny{data}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{video_BRAM_interface.pdf}}%
+    \put(0.68857102,0.27552988){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}BRAM\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{video_BRAM_interface.pdf}}%
+    \put(0.58910353,0.3118885){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\tiny{address}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{video_BRAM_interface.pdf}}%
+    \put(0.58870906,0.29144393){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\tiny{data}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{video_BRAM_interface.pdf}}%
+    \put(0.58811833,0.2692972){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\tiny{WE}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{video_BRAM_interface.pdf}}%
+    \put(0.07415019,0.31267745){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\tiny{address}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{video_BRAM_interface.pdf}}%
+    \put(0.07375572,0.29223287){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\tiny{data}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{video_BRAM_interface.pdf}}%
+    \put(0.07316499,0.27008614){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\tiny{WE}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{video_BRAM_interface.pdf}}%
+    \put(0.81709642,0.28873192){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\tiny{data}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{video_BRAM_interface.pdf}}%
+    \put(0.81679071,0.3118885){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\tiny{address}\end{tabular}}}}%
   \end{picture}%
 \endgroup%

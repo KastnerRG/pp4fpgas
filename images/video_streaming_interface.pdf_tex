@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'video_streaming_interface.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{448.04208984bp}%
+    \setlength{\unitlength}{437.50394511bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,14 +50,25 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.13018251)%
-    \put(0,0){\includegraphics[width=\unitlength]{video_streaming_interface.pdf}}%
-    \put(0.30186896,0.01968842){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Accelerator 1}}}%
-    \put(0.5241695,0.01904706){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Accelerator 2}}}%
-    \put(0.10039482,0.0173159){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Video Input}}}%
-    \put(0.74785106,0.02072101){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Video Output}}}%
-    \put(0.00430345,0.04490959){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{HDMI}}}%
-    \put(0.92450486,0.04327346){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{HDMI}}}%
-    \put(0.01259211,0.0893559){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textit{Dataflow}}}}%
+  \begin{picture}(1,0.3407048)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0.27926448){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{video_streaming_interface.pdf}}%
+    \put(0.32973728,0.23556952){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Accelerator 1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{video_streaming_interface.pdf}}%
+    \put(0.54316393,0.23495377){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Accelerator 2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{video_streaming_interface.pdf}}%
+    \put(0.13630567,0.23329171){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Video Input\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{video_streaming_interface.pdf}}%
+    \put(0.75791645,0.2365609){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Video Output\end{tabular}}}}%
+    \put(0.55117765,0){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{video_streaming_interface.pdf}}%
+    \put(0.04405012,0.2597839){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}HDMI\end{tabular}}}}%
+    \put(0.92751851,0.25821308){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}HDMI\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{video_streaming_interface.pdf}}%
+    \put(0.05200792,0.30245598){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\textit{Dataflow}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{video_streaming_interface.pdf}}%
+    \put(0.71472446,0.24028014){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
   \end{picture}%
 \endgroup%

@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'filter_one_sample_behavior.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{180bp}%
+    \setlength{\unitlength}{170.23011088bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,11 +50,16 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.53333333)%
-    \put(0,0){\includegraphics[width=\unitlength]{filter_one_sample_behavior.pdf}}%
-    \put(0.26660878,0.48888918){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Task Interval = 4}}}%
-    \put(0.26687354,0.0173785){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Task Latency = 4}}}%
-    \put(0.2,0.31111113){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{In}}}%
-    \put(0.16666667,0.1777778){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Out}}}%
+  \begin{picture}(1,0.79774474)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{filter_one_sample_behavior.pdf}}%
+    \put(0,0.79774474){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0.27298545,0.48463841){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Task Interval = 4\end{tabular}}}}%
+    \put(0.2732479,0.01722739){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Task Latency = 4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{filter_one_sample_behavior.pdf}}%
+    \put(0.20695581,0.3084061){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}In\end{tabular}}}}%
+    \put(0.1739123,0.17623207){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Out\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{filter_one_sample_behavior.pdf}}%
   \end{picture}%
 \endgroup%

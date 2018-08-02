@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'videoScanlineOrder.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{252bp}%
+    \setlength{\unitlength}{245.36341166bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,11 +50,16 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.57142857)%
-    \put(0,0){\includegraphics[width=\unitlength]{videoScanlineOrder.pdf}}%
-    \put(0.03174603,0.52380955){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(0, 0)}}}%
-    \put(0.79365079,0.52380955){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(0, width-1)}}}%
-    \put(0.03174603,0.01587304){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(height-1, 0)}}}%
-    \put(0.66666667,0.01587304){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(height-1, width-1)}}}%
+  \begin{picture}(1,0.55346548)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0.55346548){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0.03659923,0.50435395){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}(0, 0)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{videoScanlineOrder.pdf}}%
+    \put(0.77020494,0.50435395){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}(0, width-1)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{videoScanlineOrder.pdf}}%
+    \put(0.03659923,0.01528348){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}(height-1, 0)\end{tabular}}}}%
+    \put(0.64793732,0.01528348){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}(height-1, width-1)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{videoScanlineOrder.pdf}}%
   \end{picture}%
 \endgroup%

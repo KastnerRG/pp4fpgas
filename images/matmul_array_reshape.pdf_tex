@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'matmul_array_reshape.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{474.9529421bp}%
+    \setlength{\unitlength}{462.09431198bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,32 +50,55 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.30371835)%
-    \put(0,0){\includegraphics[width=\unitlength]{matmul_array_reshape.pdf}}%
-    \put(0.16578863,0.16027234){\makebox(0,0)[b]{\smash{A[i][k]}}}%
-    \put(0.07314787,0.21922555){\makebox(0,0)[rb]{\smash{i,k}}}%
-    \put(0.25000749,0.08447542){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lb]{\smash{N*M elements}}}}%
-    \put(0.14052303,0.05920969){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{32 bits}}}%
-    \put(0.14052296,0.24449121){\makebox(0,0)[rb]{\smash{$\log_2(N*M)$}}}%
-    \put(0.24598976,0.24449121){\makebox(0,0)[rb]{\smash{32}}}%
-    \put(0.4437109,0.24449127){\makebox(0,0)[b]{\smash{\tiny A[i][0]}}}%
-    \put(0.35107014,0.26133497){\makebox(0,0)[rb]{\smash{i}}}%
-    \put(0.51108599,0.23606938){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{N elements}}}%
-    \put(0.4184453,0.0002566){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{32 bits}}}%
-    \put(0.42686712,0.2866007){\makebox(0,0)[rb]{\smash{$\log_2(N)$}}}%
-    \put(0.52391203,0.2866007){\makebox(0,0)[rb]{\smash{32}}}%
-    \put(0.44371089,0.18553803){\makebox(0,0)[b]{\smash{\tiny A[i][1]}}}%
-    \put(0.35107014,0.20238176){\makebox(0,0)[rb]{\smash{i}}}%
-    \put(0.44371089,0.05078782){\makebox(0,0)[b]{\smash{\tiny A[i][M-1]}}}%
-    \put(0.35107014,0.06763157){\makebox(0,0)[rb]{\smash{i}}}%
-    \put(0.44371087,0.10974102){\makebox(0,0)[b]{\smash{\tiny A[i][M-2]}}}%
-    \put(0.35107014,0.12658478){\makebox(0,0)[rb]{\smash{i}}}%
-    \put(0.31401383,0.11816296){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lb]{\smash{M memories}}}}%
-    \put(0.77216491,0.16869428){\makebox(0,0)[b]{\smash{A[i][]}}}%
-    \put(0.62057051,0.1771161){\makebox(0,0)[rb]{\smash{i}}}%
-    \put(0.89849323,0.15185051){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{N elements}}}%
-    \put(0.6963675,0.20238183){\makebox(0,0)[rb]{\smash{$\log_2(N)$}}}%
-    \put(0.92816311,0.20238183){\makebox(0,0)[rb]{\smash{32*M}}}%
-    \put(0.7890087,0.10131918){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{32*M bits}}}%
+  \begin{picture}(1,0.47963417)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0.68150908,0.47963417){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0.80124943,0.36832104){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{matmul_array_reshape.pdf}}%
+    \put(0.18408646,0.15448401){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}A[i][k]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{matmul_array_reshape.pdf}}%
+    \put(0.09481897,0.21129058){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}i,k\end{tabular}}}}%
+    \put(0.26523872,0.08144702){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}N*M elements\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{matmul_array_reshape.pdf}}%
+    \put(0.15974084,0.05710128){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}32 bits\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{matmul_array_reshape.pdf}}%
+    \put(0.15974078,0.23563626){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}$\log_2(N*M)$\end{tabular}}}}%
+    \put(0.26136729,0.23563626){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}32\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{matmul_array_reshape.pdf}}%
+    \put(0.45188894,0.23563632){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}\tiny A[i][0]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{matmul_array_reshape.pdf}}%
+    \put(0.36262144,0.25186671){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}i\end{tabular}}}}%
+    \put(0.51681074,0.22752109){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}N elements\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{matmul_array_reshape.pdf}}%
+    \put(0.42754331,0.00029481){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}32 bits\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{matmul_array_reshape.pdf}}%
+    \put(0.43565848,0.27621245){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}$\log_2(N)$\end{tabular}}}}%
+    \put(0.52916976,0.27621245){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}32\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{matmul_array_reshape.pdf}}%
+    \put(0.45188892,0.17882971){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}\tiny A[i][1]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{matmul_array_reshape.pdf}}%
+    \put(0.36262144,0.19506012){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}i\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{matmul_array_reshape.pdf}}%
+    \put(0.45188892,0.04898606){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}\tiny A[i][M-1]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{matmul_array_reshape.pdf}}%
+    \put(0.36262144,0.0652165){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}i\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{matmul_array_reshape.pdf}}%
+    \put(0.45188891,0.10579264){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}\tiny A[i][M-2]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{matmul_array_reshape.pdf}}%
+    \put(0.36262144,0.12202308){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}i\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{matmul_array_reshape.pdf}}%
+    \put(0.32691444,0.11390792){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}M memories\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{matmul_array_reshape.pdf}}%
+    \put(0.76838318,0.16259928){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}A[i][]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{matmul_array_reshape.pdf}}%
+    \put(0.62230868,0.17071444){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}i\end{tabular}}}}%
+    \put(0.89011159,0.14636883){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}N elements\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{matmul_array_reshape.pdf}}%
+    \put(0.69534572,0.19506018){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}$\log_2(N)$\end{tabular}}}}%
+    \put(0.91870112,0.19506018){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}32*M\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{matmul_array_reshape.pdf}}%
+    \put(0.78461364,0.09767747){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}32*M bits\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{matmul_array_reshape.pdf}}%
   \end{picture}%
 \endgroup%

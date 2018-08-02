@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'filter_asm_behavior.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{430.80706388bp}%
+    \setlength{\unitlength}{405.18092432bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,12 +50,17 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.26430885)%
-    \put(0,0){\includegraphics[width=\unitlength]{filter_asm_behavior.pdf}}%
-    \put(0.05570939,0.21355257){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{In}}}%
-    \put(0.03882838,0.10410274){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Out}}}%
-    \put(0.03646952,0.17850661){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{load}}}%
-    \put(0.02846084,0.16010138){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{store}}}%
-    \put(0.00591096,0.12279733){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{branch}}}%
+  \begin{picture}(1,0.33515935)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{filter_asm_behavior.pdf}}%
+    \put(0,0.33515935){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0.05918371,0.21286777){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}In\end{tabular}}}}%
+    \put(0.04235683,0.10376892){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Out\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{filter_asm_behavior.pdf}}%
+    \put(0.04000554,0.17793419){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}load\end{tabular}}}}%
+    \put(0.03202254,0.15958798){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}store\end{tabular}}}}%
+    \put(0.00954497,0.12240355){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}branch\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{filter_asm_behavior.pdf}}%
   \end{picture}%
 \endgroup%

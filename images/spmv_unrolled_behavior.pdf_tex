@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'spmv_unrolled_behavior.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{462.49155606bp}%
+    \setlength{\unitlength}{447.61286802bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,14 +50,23 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.22510224)%
-    \put(0,0){\includegraphics[width=\unitlength]{spmv_unrolled_behavior.pdf}}%
-    \put(0.18500354,0.16326285){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{L2\_1 II = 3}}}%
-    \put(0.17351331,0.11108661){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{\small columnIndex[]}}}%
-    \put(0.17108161,0.02291325){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{\small y[]}}}%
-    \put(0.4160433,0.21018305){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{L1 Iteration 1}}}%
-    \put(0.17387669,0.09168578){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{\small values[]}}}%
-    \put(0.17387668,0.07374168){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{\small x[]}}}%
-    \put(0.83983479,0.20845318){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{L1 Iteration 2}}}%
+  \begin{picture}(1,0.41328855)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{spmv_unrolled_behavior.pdf}}%
+    \put(0.75549272,0.41328855){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0.87910699,0.29837415){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0.21086647,0.15783582){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}L2\_1 II = 3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{spmv_unrolled_behavior.pdf}}%
+    \put(0.19973631,0.10729464){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}\small columnIndex[]\end{tabular}}}}%
+    \put(0.19738082,0.02188441){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}\small y[]\end{tabular}}}}%
+    \put(0.43466604,0.20328565){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}L1 Iteration 1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{spmv_unrolled_behavior.pdf}}%
+    \put(0.2000883,0.08850179){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}\small values[]\end{tabular}}}}%
+    \put(0.2000883,0.07112001){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}\small x[]\end{tabular}}}}%
+    \put(0.03481489,0.25945536){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{spmv_unrolled_behavior.pdf}}%
+    \put(0.845177,0.20161){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}L1 Iteration 2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{spmv_unrolled_behavior.pdf}}%
   \end{picture}%
 \endgroup%

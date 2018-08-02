@@ -11,14 +11,14 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg2999"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
    width="585"
    height="360"
    xml:space="preserve"
    sodipodi:docname="merge_sort_restructured_behavior.svg"><metadata
      id="metadata3005"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs3003"><marker
        inkscape:stockid="Arrow1Send"
        orient="auto"
@@ -777,7 +777,7 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
-     inkscape:window-height="1173"
+     inkscape:window-height="1137"
      id="namedview3001"
      showgrid="true"
      inkscape:snap-grids="true"
@@ -788,11 +788,11 @@
      inkscape:snap-smooth-nodes="true"
      inkscape:snap-midpoints="true"
      inkscape:guide-bbox="true"
-     inkscape:zoom="2.8625922"
-     inkscape:cx="302.61032"
-     inkscape:cy="283.93438"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
+     inkscape:zoom="2.8413945"
+     inkscape:cx="303.57954"
+     inkscape:cy="281.3683"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="g3007"
      units="in"
@@ -840,18 +840,13 @@
    height="48.000031"
    x="71.6744"
    y="-219.67404"
-   transform="scale(1,-1)" /><text
-   xml:space="preserve"
-   style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-   x="396.47488"
-   y="89.952087"
-   id="text3317"
-   sodipodi:linespacing="125%"
-   transform="matrix(0.8,0,0,-0.8,0,440.228)"><tspan
-     sodipodi:role="line"
-     id="tspan3319"
-     x="396.47488"
-     y="89.952087" /></text>
+   transform="scale(1,-1)" />
+
+
+
+
+
+
 
 
 
@@ -915,34 +910,17 @@
 
 <text
    xml:space="preserve"
-   style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-   x="470.25"
-   y="158.53497"
-   id="text24657"
-   sodipodi:linespacing="125%"
-   transform="matrix(0.8,0,0,-0.8,0,440.228)"><tspan
-     sodipodi:role="line"
-     id="tspan24659"
-     x="470.25"
-     y="158.53497" /></text>
-
-
-
-
-
-<text
-   xml:space="preserve"
-   style="font-size:9.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
    x="77.937683"
    y="-238.13889"
    id="text4023"
-   sodipodi:linespacing="125%"
    transform="scale(1,-1)"><tspan
      sodipodi:role="line"
      id="tspan4025"
      x="77.937683"
      y="-238.13889"
-     style="font-size:9.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Sans;-inkscape-font-specification:Sans">merge</tspan></text>
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.60000038px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;writing-mode:lr-tb;text-anchor:start">merge</tspan></text>
+
 
 
 
@@ -992,17 +970,17 @@
 
 <text
    xml:space="preserve"
-   style="font-size:9.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
    x="142.87444"
    y="-259.67404"
    id="text4023-6"
-   sodipodi:linespacing="125%"
    transform="scale(1,-1)"><tspan
      sodipodi:role="line"
      id="tspan4025-8"
      x="142.87444"
      y="-259.67404"
-     style="font-size:9.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans">merge\_arrays</tspan></text>
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.60000038px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:center;writing-mode:lr-tb;text-anchor:middle">merge\_arrays</tspan></text>
+
 
 
 
@@ -1041,32 +1019,21 @@
      d="m -4.1726561,-195.85081 -1.7058594,0 0,-0.64024 0.9324219,0 0,-6.76757 -0.9324219,0 0,-0.64024 1.7058594,0 z"
      id="path12541"
      inkscape:connector-curvature="0" /></g>
-<text
-   xml:space="preserve"
-   style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-   x="-33.638008"
-   y="-8.5230751"
-   id="text11593"
-   sodipodi:linespacing="125%"
-   transform="matrix(0.8,0,0,-0.8,0,287.99964)"><tspan
-     sodipodi:role="line"
-     id="tspan11595"
-     x="-33.638008"
-     y="-8.5230751" /></text>
+
 
 <text
    xml:space="preserve"
-   style="font-size:9.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
    x="324.47427"
    y="-259.67404"
    id="text4023-6-6"
-   sodipodi:linespacing="125%"
    transform="scale(1,-1)"><tspan
      sodipodi:role="line"
      id="tspan4025-8-4"
      x="324.47427"
      y="-259.67404"
-     style="font-size:9.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans">merge\_arrays</tspan></text>
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.60000038px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:center;writing-mode:lr-tb;text-anchor:middle">merge\_arrays</tspan></text>
+
 
 <g
    id="g4019-5-9-7-1-5"
@@ -1216,17 +1183,17 @@
      id="rect2985-1-7-4-3-4-3-9-6-9-3-7-899-4-3-2-9-0"
      style="fill:#c83737;fill-opacity:1;fill-rule:evenodd;stroke:none" /></g><text
    xml:space="preserve"
-   style="font-size:9.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
    x="362.34317"
    y="-279.67404"
    id="text4023-6-6-3"
-   sodipodi:linespacing="125%"
    transform="scale(1,-1)"><tspan
      sodipodi:role="line"
      id="tspan4025-8-4-2"
-     x="363.67441"
+     x="364.03067"
      y="-279.67404"
-     style="font-size:9.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans">width = 2 </tspan></text>
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.60000038px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:center;writing-mode:lr-tb;text-anchor:middle">width = 2 </tspan></text>
+
 <g
    id="g4019-5-9-7-1-5-1"
    transform="matrix(0.2711111,0,0,-0.77135019,258.10287,968.53523)"
@@ -1242,17 +1209,17 @@
      d="m 50.058924,934.54463 c 0,-7.02952 -132.786891,-3.3419 -132.786891,-10.37142"
      style="fill:none;stroke:#000000;stroke-width:1.48213542;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" /></g><text
    xml:space="preserve"
-   style="font-size:9.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
    x="285.93756"
    y="-238.13898"
    id="text4023-5"
-   sodipodi:linespacing="125%"
    transform="scale(1,-1)"><tspan
      sodipodi:role="line"
      id="tspan4025-4"
      x="285.93756"
      y="-238.13898"
-     style="font-size:9.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Sans;-inkscape-font-specification:Sans">merge</tspan></text>
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.60000038px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;writing-mode:lr-tb;text-anchor:start">merge</tspan></text>
+
 <g
    id="g4019-5-9-9-9"
    transform="matrix(1.6266666,0,0,-0.77135019,490.34308,946.93503)"
@@ -1431,33 +1398,33 @@
      id="rect2985-1-7-4-3-4-3-9-6-9-3-7-899-4-3-2-9-0-0-26"
      style="fill:#c83737;fill-opacity:1;fill-rule:evenodd;stroke:none" /></g><text
    xml:space="preserve"
-   style="font-size:9.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
    x="225.37769"
    y="-258.87411"
    id="text4023-0-3"
-   sodipodi:linespacing="125%"
    transform="scale(1,-1)"><tspan
      sodipodi:role="line"
      id="tspan4025-6-0"
      x="225.37769"
      y="-258.87411"
-     style="font-size:9.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Sans;-inkscape-font-specification:Sans">copy</tspan></text>
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.60000038px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;writing-mode:lr-tb;text-anchor:start">copy</tspan></text>
+
 <g
    id="g4019-5-9-7-1-0"
    transform="matrix(0.25025953,0,0,-0.77135019,53.93465,988.86082)"
    style="stroke-width:1.48213542;stroke-miterlimit:4;stroke-dasharray:none" /><text
    xml:space="preserve"
-   style="font-size:9.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
    x="163.85643"
    y="-280.2803"
    id="text4023-0-3-3"
-   sodipodi:linespacing="125%"
    transform="scale(1,-1)"><tspan
      sodipodi:role="line"
      id="tspan4025-6-0-0"
      x="163.85643"
      y="-280.2803"
-     style="font-size:9.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Sans;-inkscape-font-specification:Sans">width=1</tspan></text>
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.60000038px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;writing-mode:lr-tb;text-anchor:start">width=1</tspan></text>
+
 <rect
    style="fill:#ff7f2a;fill-opacity:1;fill-rule:evenodd;stroke:none"
    id="rect2985-1-7-4-3-4-3-9-6-9-3-2-9-6-9-2-12"
@@ -1659,33 +1626,33 @@
      id="rect2985-1-7-4-3-4-3-9-6-9-3-7-899-4-3-2-9-0-0-26-6"
      style="fill:#c83737;fill-opacity:1;fill-rule:evenodd;stroke:none" /></g><text
    xml:space="preserve"
-   style="font-size:9.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
    x="393.71658"
    y="-259.21301"
    id="text4023-0-3-6"
-   sodipodi:linespacing="125%"
    transform="scale(1,-1)"><tspan
      sodipodi:role="line"
      id="tspan4025-6-0-7"
      x="393.71658"
      y="-259.21301"
-     style="font-size:9.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Sans;-inkscape-font-specification:Sans">copy</tspan></text>
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.60000038px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;writing-mode:lr-tb;text-anchor:start">copy</tspan></text>
+
 <g
    id="g4019-5-9-7-1-0-7"
    transform="matrix(0.25025953,0,0,-0.77135019,317.93465,988.86082)"
    style="stroke-width:1.48213542;stroke-miterlimit:4;stroke-dasharray:none" /><text
    xml:space="preserve"
-   style="font-size:9.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
    x="109.93755"
    y="-238.13889"
    id="text4023-1"
-   sodipodi:linespacing="125%"
    transform="scale(1,-1)"><tspan
      sodipodi:role="line"
      id="tspan4025-5"
      x="109.93755"
      y="-238.13889"
-     style="font-size:9.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Sans;-inkscape-font-specification:Sans">merge</tspan></text>
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.60000038px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;writing-mode:lr-tb;text-anchor:start">merge</tspan></text>
+
 <g
    id="g4019-5-9-9-7"
    transform="matrix(1.6266666,0,0,-0.77135019,322.31176,947.33525)"
@@ -1789,17 +1756,17 @@
    y="-187.67374"
    transform="scale(1,-1)" /><text
    xml:space="preserve"
-   style="font-size:9.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
    x="141.93744"
    y="-238.1389"
    id="text4023-9"
-   sodipodi:linespacing="125%"
    transform="scale(1,-1)"><tspan
      sodipodi:role="line"
      id="tspan4025-1"
      x="141.93744"
      y="-238.1389"
-     style="font-size:9.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Sans;-inkscape-font-specification:Sans">merge</tspan></text>
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.60000038px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;writing-mode:lr-tb;text-anchor:start">merge</tspan></text>
+
 <g
    id="g4019-5-9-9-3"
    transform="matrix(1.6266666,0,0,-0.77135019,354.31163,947.33525)"
@@ -1903,17 +1870,17 @@
    y="-187.67375"
    transform="scale(1,-1)" /><text
    xml:space="preserve"
-   style="font-size:9.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
    x="173.93744"
    y="-238.1389"
    id="text4023-4"
-   sodipodi:linespacing="125%"
    transform="scale(1,-1)"><tspan
      sodipodi:role="line"
      id="tspan4025-82"
      x="173.93744"
      y="-238.1389"
-     style="font-size:9.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Sans;-inkscape-font-specification:Sans">merge</tspan></text>
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.60000038px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;writing-mode:lr-tb;text-anchor:start">merge</tspan></text>
+
 <g
    id="g4019-5-9-9-36"
    transform="matrix(1.6266666,0,0,-0.77135019,386.31163,947.33525)"
@@ -2188,17 +2155,17 @@
    y="-187.67371"
    transform="scale(1,-1)" /><text
    xml:space="preserve"
-   style="font-size:9.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
    x="333.93768"
    y="-238.13899"
    id="text4023-5-43"
-   sodipodi:linespacing="125%"
    transform="scale(1,-1)"><tspan
      sodipodi:role="line"
      id="tspan4025-4-1"
      x="333.93768"
      y="-238.13899"
-     style="font-size:9.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Sans;-inkscape-font-specification:Sans">merge</tspan></text>
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.60000038px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;writing-mode:lr-tb;text-anchor:start">merge</tspan></text>
+
 <g
    id="g4019-5-9-9-9-3"
    transform="matrix(1.6266666,0,0,-0.77135019,538.3432,946.93503)"

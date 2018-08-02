@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'spmv_behavior.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{462.49155225bp}%
+    \setlength{\unitlength}{447.61286445bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,22 +50,40 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.45587365)%
-    \put(0,0){\includegraphics[width=\unitlength]{spmv_behavior.pdf}}%
-    \put(0.18500354,0.39403426){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{L2 (II = 3)}}}%
-    \put(0.17351331,0.34185801){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{\small columnIndex[]}}}%
-    \put(0.17108161,0.25368465){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{\small y[]}}}%
-    \put(0.28624361,0.43922459){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{L1 Iteration 1}}}%
-    \put(0.69107554,0.44095445){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{L1 Iteration 3}}}%
-    \put(0.32955527,0.08635343){\makebox(0,0)[b]{\smash{\tiny columnIndex[]}}}%
-    \put(0.43126319,0.04518693){\makebox(0,0)[b]{\smash{x[]}}}%
-    \put(0.23441829,0.11229985){\makebox(0,0)[rb]{\smash{k}}}%
-    \put(0.43334099,0.11229983){\makebox(0,0)[b]{\smash{\scriptsize values[]}}}%
-    \put(0.75991777,0.07113328){\makebox(0,0)[b]{\smash{y[]}}}%
-    \put(0.68588601,0.08738199){\makebox(0,0)[rb]{\smash{i}}}%
-    \put(0.17387669,0.32245719){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{\small values[]}}}%
-    \put(0.17387668,0.30451308){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{\small x[]}}}%
-    \put(0.47658481,0.43922479){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{L1 Iteration 2}}}%
-    \put(0.90902518,0.43922479){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{L1 Iteration 4}}}%
+  \begin{picture}(1,0.63712077)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{spmv_behavior.pdf}}%
+    \put(0.76387049,0.63712077){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0.88748476,0.52220637){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0.21086647,0.38166797){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}L2 (II = 3)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{spmv_behavior.pdf}}%
+    \put(0.19973631,0.33112679){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}\small columnIndex[]\end{tabular}}}}%
+    \put(0.19738082,0.24571656){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}\small y[]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{spmv_behavior.pdf}}%
+    \put(0.30893394,0.42544215){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}L1 Iteration 1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{spmv_behavior.pdf}}%
+    \put(0.70107948,0.42711781){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}L1 Iteration 3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{spmv_behavior.pdf}}%
+    \put(0.35088832,0.08362907){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}\tiny columnIndex[]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{spmv_behavior.pdf}}%
+    \put(0.44940898,0.04375262){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}x[]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{spmv_behavior.pdf}}%
+    \put(0.25873269,0.1087624){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}k\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{spmv_behavior.pdf}}%
+    \put(0.45142166,0.10876238){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}\scriptsize values[]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{spmv_behavior.pdf}}%
+    \put(0.76776437,0.06888588){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}y[]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{spmv_behavior.pdf}}%
+    \put(0.69605257,0.0846254){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}i\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{spmv_behavior.pdf}}%
+    \put(0.20008831,0.31233394){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}\small values[]\end{tabular}}}}%
+    \put(0.2000883,0.29495216){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}\small x[]\end{tabular}}}}%
+    \put(0.04319266,0.48328758){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{spmv_behavior.pdf}}%
+    \put(0.49331034,0.42544234){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}L1 Iteration 2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{spmv_behavior.pdf}}%
+    \put(0.91219913,0.42544234){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}L1 Iteration 4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{spmv_behavior.pdf}}%
   \end{picture}%
 \endgroup%

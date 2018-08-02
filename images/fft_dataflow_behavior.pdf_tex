@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'fft_dataflow_behavior.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{464.1748269bp}%
+    \setlength{\unitlength}{425.16728137bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,13 +50,19 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.3980539)%
-    \put(0,0){\includegraphics[width=\unitlength]{fft_dataflow_behavior.pdf}}%
-    \put(0.13686502,0.35591737){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{input}}}%
-    \put(0.13686502,0.02845457){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{output}}}%
-    \put(0.13753153,0.32603683){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{bit\_reverse}}}%
-    \put(0.13753153,0.25250806){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{fft\_stage\_one}}}%
-    \put(0.13744822,0.16633363){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{fft\_stage\_two}}}%
-    \put(0.13686502,0.08015922){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{fft\_stage\_three}}}%
+  \begin{picture}(1,0.67324866)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{fft_dataflow_behavior.pdf}}%
+    \put(0.73661494,0.67324866){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0.86675509,0.55226766){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0.11656688,0.36395857){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}input\end{tabular}}}}%
+    \put(0.11656688,0.02879639){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}output\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{fft_dataflow_behavior.pdf}}%
+    \put(0.11724906,0.33337546){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}bit\_reverse\end{tabular}}}}%
+    \put(0.11724906,0.25811787){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}fft\_stage 1\end{tabular}}}}%
+    \put(0.1171638,0.1699173){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}fft\_stage 2\end{tabular}}}}%
+    \put(0.11656688,0.08171673){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}fft\_stage 3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{fft_dataflow_behavior.pdf}}%
   \end{picture}%
 \endgroup%

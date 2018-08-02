@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'dft_behavior3.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{368.26705933bp}%
+    \setlength{\unitlength}{402.73011088bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,15 +50,22 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.40940165)%
-    \put(0,0){\includegraphics[width=\unitlength]{dft_behavior3.pdf}}%
-    \put(0.66871867,0.02715394){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Latency = 8}}}%
-    \put(0.64156447,0.38558948){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Interval = 3}}}%
-    \put(0.12020369,0.02715394){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Latency = 8}}}%
-    \put(0.11474456,0.39066524){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Interval = 8}}}%
-    \put(0.08759035,0.32549515){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{V\_in[]}}}%
-    \put(0.08759035,0.08653799){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{V\_out[i]}}}%
-    \put(0.64156447,0.32585022){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{V\_in[]}}}%
-    \put(0.64156447,0.08689293){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{V\_out[i]}}}%
+  \begin{picture}(1,0.35582162)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{dft_behavior3.pdf}}%
+    \put(0,0.35582162){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0.71600087,0.02327839){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Latency = 8\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{dft_behavior3.pdf}}%
+    \put(0.69272226,0.33055613){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Interval = 3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{dft_behavior3.pdf}}%
+    \put(0.24577281,0.02327839){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Latency = 8\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{dft_behavior3.pdf}}%
+    \put(0.24109283,0.33490746){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Interval = 8\end{tabular}}}}%
+    \put(0.21781422,0.27903878){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}V\_in[]\end{tabular}}}}%
+    \put(0.21781422,0.07418684){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}V\_out[i]\end{tabular}}}}%
+    \put(0.69272226,0.27934318){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}V\_in[]\end{tabular}}}}%
+    \put(0.69272226,0.07449112){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}V\_out[i]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{dft_behavior3.pdf}}%
   \end{picture}%
 \endgroup%

@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'fftstages.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{458.66866152bp}%
+    \setlength{\unitlength}{430.00187018bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,21 +50,24 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.11262215)%
-    \put(0,0){\includegraphics[width=\unitlength]{fftstages.pdf}}%
-    \put(0.12443247,0.05563152){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{bit\_reverse}}}%
-    \put(0.36080286,0.05563152){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{fft\_stage\_one}}}%
-    \put(0.5948571,0.05563152){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{fft\_stage\_two}}}%
-    \put(0.82984201,0.05563152){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{fft\_stage\_three}}}%
-    \put(0.19272904,0.08797198){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Stage1\_R[]}}}%
-    \put(0.19211984,0.04167268){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Stage1\_I[]}}}%
-    \put(0.43023167,0.08690353){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Stage2\_R[]}}}%
-    \put(0.42962247,0.0406042){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Stage2\_I[]}}}%
-    \put(0.00215318,0.08812192){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{X\_R[]}}}%
-    \put(0.00154397,0.04182262){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{X\_I[]}}}%
-    \put(0.89879609,0.08677578){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{OUT\_R[]}}}%
-    \put(0.89818689,0.04047645){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{OUT\_I[]}}}%
-    \put(0.66206193,0.08690351){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Stage3\_R[]}}}%
-    \put(0.66145273,0.04060421){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Stage3\_I[]}}}%
+  \begin{picture}(1,0.11263603)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{fftstages.pdf}}%
+    \put(-0.17588975,-0.96941168){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{3.04381617\unitlength}\raggedright \end{minipage}}}%
+    \put(0.12443247,0.05564637){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}bit\_reverse\end{tabular}}}}%
+    \put(0.36080286,0.05564637){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}fft\_stage 1\end{tabular}}}}%
+    \put(0.5948571,0.05564637){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}fft\_stage 2\end{tabular}}}}%
+    \put(0.82984201,0.05564637){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}fft\_stage 3\end{tabular}}}}%
+    \put(0.19272904,0.08798683){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Stage1\_R[]\end{tabular}}}}%
+    \put(0.19211984,0.04168753){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Stage1\_I[]\end{tabular}}}}%
+    \put(0.43023167,0.08691838){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Stage2\_R[]\end{tabular}}}}%
+    \put(0.42962247,0.04061905){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Stage2\_I[]\end{tabular}}}}%
+    \put(0.00215318,0.08813677){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}X\_R[]\end{tabular}}}}%
+    \put(0.00154397,0.04183747){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}X\_I[]\end{tabular}}}}%
+    \put(0.89879609,0.08679063){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}OUT\_R[]\end{tabular}}}}%
+    \put(0.89818689,0.0404913){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}OUT\_I[]\end{tabular}}}}%
+    \put(0.66206193,0.08691836){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Stage3\_R[]\end{tabular}}}}%
+    \put(0.66145273,0.04061906){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Stage3\_I[]\end{tabular}}}}%
   \end{picture}%
 \endgroup%

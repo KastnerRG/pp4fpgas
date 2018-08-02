@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'video_syncs.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{352.39609375bp}%
+    \setlength{\unitlength}{335.01990581bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,15 +50,22 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.57000098)%
-    \put(0,0){\includegraphics[width=\unitlength]{video_syncs.pdf}}%
-    \put(0.1091363,0.02270175){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{147}}}%
-    \put(0.48808714,0.02270175){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{1920}}}%
-    \put(0.05121889,0.02270175){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{44}}}%
-    \put(0.84461628,0.02270175){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{89}}}%
-    \put(0.93077082,0.24971902){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{1080}}}%
-    \put(0.93077082,0.48808715){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{37}}}%
-    \put(0.93077082,0.09080693){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{3}}}%
-    \put(0.93077082,0.53349061){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{5}}}%
+  \begin{picture}(1,0.56208602)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0.11203995,0.02238675){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}147\end{tabular}}}}%
+    \put(0,0.40534958){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{video_syncs.pdf}}%
+    \put(0.36303042,0.04358403){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\textbf{ }\end{tabular}}}}%
+    \put(0.48573266,0.02238675){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}1920\end{tabular}}}}%
+    \put(0.05492618,0.02238675){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}44\end{tabular}}}}%
+    \put(0.83731479,0.02238675){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}89\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{video_syncs.pdf}}%
+    \put(0.92227389,0.24625404){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}1080\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{video_syncs.pdf}}%
+    \put(0.92227389,0.4813147){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}37\end{tabular}}}}%
+    \put(0.92227389,0.08954694){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.92227389,0.52608816){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}5\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{video_syncs.pdf}}%
   \end{picture}%
 \endgroup%

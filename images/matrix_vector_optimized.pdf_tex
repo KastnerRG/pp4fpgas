@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'matrix_vector_optimized.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{474.10005407bp}%
+    \setlength{\unitlength}{448.35387687bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,31 +50,50 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.52797499)%
-    \put(0,0){\includegraphics[width=\unitlength]{matrix_vector_optimized.pdf}}%
-    \put(0.13036239,0.4195657){\makebox(0,0)[rb]{\smash{V\_In[1]}}}%
-    \put(0.13036239,0.36050644){\makebox(0,0)[rb]{\smash{V\_In[2]}}}%
-    \put(0.13036239,0.30144718){\makebox(0,0)[rb]{\smash{V\_In[3]}}}%
-    \put(0.13036239,0.24238791){\makebox(0,0)[rb]{\smash{V\_In[4]}}}%
-    \put(0.13036239,0.18332865){\makebox(0,0)[rb]{\smash{V\_In[5]}}}%
-    \put(0.13036239,0.12426929){\makebox(0,0)[rb]{\smash{V\_In[6]}}}%
-    \put(0.13036239,0.06521003){\makebox(0,0)[rb]{\smash{V\_In[7]}}}%
-    \put(0.59908238,0.25409915){\makebox(0,0)[lb]{\smash{V\_Out[]}}}%
-    \put(0.12998307,0.47852439){\makebox(0,0)[rb]{\smash{V\_In[0]}}}%
-    \put(0.19207771,0.4248667){\makebox(0,0)[b]{\smash{M[][0]}}}%
-    \put(0.19207771,0.30674813){\makebox(0,0)[b]{\smash{M[][2]}}}%
-    \put(0.19207771,0.36580745){\makebox(0,0)[b]{\smash{M[][1]}}}%
-    \put(0.19207771,0.24768887){\makebox(0,0)[b]{\smash{M[][3]}}}%
-    \put(0.19207771,0.18862961){\makebox(0,0)[b]{\smash{M[][4]}}}%
-    \put(0.19207771,0.12957041){\makebox(0,0)[b]{\smash{M[][5]}}}%
-    \put(0.19207771,0.07051116){\makebox(0,0)[b]{\smash{M[][6]}}}%
-    \put(0.19207771,0.01145189){\makebox(0,0)[b]{\smash{M[][7]}}}%
-    \put(0.00342755,0.51227254){\makebox(0,0)[rb]{\smash{i}}}%
-    \put(0.77874336,0.43612791){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Loop Interval = 1}}}%
-    \put(0.78054448,0.06004688){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Loop Latency = 6}}}%
-    \put(0.76564243,0.38459852){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{V\_in[]}}}%
-    \put(0.76367041,0.11066914){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{V\_out[i]}}}%
-    \put(0.78047869,0.01364341){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Function Latency = 13}}}%
-    \put(0.77626018,0.48021177){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Function Interval = 13}}}%
+  \begin{picture}(1,0.72918661)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0.68067807,0.72918661){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0.12996543,0.41591783){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}V\_In[1]\end{tabular}}}}%
+    \put(0.12996543,0.35737033){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}V\_In[2]\end{tabular}}}}%
+    \put(0.12996543,0.29882282){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}V\_In[3]\end{tabular}}}}%
+    \put(0.12996543,0.24027532){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}V\_In[4]\end{tabular}}}}%
+    \put(0.12996543,0.18172782){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}V\_In[5]\end{tabular}}}}%
+    \put(0.12996543,0.12318022){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}V\_In[6]\end{tabular}}}}%
+    \put(0.12996543,0.06463271){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}V\_In[7]\end{tabular}}}}%
+    \put(0.59462387,0.25188507){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}V\_Out[]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{matrix_vector_optimized.pdf}}%
+    \put(0.1295894,0.47436563){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}V\_In[0]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{matrix_vector_optimized.pdf}}%
+    \put(0.19114598,0.4211729){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}M[][0]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{matrix_vector_optimized.pdf}}%
+    \put(0.19114598,0.30407784){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}M[][2]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{matrix_vector_optimized.pdf}}%
+    \put(0.19114598,0.3626254){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}M[][1]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{matrix_vector_optimized.pdf}}%
+    \put(0.19114598,0.24553034){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}M[][3]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{matrix_vector_optimized.pdf}}%
+    \put(0.19114598,0.18698285){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}M[][4]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{matrix_vector_optimized.pdf}}%
+    \put(0.19114598,0.1284354){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}M[][5]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{matrix_vector_optimized.pdf}}%
+    \put(0.19114598,0.06988791){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}M[][6]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{matrix_vector_optimized.pdf}}%
+    \put(0.19114598,0.01134041){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}M[][7]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{matrix_vector_optimized.pdf}}%
+    \put(0.80408804,0.61446213){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{matrix_vector_optimized.pdf}}%
+    \put(0.00413051,0.50782134){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}i\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{matrix_vector_optimized.pdf}}%
+    \put(0.77272805,0.43233652){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Loop Interval = 1\end{tabular}}}}%
+    \put(0.77451357,0.05951431){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Loop Latency = 6\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{matrix_vector_optimized.pdf}}%
+    \put(0.75974064,0.38125365){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}V\_in[]\end{tabular}}}}%
+    \put(0.75778571,0.10969792){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}V\_out[i]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{matrix_vector_optimized.pdf}}%
+    \put(0.77444835,0.01351293){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Function Latency = 13\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{matrix_vector_optimized.pdf}}%
+    \put(0.77026639,0.47603839){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Function Interval = 13\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{matrix_vector_optimized.pdf}}%
   \end{picture}%
 \endgroup%

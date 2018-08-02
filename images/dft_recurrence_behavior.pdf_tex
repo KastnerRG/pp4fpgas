@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'dft_recurrence_behavior.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{462.39863281bp}%
+    \setlength{\unitlength}{450.44329834bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,27 +50,49 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.22156714)%
-    \put(0,0){\includegraphics[width=\unitlength]{dft_recurrence_behavior.pdf}}%
-    \put(0.10813181,0.09692749){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{sin/cos}}}%
-    \put(0.09515599,0.11422858){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{double}}}%
-    \put(0.10813181,0.13152967){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{int to double}}}%
-    \put(0.11135749,0.15267926){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{sample[i]}}}%
-    \put(0.10813181,0.01042205){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{sample[i]}}}%
-    \put(0.09515599,0.04502423){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{double}}}%
-    \put(0.09515599,0.0796264){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{double}}}%
-    \put(0.19031198,0.19208348){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Loop Interval = 4}}}%
-    \put(0.09515599,0.02772314){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{double}}}%
-    \put(0.09515599,0.06232532){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{double}}}%
-    \put(0.87010329,0.18613117){\makebox(0,0)[lb]{\smash{temp\_real[0]}}}%
-    \put(0.87010329,0.16017964){\makebox(0,0)[lb]{\smash{temp\_real[1]}}}%
-    \put(0.87010329,0.134228){\makebox(0,0)[lb]{\smash{temp\_real[2]}}}%
-    \put(0.87010329,0.10827637){\makebox(0,0)[lb]{\smash{temp\_real[3]}}}%
-    \put(0.87010329,0.08232463){\makebox(0,0)[lb]{\smash{temp\_real[4]}}}%
-    \put(0.87010329,0.056373){\makebox(0,0)[lb]{\smash{temp\_real[5]}}}%
-    \put(0.87010329,0.03042136){\makebox(0,0)[lb]{\smash{temp\_real[6]}}}%
-    \put(0.87010329,0.00446973){\makebox(0,0)[lb]{\smash{temp\_real[7]}}}%
-    \put(0.66264354,0.20546733){\makebox(0,0)[lb]{\smash{j}}}%
-    \put(0.63864673,0.17970831){\makebox(0,0)[lb]{\smash{i}}}%
+  \begin{picture}(1,0.30323888)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{dft_recurrence_behavior.pdf}}%
+    \put(0.11501609,0.09333416){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}sin/cos\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{dft_recurrence_behavior.pdf}}%
+    \put(0.10252839,0.10998443){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}double\end{tabular}}}}%
+    \put(0.11501609,0.12663469){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}int to double\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{dft_recurrence_behavior.pdf}}%
+    \put(0.00766604,0.30323888){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0.11812043,0.14698868){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}sample[i]\end{tabular}}}}%
+    \put(0.11501609,0.01008284){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}sample[i]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{dft_recurrence_behavior.pdf}}%
+    \put(0.10252839,0.04338337){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}double\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{dft_recurrence_behavior.pdf}}%
+    \put(0.10252839,0.0766839){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}double\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{dft_recurrence_behavior.pdf}}%
+    \put(0.19410485,0.18491062){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}Loop Interval = 4\end{tabular}}}}%
+    \put(0.65668926,0.29979032){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{dft_recurrence_behavior.pdf}}%
+    \put(0.10252839,0.02673311){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}double\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{dft_recurrence_behavior.pdf}}%
+    \put(0.10252839,0.06003363){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}double\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{dft_recurrence_behavior.pdf}}%
+    \put(0.84832406,0.17918221){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}temp\_real[0]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{dft_recurrence_behavior.pdf}}%
+    \put(0.84832406,0.15420692){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}temp\_real[1]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{dft_recurrence_behavior.pdf}}%
+    \put(0.84832406,0.12923152){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}temp\_real[2]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{dft_recurrence_behavior.pdf}}%
+    \put(0.84832406,0.10425612){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}temp\_real[3]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{dft_recurrence_behavior.pdf}}%
+    \put(0.84832406,0.07928062){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}temp\_real[4]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{dft_recurrence_behavior.pdf}}%
+    \put(0.84832406,0.05430523){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}temp\_real[5]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{dft_recurrence_behavior.pdf}}%
+    \put(0.84832406,0.02932983){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}temp\_real[6]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{dft_recurrence_behavior.pdf}}%
+    \put(0.84832406,0.00435443){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}temp\_real[7]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{dft_recurrence_behavior.pdf}}%
+    \put(0.64866845,0.19779099){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}j\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{dft_recurrence_behavior.pdf}}%
+    \put(0.62557433,0.17300096){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}i\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{dft_recurrence_behavior.pdf}}%
   \end{picture}%
 \endgroup%

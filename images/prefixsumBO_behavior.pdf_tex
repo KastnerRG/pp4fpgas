@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'prefixsumBO_behavior.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{90.44765625bp}%
+    \setlength{\unitlength}{133.89685893bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,11 +50,17 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.70768929)%
-    \put(0,0){\includegraphics[width=\unitlength]{prefixsumBO_behavior.pdf}}%
-    \put(0.21168148,0.63140208){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Loop Interval = 2}}}%
-    \put(0.06633671,0.28755733){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{In}}}%
-    \put(0,0.02220995){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Out}}}%
-    \put(-0.00470317,0.20029605){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Out}}}%
+  \begin{picture}(1,0.5521054)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{prefixsumBO_behavior.pdf}}%
+    \put(0,0.5521054){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0.41117151,0.39979437){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Loop Interval = 2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{prefixsumBO_behavior.pdf}}%
+    \put(0.31912706,0.18204315){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}In\end{tabular}}}}%
+    \put(0.27711711,0.01400302){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Out\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{prefixsumBO_behavior.pdf}}%
+    \put(0.27413867,0.12678202){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Out\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{prefixsumBO_behavior.pdf}}%
   \end{picture}%
 \endgroup%

@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'spmv_partial_unroll.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{287.03480008bp}%
+    \setlength{\unitlength}{269.14225197bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,9 +50,14 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.47750311)%
-    \put(0,0){\includegraphics[width=\unitlength]{spmv_partial_unroll.pdf}}%
-    \put(0.83613555,0.25836592){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
-    \put(0.20903389,0.45346422){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{0}}}%
+  \begin{picture}(1,0.47830465)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0.88189855,0.21756656){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{spmv_partial_unroll.pdf}}%
+    \put(0.83598914,0.25843842){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{spmv_partial_unroll.pdf}}%
+    \put(0.20899729,0.45350255){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{spmv_partial_unroll.pdf}}%
   \end{picture}%
 \endgroup%

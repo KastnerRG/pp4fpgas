@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'filter_one_sample.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{272.6478755bp}%
+    \setlength{\unitlength}{267.35897957bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,14 +50,16 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.47744227)%
-    \put(0,0){\includegraphics[width=\unitlength]{filter_one_sample.pdf}}%
-    \put(-0.00335082,0.43799627){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{input($n$)
-}}}%
-    \put(0.2105003,0.06774495){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.36678374\unitlength}\raggedright \small To Register Resets and Clock Enables\end{minipage}}}%
-    \put(0.366241,0.08813935){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lb]{\smash{taps[]
-}}}}%
-    \put(0.74356399,0.05669802){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{output($n$)
-}}}%
+  \begin{picture}(1,0.45784615)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{filter_one_sample.pdf}}%
+    \put(-0.00412219,0.42072286){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}input($n$)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{filter_one_sample.pdf}}%
+    \put(0.20032923,0.0667457){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.35066199\unitlength}\raggedright \small To Register Resets and Clock Enables\end{minipage}}}%
+    \put(0.34922445,0.08624368){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}taps[]\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{filter_one_sample.pdf}}%
+    \put(0.70996245,0.05618434){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}output($n$)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{filter_one_sample.pdf}}%
   \end{picture}%
 \endgroup%

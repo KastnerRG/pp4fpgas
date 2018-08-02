@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'filter2d_results_boundary_conditions.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{456bp}%
+    \setlength{\unitlength}{436.48011088bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,11 +50,16 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.28675987)%
-    \put(0,0){\includegraphics[width=\unitlength]{filter2d_results_boundary_conditions.pdf}}%
-    \put(0,0.00605811){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{a) Original input}}}%
-    \put(0.25438596,0.00605811){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{b) Zero extension}}}%
-    \put(0.50877193,0.00605811){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{c) Constant extension}}}%
-    \put(0.76315789,0.00605811){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{d) Reflect extension}}}%
+  \begin{picture}(1,0.28086009)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0.23973605){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{filter2d_results_boundary_conditions.pdf}}%
+    \put(0.02770093,0.02585004){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0.02057393,0.00593347){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}a) Original input\end{tabular}}}}%
+    \put(0.26972618,0.00593347){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}b) Zero extension\end{tabular}}}}%
+    \put(0.51887842,0.00593347){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}c) Constant extension\end{tabular}}}}%
+    \put(0.76803067,0.00593347){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}d) Reflect extension\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{filter2d_results_boundary_conditions.pdf}}%
   \end{picture}%
 \endgroup%

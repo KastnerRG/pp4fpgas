@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'prefixsum_unrolled_behavior.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{120.6203125bp}%
+    \setlength{\unitlength}{139.78198242bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,17 +50,27 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,1.13092721)%
-    \put(0,0){\includegraphics[width=\unitlength]{prefixsum_unrolled_behavior.pdf}}%
-    \put(0.40887599,1.07372291){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Loop Interval = 2}}}%
-    \put(0.54154307,0.82912144){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{\small In[i*4+0]}}}%
-    \put(0.53733953,0.23557748){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{\small Out[i*4+0]}}}%
-    \put(0.54204179,0.56471673){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{\small Out[i*4+3]}}}%
-    \put(0.54154307,0.76344207){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{\small In[i*4+1]}}}%
-    \put(0.54154307,0.69711825){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{\small In[i*4+2]}}}%
-    \put(0.54154307,0.63079443){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{\small In[i*4+3]}}}%
-    \put(0.53733953,0.16925366){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{\small Out[i*4+1]}}}%
-    \put(0.53733964,0.10292984){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{\small Out[i*4+2]}}}%
-    \put(0.53733964,0.03660602){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{\small Out[i*4+3]}}}%
+  \begin{picture}(1,0.94468669)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{prefixsum_unrolled_behavior.pdf}}%
+    \put(0.18394204,0.94468669){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0.43596246,0.86856629){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Loop Interval = 2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{prefixsum_unrolled_behavior.pdf}}%
+    \put(0.54328815,0.67068734){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}\small In[i*4+0]\end{tabular}}}}%
+    \put(0.53988756,0.19051912){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}\small Out[i*4+0]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{prefixsum_unrolled_behavior.pdf}}%
+    \put(0.54369161,0.45678787){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}\small Out[i*4+3]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{prefixsum_unrolled_behavior.pdf}}%
+    \put(0.54328815,0.61755371){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}\small In[i*4+1]\end{tabular}}}}%
+    \put(0.54328815,0.56389873){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}\small In[i*4+2]\end{tabular}}}}%
+    \put(0.54328815,0.51024375){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}\small In[i*4+3]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{prefixsum_unrolled_behavior.pdf}}%
+    \put(0.53988756,0.13686414){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}\small Out[i*4+1]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{prefixsum_unrolled_behavior.pdf}}%
+    \put(0.53988764,0.08320915){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}\small Out[i*4+2]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{prefixsum_unrolled_behavior.pdf}}%
+    \put(0.53988764,0.02955417){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}\small Out[i*4+3]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{prefixsum_unrolled_behavior.pdf}}%
   \end{picture}%
 \endgroup%

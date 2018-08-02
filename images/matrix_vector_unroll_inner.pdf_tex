@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'matrix_vector_unroll_inner.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{271.22851562bp}%
+    \setlength{\unitlength}{293.95406342bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,24 +50,27 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.80788375)%
-    \put(0,0){\includegraphics[width=\unitlength]{matrix_vector_unroll_inner.pdf}}%
-    \put(0.15232341,0.77567353){\makebox(0,0)[rb]{\smash{V\_In[0]}}}%
-    \put(0.15232341,0.7314304){\makebox(0,0)[rb]{\smash{M[i][0]}}}%
-    \put(0.15232341,0.67243955){\makebox(0,0)[rb]{\smash{V\_In[1]}}}%
-    \put(0.15232341,0.62819641){\makebox(0,0)[rb]{\smash{M[i][1]}}}%
-    \put(0.15232341,0.56920557){\makebox(0,0)[rb]{\smash{V\_In[2]}}}%
-    \put(0.15232341,0.52496243){\makebox(0,0)[rb]{\smash{M[i][2]}}}%
-    \put(0.15232341,0.46597158){\makebox(0,0)[rb]{\smash{V\_In[3]}}}%
-    \put(0.15232341,0.42172845){\makebox(0,0)[rb]{\smash{M[i][3]}}}%
-    \put(0.15232341,0.3627376){\makebox(0,0)[rb]{\smash{V\_In[4]}}}%
-    \put(0.15232341,0.31849446){\makebox(0,0)[rb]{\smash{M[i][4]}}}%
-    \put(0.15232341,0.25950362){\makebox(0,0)[rb]{\smash{V\_In[5]}}}%
-    \put(0.15232341,0.21526037){\makebox(0,0)[rb]{\smash{M[i][5]}}}%
-    \put(0.15232341,0.15626958){\makebox(0,0)[rb]{\smash{V\_In[6]}}}%
-    \put(0.15232341,0.11202644){\makebox(0,0)[rb]{\smash{M[i][6]}}}%
-    \put(0.15232341,0.05303559){\makebox(0,0)[rb]{\smash{V\_In[7]}}}%
-    \put(0.15232341,0.00879246){\makebox(0,0)[rb]{\smash{M[i][7]}}}%
-    \put(0.83071816,0.37748531){\makebox(0,0)[lb]{\smash{V\_Out[i]}}}%
+  \begin{picture}(1,0.69977157)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(1,0.53121562){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0.16702576,0.67069437){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}V\_In[0]\end{tabular}}}}%
+    \put(0.16702576,0.63242308){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}M[i][0]\end{tabular}}}}%
+    \put(0.16702576,0.5813947){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}V\_In[1]\end{tabular}}}}%
+    \put(0.16702576,0.54312341){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}M[i][1]\end{tabular}}}}%
+    \put(0.16702576,0.49209503){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}V\_In[2]\end{tabular}}}}%
+    \put(0.16702576,0.45382375){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}M[i][2]\end{tabular}}}}%
+    \put(0.16702576,0.40279537){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}V\_In[3]\end{tabular}}}}%
+    \put(0.16702576,0.36452408){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}M[i][3]\end{tabular}}}}%
+    \put(0.16702576,0.3134957){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}V\_In[4]\end{tabular}}}}%
+    \put(0.16702576,0.27522441){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}M[i][4]\end{tabular}}}}%
+    \put(0.16702576,0.22419603){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}V\_In[5]\end{tabular}}}}%
+    \put(0.16702576,0.18592465){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}M[i][5]\end{tabular}}}}%
+    \put(0.16702576,0.13489632){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}V\_In[6]\end{tabular}}}}%
+    \put(0.16702576,0.09662503){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}M[i][6]\end{tabular}}}}%
+    \put(0.16702576,0.04559665){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}V\_In[7]\end{tabular}}}}%
+    \put(0.16702576,0.00732536){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}M[i][7]\end{tabular}}}}%
+    \put(0.75385214,0.32625279){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}V\_Out[i]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{matrix_vector_unroll_inner.pdf}}%
   \end{picture}%
 \endgroup%

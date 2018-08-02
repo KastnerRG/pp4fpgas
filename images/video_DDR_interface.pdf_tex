@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'video_DDR_interface.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{455.27415169bp}%
+    \setlength{\unitlength}{433.92934582bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,17 +50,29 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.3421065)%
-    \put(0,0){\includegraphics[width=\unitlength]{video_DDR_interface.pdf}}%
-    \put(0.36309753,0.1398876){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{AXI Interconnect}}}%
-    \put(0.4371545,0.05670218){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{External}}}%
-    \put(0.31372625,0.23040161){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Accelerator 1}}}%
-    \put(0.52766846,0.23040161){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Accelerator 2}}}%
-    \put(0.10636684,0.23040161){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Video Input}}}%
-    \put(0.74983928,0.23040161){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Video Output}}}%
-    \put(0.4371545,0.02378793){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Memory}}}%
-    \put(-0.00045,0.25249017){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{HDMI}}}%
-    \put(0.93041735,0.25411018){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{HDMI}}}%
-    \put(0.03665212,0.30192842){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textit{Dataflow}}}}%
+  \begin{picture}(1,0.34351144)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{video_DDR_interface.pdf}}%
+    \put(0,0.28156499){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{video_DDR_interface.pdf}}%
+    \put(0.37353303,0.14556172){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}AXI Interconnect\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{video_DDR_interface.pdf}}%
+    \put(0.44637659,0.06373928){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}External\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{video_DDR_interface.pdf}}%
+    \put(0.32497069,0.23459268){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Accelerator 1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{video_DDR_interface.pdf}}%
+    \put(0.5354075,0.23459268){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Accelerator 2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{video_DDR_interface.pdf}}%
+    \put(0.1210088,0.23459268){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Video Input\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{video_DDR_interface.pdf}}%
+    \put(0.75393811,0.23459268){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Video Output\end{tabular}}}}%
+    \put(0.55571811,0){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0.44637659,0.03136431){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Memory\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{video_DDR_interface.pdf}}%
+    \put(0.01594214,0.25631932){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}HDMI\end{tabular}}}}%
+    \put(0.93155744,0.25791279){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}HDMI\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{video_DDR_interface.pdf}}%
+    \put(0.05243635,0.30494754){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\textit{Dataflow}\end{tabular}}}}%
   \end{picture}%
 \endgroup%

@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'merge_sort_restructured_behavior.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{398.26861952bp}%
+    \setlength{\unitlength}{373.23223385bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,19 +50,31 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.31314088)%
-    \put(0,0){\includegraphics[width=\unitlength]{merge_sort_restructured_behavior.pdf}}%
-    \put(0.08569906,0.19000434){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{merge}}}%
-    \put(0.24874668,0.24407628){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{merge\_arrays}}}%
-    \put(0.70471994,0.24407628){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{merge\_arrays}}}%
-    \put(0.79980374,0.29429365){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{width = 2 }}}%
-    \put(0.60795933,0.19000457){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{merge}}}%
-    \put(0.45590147,0.24206777){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{copy}}}%
-    \put(0.30142971,0.29581589){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{width=1}}}%
-    \put(0.87857825,0.2429187){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{copy}}}%
-    \put(0.16604652,0.19000434){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{merge}}}%
-    \put(0.24639401,0.19000438){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{merge}}}%
-    \put(0.32674179,0.19000438){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{merge}}}%
-    \put(0.72848131,0.19000461){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{merge}}}%
+  \begin{picture}(1,0.31387849)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{merge_sort_restructured_behavior.pdf}}%
+    \put(0.08573226,0.18970521){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}merge\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{merge_sort_restructured_behavior.pdf}}%
+    \put(0.24884305,0.2437981){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}merge\_arrays\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{merge_sort_restructured_behavior.pdf}}%
+    \put(0.70499296,0.2437981){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}merge\_arrays\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{merge_sort_restructured_behavior.pdf}}%
+    \put(0.8001136,0.29403492){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}width = 2 \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{merge_sort_restructured_behavior.pdf}}%
+    \put(0.60819487,0.18970544){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}merge\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{merge_sort_restructured_behavior.pdf}}%
+    \put(0.45607809,0.24178881){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}copy\end{tabular}}}}%
+    \put(0.30154649,0.29555775){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}width=1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{merge_sort_restructured_behavior.pdf}}%
+    \put(0.87891863,0.24264007){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}copy\end{tabular}}}}%
+    \put(0.16611084,0.18970521){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}merge\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{merge_sort_restructured_behavior.pdf}}%
+    \put(0.24648947,0.18970525){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}merge\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{merge_sort_restructured_behavior.pdf}}%
+    \put(0.32686838,0.18970525){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}merge\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{merge_sort_restructured_behavior.pdf}}%
+    \put(0.72876354,0.18970548){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}merge\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{merge_sort_restructured_behavior.pdf}}%
   \end{picture}%
 \endgroup%

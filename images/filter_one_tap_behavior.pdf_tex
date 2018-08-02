@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'filter_one_tap_behavior.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{180bp}%
+    \setlength{\unitlength}{170.23011088bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,11 +50,16 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.76666642)%
-    \put(0,0){\includegraphics[width=\unitlength]{filter_one_tap_behavior.pdf}}%
-    \put(0.29525608,0.72833309){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Task Interval = 1}}}%
-    \put(0.28909576,0.05071183){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Task Latency = 1}}}%
-    \put(0.22222222,0.55555558){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{In}}}%
-    \put(0.18894677,0.19999921){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Out}}}%
+  \begin{picture}(1,0.79774474)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{filter_one_tap_behavior.pdf}}%
+    \put(0,0.79774474){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0.30138366,0.7220004){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Task Interval = 1\end{tabular}}}}%
+    \put(0.29527691,0.0502709){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Task Latency = 1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{filter_one_tap_behavior.pdf}}%
+    \put(0.22898482,0.55072515){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}In\end{tabular}}}}%
+    \put(0.19599869,0.19826026){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Out\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{filter_one_tap_behavior.pdf}}%
   \end{picture}%
 \endgroup%

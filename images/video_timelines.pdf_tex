@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'video_timelines.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{451.87457108bp}%
+    \setlength{\unitlength}{427.2265489bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,11 +50,15 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.35471285)%
-    \put(0,0){\includegraphics[width=\unitlength]{video_timelines.pdf}}%
-    \put(0.03043831,0.30096847){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{In}}}%
-    \put(0.03043831,0.24785639){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{Out}}}%
-    \put(0.03043831,0.11507618){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{In}}}%
-    \put(0.03043831,0.0619641){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{Out}}}%
+  \begin{picture}(1,0.35172875)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0.31786454){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{video_timelines.pdf}}%
+    \put(0.03857464,0.29843651){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}In\end{tabular}}}}%
+    \put(0.03857464,0.24577124){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}Out\end{tabular}}}}%
+    \put(0.03857464,0.11410808){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}In\end{tabular}}}}%
+    \put(0.03857464,0.06144281){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}Out\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{video_timelines.pdf}}%
   \end{picture}%
 \endgroup%

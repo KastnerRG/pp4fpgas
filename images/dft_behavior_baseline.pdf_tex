@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'dft_behavior_baseline.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{439.91640625bp}%
+    \setlength{\unitlength}{419.35693359bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,26 +50,39 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.2900116)%
-    \put(0,0){\includegraphics[width=\unitlength]{dft_behavior_baseline.pdf}}%
-    \put(0.11704849,0.21427078){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{sample[i]}}}%
-    \put(0.11365796,0.02837287){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{sample[i]}}}%
-    \put(0.100019,0.17385506){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{double}}}%
-    \put(0.11365796,0.11929924){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{sin/cos}}}%
-    \put(0.11365796,0.19204033){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{int to double}}}%
-    \put(0.100019,0.08292869){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{double}}}%
-    \put(0.09938107,0.06602629){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{double}}}%
-    \put(0.100019,0.10111396){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{double}}}%
-    \put(0.100019,0.04655814){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{double}}}%
-    \put(0.16366746,0.25932584){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Compute w}}}%
-    \put(0.40007601,0.25568879){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Run inner loop}}}%
-    \put(0.80924465,0.27569247){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Run remaining
-}}}%
-    \put(0.9456342,0.25568879){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Copy Result}}}%
-    \put(0.80924465,0.2575072){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{iterations
-}}}%
-    \put(0.100019,0.13748451){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{double}}}%
-    \put(0.11365796,0.15566978){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{int to double}}}%
-    \put(0.65466983,0.25932573){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Compute w}}}%
+  \begin{picture}(1,0.3781103)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{dft_behavior_baseline.pdf}}%
+    \put(0.00823431,0.3781103){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0.12687654,0.21027749){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}sample[i]\end{tabular}}}}%
+    \put(0.12354208,0.02745395){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}sample[i]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{dft_behavior_baseline.pdf}}%
+    \put(0.11012868,0.17053015){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}double\end{tabular}}}}%
+    \put(0.12354208,0.11687658){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}sin/cos\end{tabular}}}}%
+    \put(0.12354208,0.18841468){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}int to double\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{dft_behavior_baseline.pdf}}%
+    \put(0.11012868,0.08110752){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}double\end{tabular}}}}%
+    \put(0.1095013,0.06448465){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}double\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{dft_behavior_baseline.pdf}}%
+    \put(0.11012868,0.09899205){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}double\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{dft_behavior_baseline.pdf}}%
+    \put(0.11012868,0.04533847){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}double\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{dft_behavior_baseline.pdf}}%
+    \put(0.17272453,0.25458743){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}Compute w\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{dft_behavior_baseline.pdf}}%
+    \put(0.40522336,0.25101052){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}Run inner loop\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{dft_behavior_baseline.pdf}}%
+    \put(0.8076252,0.27068339){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}Run remaining\\ \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{dft_behavior_baseline.pdf}}%
+    \put(0.94175915,0.25101052){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}Copy Result\end{tabular}}}}%
+    \put(0.70536875,0.3744061){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0.8076252,0.25279887){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}iterations\\ \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{dft_behavior_baseline.pdf}}%
+    \put(0.11012868,0.1347611){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}double\end{tabular}}}}%
+    \put(0.12354208,0.15264563){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}int to double\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{dft_behavior_baseline.pdf}}%
+    \put(0.65560673,0.25458732){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}Compute w\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{dft_behavior_baseline.pdf}}%
   \end{picture}%
 \endgroup%

@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'filter_one_tap.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{273.67489868bp}%
+    \setlength{\unitlength}{268.79414474bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,18 +50,21 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.44450625)%
-    \put(0,0){\includegraphics[width=\unitlength]{filter_one_tap.pdf}}%
-    \put(-0.00088365,0.25904945){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{taps[0]
-}}}%
-    \put(0.18912281,0.25904945){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{taps[1]
-}}}%
-    \put(0.37912928,0.25904945){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{taps[2]
-}}}%
-    \put(0.56913574,0.25904945){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{taps[3]}}}%
-    \put(-0.00088365,0.40520827){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{input($n$)
-}}}%
-    \put(0.74452633,0.01057928){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{output($n$)
-}}}%
+  \begin{picture}(1,0.47358741)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{filter_one_tap.pdf}}%
+    \put(0,0.29715035){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}taps[0]\\ \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{filter_one_tap.pdf}}%
+    \put(0.18136556,0.29715035){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}taps[1]\\ \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{filter_one_tap.pdf}}%
+    \put(0.36273112,0.29715035){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}taps[2]\\ \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{filter_one_tap.pdf}}%
+    \put(0.54409667,0.29715035){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}taps[3]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{filter_one_tap.pdf}}%
+    \put(0,0.43666232){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}input($n$)\\ \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{filter_one_tap.pdf}}%
+    \put(0.71151103,0.05997984){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}output($n$)\\ \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{filter_one_tap.pdf}}%
   \end{picture}%
 \endgroup%

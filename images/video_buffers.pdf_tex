@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'video_buffers.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{428.40158622bp}%
+    \setlength{\unitlength}{414.73013312bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,26 +50,36 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.4145679)%
-    \put(0,0){\includegraphics[width=\unitlength]{video_buffers.pdf}}%
-    \put(0.47525866,0.32679613){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{width-1}}}%
-    \put(0.02708104,0.32679613){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{0}}}%
-    \put(0.26984392,0.32679613){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{col}}}%
-    \put(0.34454019,0.14005546){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{pixel\_in[row][col]}}}%
-    \put(0.06442918,0.32679613){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{1}}}%
-    \put(-0.00093006,0.289448){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{0}}}%
-    \put(-0.00093006,0.25209986){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{1}}}%
-    \put(0.21382172,0.32679613){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{col-1}}}%
-    \put(0.30719205,0.32679613){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{col+1}}}%
-    \put(0.01774401,0.21848654){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{line\_buffer}}}%
-    \put(0.12978841,0.18674058){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{0}}}%
-    \put(0.16713655,0.18674058){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{1}}}%
-    \put(0.10177731,0.14939245){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{0}}}%
-    \put(0.10177731,0.11204431){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{1}}}%
-    \put(0.10177731,0.07469618){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{2}}}%
-    \put(0.20448468,0.18674058){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{2}}}%
-    \put(0.12045138,0.04108286){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{window}}}%
-    \put(0.77404373,0.38748685){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lb]{\smash{col}}}}%
-    \put(0.61064564,0.16806656){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{row}}}%
+  \begin{picture}(1,0.40371575)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0.32744222){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{video_buffers.pdf}}%
+    \put(0.49183817,0.31647081){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}width-1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{video_buffers.pdf}}%
+    \put(0.057821,0.31647081){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{video_buffers.pdf}}%
+    \put(0.29291364,0.31647081){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}col\end{tabular}}}}%
+    \put(0.36524983,0.13563032){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}pixel\_in[row][col]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{video_buffers.pdf}}%
+    \put(0.0939891,0.31647081){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.03069493,0.28030272){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.03069493,0.24413462){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.23866149,0.31647081){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}col-1\end{tabular}}}}%
+    \put(0.32908173,0.31647081){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}col+1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{video_buffers.pdf}}%
+    \put(0.04877898,0.21158333){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}line\_buffer\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{video_buffers.pdf}}%
+    \put(0.15728327,0.1808404){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.19345137,0.1808404){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.1301572,0.1446723){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.1301572,0.10850421){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.1301572,0.07233611){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0.22961946,0.1808404){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0.14824124,0.03978482){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}window\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{video_buffers.pdf}}%
+    \put(0.78118295,0.37524397){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}col\end{tabular}}}}}%
+    \put(0.62294753,0.1627564){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}row\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{video_buffers.pdf}}%
   \end{picture}%
 \endgroup%

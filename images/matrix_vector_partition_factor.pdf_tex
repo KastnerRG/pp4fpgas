@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'matrix_vector_partition_factor.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{446.95637486bp}%
+    \setlength{\unitlength}{419.05469022bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,36 +50,58 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.52094551)%
-    \put(0,0){\includegraphics[width=\unitlength]{matrix_vector_partition_factor.pdf}}%
-    \put(0.11495495,0.44146616){\makebox(0,0)[rb]{\smash{V\_In[1]}}}%
-    \put(0.11495495,0.37882023){\makebox(0,0)[rb]{\smash{V\_In[2]}}}%
-    \put(0.11495495,0.31617429){\makebox(0,0)[rb]{\smash{V\_In[3]}}}%
-    \put(0.11495495,0.25352836){\makebox(0,0)[rb]{\smash{V\_In[4]}}}%
-    \put(0.11495495,0.19088242){\makebox(0,0)[rb]{\smash{V\_In[5]}}}%
-    \put(0.11495495,0.1282364){\makebox(0,0)[rb]{\smash{V\_In[6]}}}%
-    \put(0.11495495,0.06559047){\makebox(0,0)[rb]{\smash{V\_In[7]}}}%
-    \put(0.1145526,0.50400541){\makebox(0,0)[rb]{\smash{V\_In[0]}}}%
-    \put(0.18041801,0.45066887){\makebox(0,0)[b]{\smash{M[][0]}}}%
-    \put(0.18041801,0.32537695){\makebox(0,0)[b]{\smash{M[][2]}}}%
-    \put(0.18041801,0.38802294){\makebox(0,0)[b]{\smash{M[][1]}}}%
-    \put(0.18041801,0.26273102){\makebox(0,0)[b]{\smash{M[][3]}}}%
-    \put(0.18041801,0.20008509){\makebox(0,0)[b]{\smash{M[][4]}}}%
-    \put(0.18041801,0.13743921){\makebox(0,0)[b]{\smash{M[][5]}}}%
-    \put(0.18041801,0.0747933){\makebox(0,0)[b]{\smash{M[][6]}}}%
-    \put(0.18041801,0.01214737){\makebox(0,0)[b]{\smash{M[][7]}}}%
-    \put(0.00536965,0.48252659){\makebox(0,0)[rb]{\smash{i}}}%
-    \put(0.40874572,0.36720167){\rotatebox{90}{\makebox(0,0)[lb]{\smash{To Adders}}}}%
-    \put(0.40906757,0.17980895){\rotatebox{90}{\makebox(0,0)[lb]{\smash{To Adders}}}}%
-    \put(0.40929499,0.02685297){\rotatebox{90}{\makebox(0,0)[lb]{\smash{To Adders}}}}%
-    \put(0.81940669,0.2681007){\makebox(0,0)[b]{\smash{M[][0-2]}}}%
-    \put(0.81940669,0.14280874){\makebox(0,0)[b]{\smash{M[][6-7]}}}%
-    \put(0.81940669,0.20545477){\makebox(0,0)[b]{\smash{M[][3-5]}}}%
-    \put(0.70163439,0.34649551){\makebox(0,0)[rb]{\smash{i,j\%3}}}%
-    \put(0.99972926,0.17980895){\rotatebox{90}{\makebox(0,0)[lb]{\smash{To Adders}}}}%
-    \put(0.66430762,0.28384959){\makebox(0,0)[b]{\smash{V\_In[0-2]}}}%
-    \put(0.66418348,0.22120364){\makebox(0,0)[b]{\smash{V\_In[3-5]}}}%
-    \put(0.66418348,0.15855774){\makebox(0,0)[b]{\smash{V\_In[6-7]}}}%
-    \put(0.54412449,0.34649551){\makebox(0,0)[rb]{\smash{j\%3}}}%
+  \begin{picture}(1,0.71752841)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0.70779822,0.71752841){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0.11494587,0.4414182){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}V\_In[1]\end{tabular}}}}%
+    \put(0.11494587,0.37877721){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}V\_In[2]\end{tabular}}}}%
+    \put(0.11494587,0.31613622){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}V\_In[3]\end{tabular}}}}%
+    \put(0.11494587,0.25349523){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}V\_In[4]\end{tabular}}}}%
+    \put(0.11494587,0.19085424){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}V\_In[5]\end{tabular}}}}%
+    \put(0.11494587,0.12821317){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}V\_In[6]\end{tabular}}}}%
+    \put(0.11494587,0.06557218){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}V\_In[7]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{matrix_vector_partition_factor.pdf}}%
+    \put(0.11454356,0.50395251){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}V\_In[0]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{matrix_vector_partition_factor.pdf}}%
+    \put(0.18040377,0.45062017){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}M[][0]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{matrix_vector_partition_factor.pdf}}%
+    \put(0.18040377,0.32533814){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}M[][2]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{matrix_vector_partition_factor.pdf}}%
+    \put(0.18040377,0.38797919){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}M[][1]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{matrix_vector_partition_factor.pdf}}%
+    \put(0.18040377,0.26269716){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}M[][3]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{matrix_vector_partition_factor.pdf}}%
+    \put(0.18040377,0.20005618){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}M[][4]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{matrix_vector_partition_factor.pdf}}%
+    \put(0.18040377,0.13741525){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}M[][5]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{matrix_vector_partition_factor.pdf}}%
+    \put(0.18040377,0.07477429){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}M[][6]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{matrix_vector_partition_factor.pdf}}%
+    \put(0.18040377,0.0121333){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}M[][7]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{matrix_vector_partition_factor.pdf}}%
+    \put(0.83983668,0.5947827){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0.00536923,0.48247538){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}i\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{matrix_vector_partition_factor.pdf}}%
+    \put(0.40871344,0.36715956){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}To Adders\end{tabular}}}}}%
+    \put(0.40903527,0.17978165){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}To Adders\end{tabular}}}}}%
+    \put(0.40926267,0.02683774){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}To Adders\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{matrix_vector_partition_factor.pdf}}%
+    \put(0.81934198,0.26806642){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}M[][0-2]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{matrix_vector_partition_factor.pdf}}%
+    \put(0.81934198,0.14278436){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}M[][6-7]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{matrix_vector_partition_factor.pdf}}%
+    \put(0.81934198,0.20542544){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}M[][3-5]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{matrix_vector_partition_factor.pdf}}%
+    \put(0.70157899,0.34645504){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}i,j\%3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{matrix_vector_partition_factor.pdf}}%
+    \put(0.99965032,0.17978165){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}To Adders\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{matrix_vector_partition_factor.pdf}}%
+    \put(0.66425516,0.28381407){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}V\_In[0-2]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{matrix_vector_partition_factor.pdf}}%
+    \put(0.66413104,0.22117307){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}V\_In[3-5]\end{tabular}}}}%
+    \put(0.66413104,0.15853211){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}V\_In[6-7]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{matrix_vector_partition_factor.pdf}}%
+    \put(0.54408152,0.34645504){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}j\%3\end{tabular}}}}%
   \end{picture}%
 \endgroup%

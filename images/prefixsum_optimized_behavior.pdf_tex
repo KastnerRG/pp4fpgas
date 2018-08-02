@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'prefixsum_optimized_behavior.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{88.76601563bp}%
+    \setlength{\unitlength}{133.52332377bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,10 +50,15 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.63097163)%
-    \put(0,0){\includegraphics[width=\unitlength]{prefixsum_optimized_behavior.pdf}}%
-    \put(0.21089944,0.55323918){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Loop Interval = 1}}}%
-    \put(0.06280117,0.20288042){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{In}}}%
-    \put(-0.00479227,0.02263071){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Out}}}%
+  \begin{picture}(1,0.49748002)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{prefixsum_optimized_behavior.pdf}}%
+    \put(0,0.49748002){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0.41232177,0.3447429){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Loop Interval = 1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{prefixsum_optimized_behavior.pdf}}%
+    \put(0.32001983,0.12638252){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}In\end{tabular}}}}%
+    \put(0.27789235,0.01404225){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Out\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{prefixsum_optimized_behavior.pdf}}%
   \end{picture}%
 \endgroup%

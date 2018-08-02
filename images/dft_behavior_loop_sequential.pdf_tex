@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'dft_behavior_loop_sequential.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{186.81747988bp}%
+    \setlength{\unitlength}{176.44068932bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,10 +50,16 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.51387054)%
-    \put(0,0){\includegraphics[width=\unitlength]{dft_behavior_loop_sequential.pdf}}%
-    \put(0.27562492,0.37351722){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{V\_in[i]}}}%
-    \put(0.27290329,0.23416308){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{V\_out[i]}}}%
-    \put(0.353286,0.06423384){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Latency = 4*SIZE*SIZE}}}%
+  \begin{picture}(1,0.76966473)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{dft_behavior_loop_sequential.pdf}}%
+    \put(0,0.76966473){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{dft_behavior_loop_sequential.pdf}}%
+    \put(0.28198394,0.37076665){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}V\_in[i]\end{tabular}}}}%
+    \put(0.27928236,0.23243871){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}V\_out[i]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{dft_behavior_loop_sequential.pdf}}%
+    \put(0.35907313,0.06376083){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Latency = 4*SIZE*SIZE\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{dft_behavior_loop_sequential.pdf}}%
   \end{picture}%
 \endgroup%

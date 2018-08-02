@@ -1,4 +1,4 @@
-%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'intervalduration.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{409.21926589bp}%
+    \setlength{\unitlength}{399.7882315bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,11 +50,18 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.43225604)%
-    \put(0,0){\includegraphics[width=\unitlength]{intervalduration.pdf}}%
-    \put(0.01954942,0.41053786){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Task Interval = 1}}}%
-    \put(0.48873554,0.41053786){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Task Interval = 13}}}%
-    \put(0.01954942,0.04887379){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Task Latency = 10}}}%
-    \put(0.48873554,0.04887379){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Task Latency = 13}}}%
+  \begin{picture}(1,0.41479968)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{intervalduration.pdf}}%
+    \put(0,0.35844226){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{intervalduration.pdf}}%
+    \put(0.05998203,0.39395857){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Task Interval = 1\end{tabular}}}}%
+    \put(0.5102204,0.39395857){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Task Interval = 13\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{intervalduration.pdf}}%
+    \put(0.05998203,0.04690006){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Task Latency = 10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{intervalduration.pdf}}%
+    \put(0.5102204,0.04690006){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Task Latency = 13\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{intervalduration.pdf}}%
   \end{picture}%
 \endgroup%
