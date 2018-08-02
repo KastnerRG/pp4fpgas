@@ -1,5 +1,5 @@
 # Latex files
-
+*~
 *.aux
 *.glo
 *.idx
@@ -30,3 +30,4 @@
 *.upa
 *.upb
 main.pdf
+*.bin
