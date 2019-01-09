@@ -298,7 +298,7 @@ Another key factor that can limit processing rate are resource limitations.  One
 
 Another key question you should ask yourself is, ``Is this code the best way to capture the algorithm?''.  In many cases, the goal is not only the highest quality of results, but maintainable and modifiable code.  Although this is somewhat a stylistic preference, coding style can sometimes limit the architectures that a HLS tool can generate from a particular piece of code.
 
-For instance, while a tool might be able to generate either architecture in Figure \ref{fig:FIR_function_pipeline} or \ref{fig:FIR_sequential} from the code in Figure \ref{fig:FIR}, additing additional directives as shown in Figure \ref{fig:block_FIR} would result in a specific architecture. In this case the delay line is explicitly unrolled, and the multiply-accumulate \lstinline|for| loop is stated to be implemented in a pipelined manner. This would direct the HLS tool to produce an architecture that looks more like the pipelined one in Figure \ref{fig:FIR_function_pipeline}.
+For instance, while a tool might be able to generate either architecture in Figure \ref{fig:FIR_function_pipeline} or \ref{fig:FIR_sequential} from the code in Figure \ref{fig:FIR}, adding additional directives as shown in Figure \ref{fig:block_FIR} would result in a specific architecture. In this case the delay line is explicitly unrolled, and the multiply-accumulate \lstinline|for| loop is stated to be implemented in a pipelined manner. This would direct the HLS tool to produce an architecture that looks more like the pipelined one in Figure \ref{fig:FIR_function_pipeline}.
 
 \begin{figure}
 \lstinputlisting{examples/block_fir.c}
