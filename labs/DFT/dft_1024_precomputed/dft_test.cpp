@@ -3,7 +3,7 @@ This is DFT computation using matrix vector multiplication form.
 INPUT:
 	In_R, In_I[]: Real and Imag parts of Complex signal in time domain.
 OUTPUT:
-	In_R, In_I[]: Real and Imag parts of Complex signal in frequency domain.
+	Out_R, Out_I[]: Real and Imag parts of Complex signal in frequency domain.
 
 */
 
@@ -34,12 +34,12 @@ struct Rmse
 
 Rmse rmse_R,  rmse_I;
 
-DTYPE In_R[SIZE], In_I[SIZE];
+DTYPE In_R[SIZE], In_I[SIZE],Out_R[SIZE],Out_I[SIZE];   //Modify the testbench while checking for demo. You will have to access the data variable of the structure//
 
 int main()
 {
 	int index;
-	DTYPE gold_R, gold_I;
+	float gold_R, gold_I;
 
 	FILE * fp = fopen("out.gold.dat","r");
 
@@ -53,15 +53,15 @@ int main()
 	
 
 	// DFT
-	dft(In_R, In_I);
+	dft(In_R, In_I,Out_R,Out_I);
 
 
 	// comparing with golden output
 	for(int i=0; i<SIZE; i++)
 	{
 		fscanf(fp, "%d %f %f", &index, &gold_R, &gold_I);
-		rmse_R.add_value((float)In_R[i] - gold_R);
-		rmse_I.add_value((float)In_I[i] - gold_I);
+		rmse_R.add_value((float)Out_R[i] - gold_R);
+		rmse_I.add_value((float)Out_I[i] - gold_I);
 	}
 	fclose(fp);
 
