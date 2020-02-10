@@ -12,12 +12,12 @@
 CORDIC (Coordinate Rotation DIgital Computer) is an efficient technique to calculate trigonometric, hyperbolic, and other mathematical functions. It is a digit-by-digit algorithm that produces one output digit per iteration. This allows us to tune the accuracy of the algorithm to the application requirements; additional iterations produce a more precise output result. Accuracy is another common design evaluation metric alongside performance and resource usage. CORDIC performs simple computations using only addition, subtraction, bit shifting, and table lookups, which are efficient to implement in FPGAs and more generally in hardware. 
 
 \begin{aside}
-The CORDIC method was developed by Jack Volder in the 1950's as a digital solution to replace an analog resolver for real-time navigation on a B-58 bomber. A resolver measures degrees of rotation. At that time hardware implementations of multiply operations were prohibitively expense and CPUs had very limited amount of state. Thus the algorithm needed to have low complexity and use simple operations.  Over the years, it has been used in math co-processors \cite{duprat1993cordic}, linear systems \cite{ahmed1982highly}, radar signal processing \cite{andraka1996building}, Fourier transforms \cite{despain1974fourier}, and many other digital signal processing algorithms. It is now commonly used in FPGA designs. \VHLS uses a CORDIC core for calculating trigonometric functions and it is a common element of modern FPGA IP core libraries.
+The CORDIC method was developed by Jack Volder in the 1950's as a digital solution to replace an analog resolver for real-time navigation on a B-58 bomber. A resolver measures degrees of rotation. At that time hardware implementations of multiply operations were prohibitively expensive and CPUs had very limited amount of state. Thus the algorithm needed to have low complexity and use simple operations.  Over the years, it has been used in math co-processors \cite{duprat1993cordic}, linear systems \cite{ahmed1982highly}, radar signal processing \cite{andraka1996building}, Fourier transforms \cite{despain1974fourier}, and many other digital signal processing algorithms. It is now commonly used in FPGA designs. \VHLS uses a CORDIC core for calculating trigonometric functions and it is a common element of modern FPGA IP core libraries.
 \end{aside}
 
 %\note{Talk about what HLS optimizations this chapter will focus on (number representation) and optimization of precision vs area and performance. 
 
-The goal of this chapter is to demonstrate how to create an optimized CORDIC core using high-level synthesis. We are gradually increasing the complexity of the types of hardware cores that we are developing as we progress through the book. The CORDIC method is an iterative algorithm; thus most of the computation is performed within a single \lstinline|for| loop. The code itself is not all that complex. However, understanding the code such that we can create an optimal hardware implementation requires deep insight. And a good HLS designers must always understand the computation if they wish to create the optimal design. Thus, we spend the early part of this chapter giving the mathematical and computational background of the CORDIC method.  
+The goal of this chapter is to demonstrate how to create an optimized CORDIC core using high-level synthesis. We are gradually increasing the complexity of the types of hardware cores that we are developing as we progress through the book. The CORDIC method is an iterative algorithm; thus most of the computation is performed within a single \lstinline|for| loop. The code itself is not all that complex. However, understanding the code such that we can create an optimal hardware implementation requires deep insight. And a good HLS designer must always understand the computation if they wish to create the optimal design. Thus, we spend the early part of this chapter giving the mathematical and computational background of the CORDIC method.  
 
 The major HLS optimization that we wish to highlight in this chapter is choosing the correct number representation for the variables. As we discuss later in the chapter, the designer must carefully tradeoff between the accuracy of the results, the performance, and resource utilization of the design. Number representation is one big factor in this tradeoff -- ``larger'' numbers (i.e., those with more bits) generally provide more precision at the cost of increased resource usage (more FFs and logic blocks) and reduced performance. We provide a background on number representation and arbitrary data types in Chapter \ref{sec:arbitrary_precision}. 
 
@@ -693,11 +693,11 @@ ap_uint<30> p = a*b;
 The \lstinline|ap_fixed<>| and \lstinline|ap_ufixed<>| template classes are similar, except that they require two integer template arguments that define the overall width (the total number of bits) and the number of integer bits.
 \begin{lstlisting}
 #include "ap_fixed.h"
-// 4.0 represented with 12 fractional bits.
+// 4.0 represented with 12 integer bits.
 ap_ufixed<15,12> a = 4.0; 
-// 4.0 represented with 12 fractional bits.
+// 4.0 represented with 12 integer bits.
 ap_ufixed<15,12> b = 4.0; 
-// p is assigned to 16.0 represented with 12 fractional bits
+// p is assigned to 16.0 represented with 12 integer bits
 ap_ufixed<18,12> p = a*b; 
 \end{lstlisting}
 
