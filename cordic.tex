@@ -199,7 +199,7 @@ we can rewrite the rotation matrix as
 \begin{equation}
 R_i = \frac{1}{\sqrt{1 + \tan^2(\theta_i)}} \begin{bmatrix} 1 & -\tan(\theta_i) \\ \tan(\theta_i) & 1 \end{bmatrix}
 \end{equation}
-If we restrict the values of $\tan(\theta_i)$ to be a multiplication by a factor of two, the rotation can be performed using a shifts (for the multiplication) and additions. More specifically, we use let $\tan(\theta_i) = 2^{-i}$. The rotation then becomes 
+If we restrict the values of $\tan(\theta_i)$ to be a multiplication by a factor of two, the rotation can be performed using shifts (for the multiplication) and additions. More specifically, we use let $\tan(\theta_i) = 2^{-i}$. The rotation then becomes 
 \begin{equation}
 v_i = K_i \begin{bmatrix} 1 & - 2^{-i} \\  2^{-i} & 1 \end{bmatrix} \begin{bmatrix} x_{i-1} \\ y_{i-1} \end{bmatrix}
 \end{equation}
