@@ -20,8 +20,8 @@ void dft(IN_TYPE sample_real[N], IN_TYPE sample_imag[N]) {
 		// Calculate the jth frequency sample sequentially
 		for (j = 0; j < N; j += 1) {
 			// Fetch precomputed sine and cosine values
-			c = cos_table[i * j];
-			s = sin_table[i * j];
+			c = cos_table[i * j % N];
+			s = sin_table[i * j % N];
 
 			// Multiply c and s with the appropriate input sample and keep running sum
 			temp_real[i] += (sample_real[j] * c - sample_imag[j] * s);
