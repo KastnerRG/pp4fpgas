@@ -24,7 +24,7 @@ void dft(IN_TYPE sample_real[N], IN_TYPE sample_imag[N]) {
 		for (j = 0; j < N; j += 1) {
 			// Utilize HLS tool to calculate sine and cosine values
 			c = cos(j * w);
-			s = sin(j * w);
+			s = -sin(j * w);
 
 			// Multiply the current phasor with the appropriate input sample and keep
 			// running sum

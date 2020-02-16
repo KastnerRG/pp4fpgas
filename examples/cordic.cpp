@@ -28,7 +28,7 @@ void cordic(THETA_TYPE theta, COS_SIN_TYPE &s, COS_SIN_TYPE &c)
       current_sin = current_sin + cos_shift;
 
       // Determine the new theta
-      theta = theta - cordic_phase[j];
+      theta = theta - sigma * cordic_phase[j];
 
       factor = factor / 2;
   }
