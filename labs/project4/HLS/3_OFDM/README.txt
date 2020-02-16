@@ -1,0 +1,1 @@
+This testbench is based on hdlcoder_ofdm_fft_eml_1024b. The 1024 buffering delay is removed. Both IFFT and FFT are bit reversed.
