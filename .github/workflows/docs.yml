@@ -1,0 +1,47 @@
+name: Deploy build
+
+on:
+  push:
+    branches:
+    - master
+    tags:
+    - v*
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [ '3.7' ]
+
+    steps:
+    - name: Checkout book
+      uses: actions/checkout@v2
+      with:
+        submodules: 'recursive'
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v1
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Compile book
+      uses: docker://xucheng/texlive-full:latest
+      with:
+        entrypoint: /bin/sh
+        args: |
+          -c "\
+          apk --no-cache add make && \
+          make all"
+    - name: List directory contents
+      run: ls -lhtra
+    - name: Setup build for deployment
+      run: |
+        mkdir -p docs/_build
+        cp main.pdf docs/_build/main.pdf
+    - name: Deploy build to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: docs/_build
+        force_orphan: true
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'

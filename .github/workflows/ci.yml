@@ -1,0 +1,36 @@
+name: CI/CD
+
+on:
+  push:
+    branches:
+      - '*'       # matches every branch
+      - '*/*'     # matches every branch containing a single '/'
+      - '!master' # excludes master
+  pull_request:
+  # Run daily at 0:01 UTC
+  schedule:
+  - cron:  '1 0 * * *'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [ '3.7' ]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v1
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Compile book
+      uses: docker://xucheng/texlive-full:latest
+      with:
+        entrypoint: /bin/sh
+        args: |
+          -c "\
+          apk --no-cache add make && \
+          make all"
+    - name: List directory contents
+      run: ls -lhtra
