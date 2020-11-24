@@ -68,7 +68,7 @@ G[1] & = & g[0] \cdot e^{\frac{-j 2 \pi \cdot 1 \cdot 0}{2}} + g[1] \cdot e^{\fr
 \label{eq:2pthigher}
 \end{equation} since  $e^{\frac{-j 2 \pi \cdot 1 \cdot 1}{2}}  = e^{-j \pi } = -1$.
 
-Figure \ref{fig:2pointFFT} provides two different representations for this computation.  Part a) is the data flow graph for the 2 point \gls{dft}. It is the familiar view that we have used to represent computation throughout this book. Part b) shows a butterfly structure for the same computation. This is a typically structure used in digital signal processing, in particular, to represent the computations in an \gls{fft}. 
+Figure \ref{fig:2pointFFT} provides two different representations for this computation.  Part a) is the data flow graph for the 2 point \gls{dft}. It is the familiar view that we have used to represent computation throughout this book. Part b) shows a butterfly structure for the same computation. This is a typical structure used in digital signal processing, in particular, to represent the computations in an \gls{fft}. 
 
 The butterfly structure is a more compact representation that is useful to represent large data flow graphs. When two lines come together this indicates an addition operation. Any label on the line itself indicates a multiplication of that label by the value on that line. There are two labels in this figure. The `$-$' sign on the bottom horizontal line indicates that this value should be negated. This followed by the addition denoted by the two lines intersecting is the same as subtraction. The second label is $W^0_2$. While this is a multiplication is unnecessary (since $W^0_2 = 1$ this means it is multiplying by the value `$1$'), we show it here since it is a common structure that appears in higher point \gls{fft}s.
 
