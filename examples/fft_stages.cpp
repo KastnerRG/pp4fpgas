@@ -65,11 +65,7 @@ void fft_streaming(DTYPE X_R[SIZE], DTYPE X_I[SIZE], DTYPE OUT_R[SIZE], DTYPE OU
 {
   #pragma HLS dataflow
   DTYPE Stage1_R[SIZE], Stage1_I[SIZE],
-    Stage2_R[SIZE], Stage2_I[SIZE],
-    Stage3_R[SIZE], Stage3_I[SIZE];
   
   bit_reverse(X_R, X_I, Stage1_R, Stage1_I);
   fft_stage(1, Stage1_R, Stage1_I, Stage2_R, Stage2_I);
-  fft_stage(2, Stage2_R, Stage2_I, Stage3_R, Stage3_I);
-  fft_stage(3, Stage3_R, Stage3_I, OUT_R, OUT_I);
 }
