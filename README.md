@@ -21,6 +21,8 @@ The book is licensed under the [Creative Commons Attribution 4.0 International L
 
 Feel free to grab the source at our github repo https://github.com/KastnerRG/pp4fpgas or for quicker access, [here is the pre-built pdf](https://github.com/KastnerRG/pp4fpgas/raw/gh-pages/main.pdf).
 
+Some fine people have translated this book into Mandarin - [pp4fpgas-ch](https://github.com/xupsh/pp4fpgas-cn)
+
 If you want to cite this book, please use the arxiv submission:
 ```
 @ARTICLE{2018arXiv180503648K,
