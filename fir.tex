@@ -131,7 +131,7 @@ Vary the clock period for the base FIR architecture (Figure \ref{fig:fir11_initi
 
 The \lstinline{if/else} statement inside of the \lstinline{for} loop is inefficient.  For every control structure in the code, the \VHLS tool creates logical hardware that checks if the condition is met, which is executed in every iteration of the loop. Furthermore, this conditional structure limits the execution of the statements in either the \lstinline{if} or \lstinline{else} branches; these statements can only be executed after the \lstinline{if} condition statement is resolved.
 
-The \lstinline{if} statement checks when \lstinline{x == 0}, which happens only on the last iteration. Therefore, the statements within the \lstinline{if} branch can be ``hoisted'' out of the loop. That is we can execute these statements after the loop ends, and then remove the \lstinline{if/else} control flow in the loop. Finally, we must change the loop bounds from executing the ``0th'' iteration. This transform is shown in Figure \ref{fig:fir11_ifelse}. This shows just the changes that are required to the \lstinline{for} loop. 
+The \lstinline{if} statement checks when \lstinline{i == 0}, which happens only on the last iteration. Therefore, the statements within the \lstinline{if} branch can be ``hoisted'' out of the loop. That is we can execute these statements after the loop ends, and then remove the \lstinline{if/else} control flow in the loop. Finally, we must change the loop bounds from executing the ``0th'' iteration. This transform is shown in Figure \ref{fig:fir11_ifelse}. This shows just the changes that are required to the \lstinline{for} loop. 
 
 \begin{figure}
 \lstinputlisting{examples/fir11_ifelse.c}
