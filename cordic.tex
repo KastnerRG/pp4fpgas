@@ -230,7 +230,7 @@ At each iteration, we need to know the angle $\theta_i$ of the rotation that was
 Table \ref{table:cordic} provides the statistics for the first seven iterations of a CORDIC. The first row is the ``zeroth'' rotation (i.e., when $i=0$), which is a $45^{\circ}$ rotation. It performs a scaling of the vector by a factor of $1.41421$. The second row does a rotation by $2^{-1} = 0.5$. This results in a rotation by $\theta = \arctan 2^{-1} = 26.565^{\circ}$. This rotation scales the vector by $1.11803$. The CORDIC gain is the overall scaling of the vector. In this case, it is the scaling factor of the first two rotations, i.e., $1.58114 = 1.41421 \cdot 1.11803$. This process continues by incrementing $i$ which results in smaller and smaller rotating angles and scaling factors. Note that the CORDIC gain starts to stabilize to $\approx 1.64676025812107$ as described in Equation \ref{eq:cordicgain}. Also, note as the angles get smaller, they have less effect on the most significant digits. 
 
 \begin{exercise}
-Describe the effect if the $i$th iteration on the precision of the results? That is, what bits does it change? How does more iterations change the precision of the final result, i.e., how do the values of $\sin \phi$ and $\cos \phi$ change as the CORDIC performs more iterations?
+Describe the effect of the $i$th iteration on the precision of the results? That is, what bits does it change? How does more iterations change the precision of the final result, i.e., how do the values of $\sin \phi$ and $\cos \phi$ change as the CORDIC performs more iterations?
 \end{exercise}
 
 
