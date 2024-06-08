@@ -10,6 +10,7 @@ void cordic(THETA_TYPE theta, COS_SIN_TYPE &s, COS_SIN_TYPE &c)
   // Set the initial vector that we will rotate
   // current_cos = I; current_sin = Q
   COS_SIN_TYPE current_cos = 0.60735;
+  //COS_SIN_TYPE current_cos = 0.607252935;
   COS_SIN_TYPE current_sin = 0.0;
 
   COS_SIN_TYPE factor = 1.0;

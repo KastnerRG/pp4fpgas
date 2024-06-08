@@ -407,6 +407,7 @@ int ReadBMP(const char *filename, int rows, int cols, unsigned char *r,
 			free(header);
 		return 1;
 	}
+	PrintBMPInfoHeader(info);
 
 	if (ReadBMPFileHeader(fp, header) != 0) {
 		if (header)
@@ -579,5 +580,128 @@ int WriteBMP(const char *filename, int rows, int cols, unsigned char *r,
 	fclose(outfile);
 
 	CleanupBMP(bmp);
+	return 0;
+}
+
+// Create a version of ReadBMP that skips over checks so it can simply
+// be used to read a bitmap into an array of r,g,b values.
+// This is useful for testing.  BMP files written by OpenCV don't have
+// most its header info field set, so the checks fail.
+int ReadBMPUnsafe(const char *filename, int rows, int cols, unsigned char *r,
+				  	unsigned char *g, unsigned char *b, unsigned int biSizeImage) {
+	BMPFileHeader *header = NULL;
+	BMPInfoHeader *info = NULL;
+	unsigned char *data = NULL;
+	FILE *fp = NULL;
+	int i, j;
+
+	if (!(fp = OpenBMPInputFile(filename)))
+		return 1;
+
+	header = (BMPFileHeader *)malloc(sizeof(BMPFileHeader));
+	if (!header) {
+		printf("Failed to malloc BMPFileHeader in ReadRGBFromBMP\n");
+		return 1;
+	}
+
+	info = (BMPInfoHeader *)malloc(sizeof(BMPInfoHeader));
+	if (!header) {
+		printf("Failed to malloc BMPInfoHeader in ReadRGBFromBMP\n");
+		if (header)
+			free(header);
+		return 1;
+	}
+	PrintBMPInfoHeader(info);
+
+	if (ReadBMPFileHeader(fp, header) != 0) {
+		if (header)
+			free(header);
+		if (info)
+			free(info);
+		return 1;
+	}
+
+	if (ReadBMPInfoHeader(fp, info) != 0) {
+		if (header)
+			free(header);
+		if (info)
+			free(info);
+		return 1;
+	}
+
+	// 24 bit bitmap has no RGBQUAD array, so don't try to read it
+
+	data = (unsigned char *)malloc(biSizeImage);
+	if (!data) {
+		printf("Failed to malloc data storage in ReadRGBFromBMP\n");
+		if (header)
+			free(header);
+		if (info)
+			free(info);
+		if (data)
+			free(data);
+		return 1;
+	}
+	if (ReadBMPData(fp, data, biSizeImage) != 0) {
+		if (header)
+			free(header);
+		if (info)
+			free(info);
+		if (data)
+			free(data);
+		return 1;
+	}
+
+	if (rows != (int)info->biHeight) {
+		printf(
+				"Error:  bitmap file Height (%i) differs from requested height (%i)\n",
+				info->biHeight, rows);
+		if (header)
+			free(header);
+		if (info)
+			free(info);
+		if (data)
+			free(data);
+		return 1;
+	}
+
+	if (cols != (int)info->biWidth) {
+		printf(
+				"Error:  bitmap file Height (%i) differs from requested height (%i)\n",
+				info->biWidth, cols);
+		if (header)
+			free(header);
+		if (info)
+			free(info);
+		if (data)
+			free(data);
+		return 1;
+	}
+
+	unsigned char *datatmp = data;
+
+	// copy the data into the r,g,b arrays (BMP is stored upside-down)
+	for (i = 0; i < rows; i++) {
+		for (j = 0; j < cols; j++) {
+			unsigned char rtmp, gtmp, btmp;
+
+			btmp = *datatmp++;
+			gtmp = *datatmp++;
+			rtmp = *datatmp++;
+
+			r[(rows - 1 - i) * cols + j] = rtmp;
+			g[(rows - 1 - i) * cols + j] = gtmp;
+			b[(rows - 1 - i) * cols + j] = btmp;
+		}
+	}
+
+	CloseBMPFile(fp);
+	if (header)
+		free(header);
+	if (info)
+		free(info);
+	if (data)
+		free(data);
+
 	return 0;
 }

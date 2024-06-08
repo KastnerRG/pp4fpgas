@@ -1,5 +1,5 @@
 #define N 11
-#include "ap_int.h"
+
 
 typedef int coef_t;
 typedef int data_t;

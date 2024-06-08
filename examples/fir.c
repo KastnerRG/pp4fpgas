@@ -1,4 +1,4 @@
-#define NUM_TAPS 4
+#include "fir.h"
 
 void fir(int input, int *output, int taps[NUM_TAPS])
 {
@@ -9,10 +9,10 @@ void fir(int input, int *output, int taps[NUM_TAPS])
 		delay_line[i] = delay_line[i - 1];
 	}
 	delay_line[0] = input;
-
-	for (int i = 0; i < NUM_TAPS; i++) {
-		result += delay_line[i] * taps[i];
+	
+	for (int j = 0; j < NUM_TAPS; j++) {
+		result += delay_line[j] * taps[j];
 	}
-
+	
 	*output = result;
 }

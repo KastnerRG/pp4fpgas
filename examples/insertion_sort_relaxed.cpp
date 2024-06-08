@@ -1,6 +1,7 @@
 #include "insertion_sort.h"
 void insertion_sort(DTYPE A[SIZE]) {
  L1:
+    int i, j;
     for(i = 1; i < SIZE; i++) {
         DTYPE item = A[i];
         j = i;

@@ -4,8 +4,9 @@
 #include "ap_fixed.h"
 
 typedef unsigned int UINTYPE_12;
-typedef ap_fixed<12,2> THETA_TYPE;
-typedef ap_fixed<12,2> COS_SIN_TYPE;
+// increase from 12 to 16 bits to improve accuracy
+typedef ap_fixed<16,2> THETA_TYPE; // 16 bits, 2 integer bits
+typedef ap_fixed<16,2> COS_SIN_TYPE;
 const int NUM_ITERATIONS=32;
 
 const int NUM_DEGREE=90;

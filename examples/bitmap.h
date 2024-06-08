@@ -49,3 +49,6 @@ int ReadBMP(const char *filename, int rows, int cols, unsigned char *r,
 						unsigned char *g, unsigned char *b);
 int WriteBMP(const char *filename, int rows, int cols, unsigned char *r,
 						 unsigned char *g, unsigned char *b);
+
+int ReadBMPUnsafe(const char *filename, int rows, int cols, unsigned char *r,
+						unsigned char *g, unsigned char *b, unsigned int biSizeImage);

@@ -33,7 +33,7 @@ double abs_double(double var){
 }
 int main(int argc, char **argv)
 {	
-
+	int fail=0;
 
     FILE *fp;
 
@@ -57,14 +57,29 @@ int main(int argc, char **argv)
 			zc = cos((double)radian);
 			error_sin=(abs_double((double)s-zs)/zs)*100.0;
 			error_cos=(abs_double((double)c-zc)/zc)*100.0;
+
+			// fail test if error greater than 3.5% error
+			if (error_cos > 3.5 || error_sin > 3.5) {
+				fail=1;
+			}
+
 			Total_Error_Sin=Total_Error_Sin+error_sin;
 			Total_error_Cos=Total_error_Cos+error_cos;
-
+			
 			fprintf(fp, "degree=%d, radian=%f, cos=%f, sin=%f\n", i, (double)radian, (double)c, (double)s);
 	}
 
 	fclose(fp);
 
 	printf ("Total_Error_Sin=%f, Total_error_Cos=%f, \n", Total_Error_Sin, Total_error_Cos);
-	return 0;
+
+	if (fail==1) {
+		printf("Test failed\n");
+		return 1;
+	}
+	else {
+		printf("Test passed\n");
+		return 0;
+	}
+
 }

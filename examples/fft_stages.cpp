@@ -60,12 +60,17 @@ void fft_stage(int stage, DTYPE X_R[SIZE], DTYPE X_I[SIZE],
     k += step;
   }
 }
- 
+
 void fft_streaming(DTYPE X_R[SIZE], DTYPE X_I[SIZE], DTYPE OUT_R[SIZE], DTYPE OUT_I[SIZE])
 {
-  #pragma HLS dataflow
-  DTYPE Stage1_R[SIZE], Stage1_I[SIZE],
+//  #pragma HLS dataflow
+  DTYPE Stage_R[M][SIZE], Stage_I[M][SIZE];
+
+  bit_reverse(X_R, X_I, Stage_R[0], Stage_I[0]);
   
-  bit_reverse(X_R, X_I, Stage1_R, Stage1_I);
-  fft_stage(1, Stage1_R, Stage1_I, Stage2_R, Stage2_I);
+  stage_loop:
+    for (int stage = 1; stage < M; stage++) { // Do M-1 stages of butterflies
+      fft_stage(stage, Stage_R[stage-1], Stage_I[stage-1], Stage_R[stage], Stage_I[stage]);
+    }
+  fft_stage(M, Stage_R[M-1], Stage_I[M-1], OUT_R, OUT_I);
 }

@@ -1,0 +1,123 @@
+hls_compiler_type:
+  vitis_hls: 
+    pattern: "\\*\\*\\*\\*\\*\\* Vitis HLS - High-Level Synthesis"
+  vivado_hls:
+    pattern: "\\*\\*\\*\\*\\*\\* Vivado\\(TM\\) HLS - High-Level Synthesis"
+
+component_start:
+  vitis_hls:
+    pattern: "vitis-run --mode hls --tcl\\s+(\\S+)\\.tcl"
+  vivado_hls:
+    pattern: "vivado_hls -f\\s+(\\S+)\\.tcl \\|"
+
+component_end:
+  vitis_hls:
+    pattern: "INFO: \\[vitis-run 60-1662\\] Stopping dispatch session having empty uuid."
+  vivado_hls:
+    pattern: "INFO: \\[Common 17-206\\] Exiting vivado_hls at"
+
+component:
+
+  version:
+    vitis_hls:
+      pattern: "\\*\\*\\*\\*\\*\\* vitis-run (.*)"
+    vivado_hls:
+      pattern: "\\*\\*\\*\\*\\*\\* Vivado\\(TM\\) HLS - High-Level Synthesis from C, C\\+\\+ and SystemC (.*)"
+
+  command:
+    vitis_hls:
+      pattern: "INFO: \\[vitis-run 82-31\\] Launching vitis_hls: (.*)"
+    vivado_hls:
+      pattern: "(vivado_hls -f .*?) \\|"
+
+  hls_compiler:
+    vitis_hls:
+      pattern: "INFO: \\[vitis-run 82-31\\] Launching .*?: (\\S+)"
+    vivado_hls:
+      pattern: "INFO: \\[HLS 200-10\\] Running '.*/(vivado_hls)'"
+
+  user_host_timestamp:
+    pattern: "INFO: \\[HLS 200-10\\] (For user .*)"
+
+  operating_system:
+    pattern: "INFO: \\[HLS 200-10\\] On os (.*)"
+
+  top:
+    vitis_hls:
+      pattern: "INFO: \\[HLS 200-1510\\] Running: set_top (\\S+)"
+    vivado_hls:
+      pattern: "Running: set_top (\\S+)"
+
+  flow_target:
+    pattern: "INFO: \\[HLS 200-1505\\] Using default flow_target (\\S+)"
+
+  # type list will grab every instance of pattern match for current_allocated_memory
+  # and store it in a list.  Because there are 2 paren sets in the pattern, the 
+  # generated list is a list of tuples.
+  current_allocated_memory:
+    type: list
+    pattern: "INFO: \\[HLS 200-111\\] (.*:) .*? current allocated memory: ([0-9.]+) MB."
+
+  total_elapsed_time:
+    vitis_hls:
+      pattern: "INFO: \\[vitis-run 60-791\\] (Total elapsed time: .*s)"
+    vivado_hls:
+      pattern: "INFO: \\[HLS 200-112\\] (Total elapsed time: .*);"
+
+  estimated_fmax:
+    pattern: "INFO: \\[HLS 200-789\\] \\*\\*\\*\\* Estimated Fmax: ([0-9.]+ MHz)"
+
+  cp_achieved_post_synth:
+    pattern: "CP achieved post-synthesis:\\s+([0-9.]+)"
+
+  cp_achieved_post_impl:
+    pattern: "CP achieved post-implementation:\\s+([0-9.]+)"
+
+  csynth_run_stats:
+    pattern: "INFO: \\[HLS 200-2161\\] (Finished Command csynth_design.*)"
+
+  pipelining_result:
+    vitis_hls:
+      type: list
+      pattern: "(INFO: \\[HLS 200-1470\\] Pipelining result : .*)"
+    vivado_hls:
+      type: list
+      pattern: 
+        - "\\[SCHED 204-61\\] (Pipelining loop .*)"
+        - "INFO: \\[SCHED 204-61\\] (Pipelining result : .*)"
+
+  part:
+    vitis_hls:
+      pattern: "INFO: \\[HLS 200-1510\\] Running: set_part (\\S+)"
+    vivado_hls:
+      pattern: "Running: set_part (\\S+)"
+
+
+  device:
+    vitis_hls:
+      pattern: "INFO: \\[HLS 200-1611\\] Setting target device to '(\\S+)'"
+    vivado_hls:
+      pattern: "INFO: \\[HLS 200-10\\] Setting target device to '(\\S+)'"
+
+  clock_period:
+    vitis_hls:
+      pattern: "INFO: \\[HLS 200-1510\\] Running: create_clock -period ([0-9.]+)"
+    vivado_hls:
+      pattern: "INFO: \\[SYN 201-201\\] Setting up clock 'default' with a period of (.*)ns\\."
+
+  # type counter will count the number of times the pattern is matched
+  warnings_count:
+    type: counter
+    pattern: "WARNING: .*"
+
+  warnings:
+    type: list
+    pattern: "(WARNING: .*)"
+
+  errors_count:
+    type: counter
+    pattern: "ERROR: .*"
+
+  errors:
+    type: list
+    pattern: "(ERROR: .*)"

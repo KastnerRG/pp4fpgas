@@ -10,7 +10,7 @@ void block_fir(int input[256], int output[256], int taps[NUM_TAPS],
 #pragma HLS unroll
 			delay_line[i] = delay_line[i - 1];
 		}
-		delay_line[0] = input;
+		delay_line[0] = input[j];
 
 		for (i = 0; i < NUM_TAPS; i++) {
 #pragma HLS pipeline
