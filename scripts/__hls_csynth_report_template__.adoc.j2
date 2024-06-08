@@ -1,0 +1,68 @@
+{% set command = data.command[0] %}
+{% set script_name = command | regex('.*?(\S+\.tcl)') | basename %}
+{% set report_name = script_name | regex('(\S+)\.tcl') %}
+[[{{ report_name }}]]
+== {{ report_name }} Component Status Report
+
+This report provides a summary of the status of the `{{ script_name }} -- {{ data.top[0] | first_item("") }}` component csynth compiliation status.
+
+Compiler: `{{ data.hls_compiler[0] }} version {{ data.version[0] }}`
+
+Command: `{{ data.command[0] }}`
+
+Timestamp: `{{ data.user_host_timestamp[0] }}`
+
+Operating System: `{{ data.operating_system[0] }}`
+
+Device: `{{ data.device[0] }}`
+
+Part: `{{ data.part[0] | first_item("Unavailable") }}`
+
+Top: `{{ data.top[0] | first_item("Unavailable") }}`
+
+Flow Target: `{{ data.flow_target[0] | first_item("Unavailable") }}`
+
+Estimated Fmax: `{{ data.estimated_fmax|first_item("Unavailable") }}`
+
+Total Elapsed Time: `{{ data.total_elapsed_time|first_item("Unavailable") }}`
+
+{# print this error count line if the dictionary
+key errors_count exists#}
+Error count: `{{ data.errors_count|default("0") }}`
+
+{# print this warning count line if the dictionary
+key warning_count exists#}
+Warning count: `{{ data.warnings_count|default("0") }}`
+
+{% if 'errors' in data %}
+.Error Messages
+|===
+{#- iterate over the error messages #}
+|Error Message
+{%- for error in data.errors %}
+|{{ error[0] }}
+{%- endfor %}
+|===
+{%- endif %}
+
+{% if 'warnings' in data %}
+.Warning Messages
+{#- iterate over the warning messages #}
+|===
+|Warning Message
+{%- for warning in data.warnings %}
+|{{ warning[0] }}
+{%- endfor %}
+|===
+{%- endif %}
+
+{% if pipelining_results in data %}
+Pipelining Results:
+
+{#- iterate over the pipelining results #}
+{%- for pipelining_results in data.pipelining_results %}
+{{ pipelining_results[0] }}
+{%- endfor %}
+{%- endif %}
+
+<<<

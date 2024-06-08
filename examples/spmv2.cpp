@@ -5,7 +5,7 @@ const static int S = 8;
 void spmv(int rowPtr[NUM_ROWS+1], int columnIndex[NNZ],
        DTYPE values[NNZ], DTYPE y[SIZE], DTYPE x[SIZE])
 {
-#pragma HLS ARRAY_PARTITION variable=row_ptr cyclic factor=16 dim=1
+#pragma HLS ARRAY_PARTITION variable=rowPtr cyclic factor=NUM_ROWS+1 dim=1
 
 int i;
 int cnt;
@@ -27,8 +27,8 @@ int flag;
 	y[row] = 0;
  ACC:  for(i=0; i<NNZ + NUM_ROWS; i++ ) {
 #pragma HLS DEPENDENCE variable=y array inter false
-#pragma HLS DEPENDENCE variable=element_left array inter false
-#pragma HLS DEPENDENCE variable=element_done array inter false
+//#pragma HLS DEPENDENCE variable=element_left array inter false
+//#pragma HLS DEPENDENCE variable=element_done array inter false
 #pragma HLS PIPELINE II=1
 
 		if(LB == UB) {

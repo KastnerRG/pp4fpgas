@@ -1,17 +1,13 @@
-typedef int	data_t;
-void firI1(data_t *y, data_t x);
-void firQ1(data_t *y, data_t x);
-void firI2(data_t *y, data_t x);
-void firQ2(data_t *y, data_t x);
+#include "complex_fir.h"
 
-void complexFIR(data_t Iin, data_t Qin, data_t *Iout, data_t *Qout) {
+void complexFIR(data_t Iin, data_t Qin, data_t *Iout, data_t *Qout, coef_t Itaps[NUM_TAPS], coef_t Qtaps[NUM_TAPS]) {
 
   data_t IinIfir, QinQfir, QinIfir, IinQfir;
 
-  firI1(&IinIfir, Iin);
-  firQ1(&QinQfir, Qin);
-  firI2(&QinIfir, Qin);
-  firQ2(&IinQfir, Iin);
+  fir(Iin, &IinIfir, Itaps); // firI1
+  fir(Qin, &QinQfir, Qtaps); // firQ1
+  fir(Qin, &QinIfir, Itaps); // firI2
+  fir(Iin, &IinQfir, Qtaps); // firQ2
 
   *Iout = IinIfir + QinQfir;
   *Qout = QinIfir - IinQfir;
