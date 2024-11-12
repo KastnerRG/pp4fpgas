@@ -447,7 +447,7 @@ The overall goal is to create the most optimal design, which is a function of yo
 In general, there is no one algorithm for optimizing your design. It is a complex function of the application, design constraints, and the designer's inherent abilities. Yet, it is important that the designer have a deep understanding of the application, the design constraints, and the abilities of the synthesis tool. 
 
 We attempted to illustrate these bits of wisdom in this chapter. While the \gls{fft} is a well-studied algorithm with many known hardware implementation tricks, it still serves as a good exemplar for high-level synthesis. We did not give all of the tricks for optimization. %e leave that as an exercise in Chapter \ref{chapter:ofdm} where we task the designer to create an simple orthogonal frequency-division multiplexing receiver. The core of this an \gls{fft}.  
-Regardless, we provided some insight into the key optimizations here, which we hope serve as a guide to how to optimize the \gls} using the \VHLS tool.
+Regardless, we provided some insight into the key optimizations here, which we hope serve as a guide to how to optimize the \gls{fft} using the \VHLS tool.
 
 First and foremost, understand the algorithm. We spent a lot of time explaining the basics of the \gls{fft}, and how it relates to the \gls{dft}. We hope the reader understands this is the most important part of building optimal hardware. Indeed, the designer could translate C/MATLAB/Java/Python code into \VHLS and get a working implementation. And that same designer could blindly apply directives to achieve better results. However, that designer will not get anywhere close to optimal results without a deep understanding of the algorithm itself.
 
