@@ -1,15 +1,15 @@
 #include "spmv.h"
 #include <stdio.h>
 
-const static int S = 8;
+const static int S = SIZE;
 
 void spmv(int rowPtr[NUM_ROWS+1], int columnIndex[NNZ],
        DTYPE values[NNZ], DTYPE y[SIZE], DTYPE x[SIZE])
 {
 	//#pragma HLS ARRAY_PARTITION variable=rowPtr cyclic factor=2 dim=1
 	int currentrow[S];
-	int LB;
-	int UB;
+	int LB[S];
+	int UB[S];
 	int flag[S];
 	int row;
 

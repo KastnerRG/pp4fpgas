@@ -62,9 +62,22 @@ void video_2dfilter(rgb_pixel pixel_in[MAX_HEIGHT][MAX_WIDTH],
 			}
 			if(row >= MAX_HEIGHT-2 && col >= MAX_WIDTH-2) {
 				printf("%d %d\n", row, col);
-				printf("%x %x %x\n", window[0][0], window[0][1], window[0][2]);
-				printf("%x %x %x\n", window[1][0], window[1][1], window[1][2]);
-				printf("%x %x %x\n", window[2][0], window[2][1], window[2][2]);
+				// printf each of the rgb elements of the window variable 3 pixels at a time
+				printf("r%x g%x b%x -- r%x g%x b%x -- r%x g%x b%x\n", 
+						window[0][0].R, window[0][0].G, window[0][0].B,
+						window[0][1].R, window[0][1].G, window[0][1].B,
+						window[0][2].R, window[0][2].G, window[0][2].B);
+				// repeat the above printf but use window[1][0], window[1][1], window[1][2]
+				printf("r%x g%x b%x -- r%x g%x b%x -- r%x g%x b%x\n", 
+						window[1][0].R, window[1][0].G, window[1][0].B,
+						window[1][1].R, window[1][1].G, window[1][1].B,
+						window[1][2].R, window[1][2].G, window[1][2].B);
+				// repeat the above printf but use window[2][0], window[2][1], window[2][2]
+				printf("r%x g%x b%x -- r%x g%x b%x -- r%x g%x b%x\n", 
+						window[2][0].R, window[2][0].G, window[2][0].B,
+						window[2][1].R, window[2][1].G, window[2][1].B,
+						window[2][2].R, window[2][2].G, window[2][2].B);
+
 			}
 
 			pixel_out[row][col] = filter(window);
