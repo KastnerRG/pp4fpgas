@@ -136,10 +136,10 @@ CXX_HLS_TARGET_FILES = \
 	spmv2_restructured.cpp \
 	spmv_unrolled.cpp
 
-HLS_TARGETS = $(patsubst %.c,%.proj,$(CC_HLS_TARGET_FILES))
-HLS_TARGETS += $(patsubst %.cpp,%.proj,$(CXX_HLS_TARGET_FILES))
+HLS_TARGETS = $(patsubst %.c,%.comp,$(CC_HLS_TARGET_FILES))
+HLS_TARGETS += $(patsubst %.cpp,%.comp,$(CXX_HLS_TARGET_FILES))
 
-%.proj: %.tcl
+%.comp: %.tcl
 #	vivado_hls -f $?
 	$(HLS_COMPILER) $? || (echo "$(HLS_COMPILER) $? failed $$?"; exit 0)
 
@@ -159,7 +159,7 @@ test: $(EXAMPLES_LOG)
 
 
 clean:
-	rm -rf *.o *.log *.bin *.tcl *.proj logs/* hls/*
+	rm -rf *.o *.log *.bin *.tcl *.comp logs/* hls/*
 
 .PHONY: clean hls test
 

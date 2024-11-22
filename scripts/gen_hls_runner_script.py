@@ -107,12 +107,11 @@ def write_script(
 
     with open(output_file, "w", encoding="utf-8") as file:
         script_text = f"""\
-                    open_project {file_root}.proj -reset
+                    open_component {file_root}.comp -reset
                     add_files [list {files}]
                     {tb_add_files}
                     set_top {top}
                     puts "Running: set_top {top}"
-                    open_solution solution -reset
                     set_part {part}
                     puts "Running: set_part {part}"
                     create_clock -period {period}

@@ -35,6 +35,7 @@ main.pdf
 
 # hls projects
 **/*.proj/
+**/*.comp/
 
 # ignore any python virtual environments
 **/.venv/
