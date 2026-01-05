@@ -3,7 +3,7 @@
 \label{chapter:BNN}
 
 \section{Overview}
-\emph{Binary Neural Networks (BNNs)} are efficient neural network architectures that operate with binary weights and activations rather than full precision values as done in typical neural networks. Binary operations simplifies computations by moving from higher precision arithmetic to bit-level operations. Binary operations provide significant advantages in terms of power, performance, and area. Yet, they are have significantly less precision than floating point, fixed point, or integer representations.  
+\emph{Binary Neural Networks (BNNs)} are efficient neural network architectures that operate with binary weights and activations rather than full precision values as done in typical neural networks. Binary operations simplify computations by moving from higher precision arithmetic to bit-level operations. Binary operations provide significant advantages in terms of power, performance, and area. Yet, they have significantly less precision than floating point, fixed point, or integer representations.  
 
 This chapter introduces BNNs, provides a basic understanding about how they function, and develops HLS code to implement a small BNN. The chapter begins by motivating the development of BNNs with a discussion of the benefits these networks provide with respect to computational efficiency and memory consumption. Next, the basic operations and concepts behind BNNs are explained to give an idea of how binary values are created and used within the network. Then, the chapter describes model inference and training, i.e., forward and backward propagation, and discuss how BNNs address the challenges that arise as a result of using only binary values. 
 
@@ -60,7 +60,7 @@ where $x^{b}$ denotes the binarized or quantized value of $x$.
 \label{fig:signum}
 \end{figure}
 
-Consider two vectors vectors $[10, -10, -5, 9, -8, 2, 3, 1]$ and $[12, -18, -13, -13, -14, -15, 11, 12].$ 
+Consider two vectors $[10, -10, -5, 9, -8, 2, 3, 1]$ and $[12, -18, -13, -13, -14, -15, 11, 12].$ 
 We can binarize these using the signum function to convert our values to -1 or +1 and obtain $[1, -1, -1, 1, -1, 1, 1, 1]$ and $[1, -1, -1, -1, -1, -1, 1, 1]$. This is shown in Figure~\ref{fig:signum-binarize}.
 
 \begin{figure} 
@@ -99,9 +99,9 @@ The two binarized vectors then become $[0, 1, 1, 0, 1, 0, 0, 0]$ and $[0, 1, 1, 
 Another potential way to quantize/represent -1 and 1 would be 0 and 1. Why would one prefer the representation 1 and 0? Think about the conversion of negative and positive numbers to binary. Which way would require the least amount of logic? 
 \end{exercise}
 
-To perform the dot product of these two binary vectors, we can the following operations operations: quantize to 0,1, exclusive NOR of the resulting 0,1 quantization, and population count (popcount). These operations are much more efficient to implement in hardware than multiplication and addition.
+To perform the dot product of these two binary vectors, we can perform the following operations: quantize to 0,1, exclusive NOR of the resulting 0,1 quantization, and population count (popcount). These operations are much more efficient to implement in hardware than multiplication and addition.
 
-The \emph{exclusive NOR (XNOR)} operations is a digital logic gate that acts as an exclusive or (XOR) operation followed by a NOT operation (inverter gate) . As seen in Figure~\ref{fig:xnor}, its output is “true” if the inputs are the same and “false” otherwise.  
+The \emph{exclusive NOR (XNOR)} operation is a digital logic gate that acts as an exclusive or (XOR) operation followed by a NOT operation (inverter gate) . As seen in Figure~\ref{fig:xnor}, its output is “true” if the inputs are the same and “false” otherwise.  
 
 \begin{figure}[h]
 \centerline{\includegraphics[scale = .65]{images/xnor.png}}
@@ -114,11 +114,11 @@ In the context of BNNs, the XNOR operation is applied element-wise between binar
 \begin{figure}[h]
 \centering
 \includegraphics[width=.6\textwidth]{images/xnor-binary-multiplication.pdf}
-\caption{ Comparing the -1,1 binary multiplication with the XNOR operation. The first two columns are the inputs and the last column is the output. The XNOR operations quantizes the -1,1 to 1,0 and then performs the XNOR on the 0,1 binary values. The result of the XNOR operation is the number of 1 in the -1,1 multiplication.}
+\caption{ Comparing the -1,1 binary multiplication with the XNOR operation. The first two columns are the inputs and the last column is the output. The XNOR operation quantizes the -1,1 to 1,0 and then performs the XNOR on the 0,1 binary values. The result of the XNOR operation is the number of 1 in the -1,1 multiplication.}
 \label{fig:xnor-binary-multiplication}
 \end{figure}
 
-Figure~\ref{fig:xnor} compares the binary multiplication of -1 and +1 with the XNOR operation when -1 is mapped to 1 and +1 is mapped to 0. The left table shows the results of the -1,1 binary multiplication. The right table first quantizes the -1,1 input values to 1,0. Then it performs the XNOR operation on the 0,1 binary values. The results of the XNOR operations is equal to the number of 1 in the -1,1 multiplication. Note this is different than if we performed a reverse mapping/quanization from 0,1 to 1,-1. 
+Figure~\ref{fig:xnor} compares the binary multiplication of -1 and +1 with the XNOR operation when -1 is mapped to 1 and +1 is mapped to 0. The left table shows the results of the -1,1 binary multiplication. The right table first quantizes the -1,1 input values to 1,0. Then it performs the XNOR operation on the 0,1 binary values. The results of the XNOR operations is equal to the number of 1 in the -1,1 multiplication. Note this is different than if we performed a reverse mapping/quantization from 0,1 to 1,-1. 
 
 
 
@@ -137,7 +137,7 @@ Figure~\ref{fig:xnor} compares the binary multiplication of -1 and +1 with the X
 
 
 \subsection{Population Count}
-Next we peform the reduction or summation of the multiplied results, which, along with the multiplication, is necessary to complete the dot product operation.
+Next we perform the reduction or summation of the multiplied results, which, along with the multiplication, is necessary to complete the dot product operation.
 The population count (popcount) operation counts the number of ``set'' bits (i.e., those equal to 1) in a binary vector. Popcount is a common operation in many processor architectures. And it is very efficient to implement in hardware.
 
 Figure~\ref{fig:binary-0-1-dot-product} shows the dot product of the two binarized vectors from Figure~\ref{fig:signum-binarize}, but with the input -1 and +1 values quantized to 1 and 0. The multiplication is performed using XNOR, and the summation is performed using popcount.
@@ -402,13 +402,13 @@ Backpropagation (short for ``backwards propagation of errors'') is a fundamental
 Can you think of any issue with taking the gradient here? Remember in forward propagation, we used Sign(x) to binarize weights. What does the derivative look like for this function?
 \end{exercise} 
 
-\subsection{Gradient Decent Update Rule}
+\subsection{Gradient Descent Update Rule}
 
-Backpropagation gets its name from the fact that this chain rule process starts at the output layer and works backward through the network. The weights are then updated to minimize the loss (error) function, shown below with W the weight to update, J the loss function, and $\alpha$ the learning rate. This update process is called gradient decent.
+Backpropagation gets its name from the fact that this chain rule process starts at the output layer and works backward through the network. The weights are then updated to minimize the loss (error) function, shown below with W the weight to update, J the loss function, and $\alpha$ the learning rate. This update process is called gradient descent.
 
 \begin{figure}[htbp]
 \centerline{\includegraphics[scale = .65]{images/grad_decent.png}}
-\caption{Gradient decent update rule.}
+\caption{Gradient descent update rule.}
 \label{fig:grad_descent}
 \end{figure}
 
@@ -465,7 +465,7 @@ Rather than use the analytical gradient of the loss with respect to the weights,
 
 \subsection{Backpropagation Pseudo Code}
 
-The pseudo code for backward propagation of a BNN is shown below. We have also defined some important terms. In short, for each layer (except the last), we apply straight through estimation. We then perform a backwards pass for BatchNorm and calculate the estimated gradients of the weights with respect to the loss, and apply activation (the transpose step). In the second for loop, the weights are updated via gradient decent, and the gradients are passed left through the network.
+The pseudo code for backward propagation of a BNN is shown below. We have also defined some important terms. In short, for each layer (except the last), we apply straight through estimation. We then perform a backwards pass for BatchNorm and calculate the estimated gradients of the weights with respect to the loss, and apply activation (the transpose step). In the second for loop, the weights are updated via gradient descent, and the gradients are passed left through the network.
 
 
 
@@ -491,9 +491,9 @@ The pseudo code for backward propagation of a BNN is shown below. We have also d
 
 
 \section{Conclusion}
-BNNs are an efficient operation used in many resource-constrianed computing devices. An input to a BNN is a list (x vector). Let's say our goal is to predict the y. The network, having taken in a vector x, will perform the following operations to predict y (referred to as inference in neural networks). During the forward pass, the input data is processed through the network's layers, using the trained binary weights and activations. In BNNs, the standard dot product in the neurons is replaced by XNOR and popcount operations. These operations are much more efficient than floating-point multiplications and additions. At each layer, after the XNOR and bitcount operations, an activation function is applied (signum). BNNs can use batch normalization to stabilize and speed up training. During inference, the learned parameters from batch normalization are used to normalize the activations. If the network includes pooling layers, convolutional layers, or other types of layers, these operate in a similar manner to their counterparts in traditional neural networks, but they are adapted to work with binary values. Finally, at the output layer, we receive our value for y (regression) or pass the final vector through typically a soft max (classification).
+BNNs are an efficient operation used in many resource-constrained computing devices. An input to a BNN is a list (x vector). Let's say our goal is to predict the y. The network, having taken in a vector x, will perform the following operations to predict y (referred to as inference in neural networks). During the forward pass, the input data is processed through the network's layers, using the trained binary weights and activations. In BNNs, the standard dot product in the neurons is replaced by XNOR and popcount operations. These operations are much more efficient than floating-point multiplications and additions. At each layer, after the XNOR and bitcount operations, an activation function is applied (signum). BNNs can use batch normalization to stabilize and speed up training. During inference, the learned parameters from batch normalization are used to normalize the activations. If the network includes pooling layers, convolutional layers, or other types of layers, these operate in a similar manner to their counterparts in traditional neural networks, but they are adapted to work with binary values. Finally, at the output layer, we receive our value for y (regression) or pass the final vector through typically a soft max (classification).
 
-The key advantage of BNNs is that they require significantly less computational power and memory than traditional neural networks, making them well-suited for resource-constrained environments like mobile devices or embedded systems. However, the trade-off is that the binarization of weights and activations can lead to a loss in model accuracy, especially for complex tasks. In simple tasks such as number recognition, the BNN performs well, although requiring more layers than a full-precision NN. For complex tasks such as high-resolution image classificaiton and natural language processing, the lower expressiveness of the BNN may struggle to recognize complex patterns.
+The key advantage of BNNs is that they require significantly less computational power and memory than traditional neural networks, making them well-suited for resource-constrained environments like mobile devices or embedded systems. However, the trade-off is that the binarization of weights and activations can lead to a loss in model accuracy, especially for complex tasks. In simple tasks such as number recognition, the BNN performs well, although requiring more layers than a full-precision NN. For complex tasks such as high-resolution image classification and natural language processing, the lower expressiveness of the BNN may struggle to recognize complex patterns.
 
 
 %\nocite{bnn1, vid1, vid2, vid3, vid4, vid5, vid6}
