@@ -10,8 +10,6 @@ on:
 jobs:
   test:
     runs-on: ubuntu-22.04
-    strategy:
-
     steps:
     - name: Checkout book
       uses: actions/checkout@v2
