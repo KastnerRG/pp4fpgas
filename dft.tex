@@ -439,7 +439,7 @@ Devise an architecture that utilizes $S'$ -- the 1D version of the $S$ matrix. H
 In order to effectively optimize the design, we must consider every part of the code. The performance can only as good as the ``weakest link'' meaning that if there is a bottleneck the performance will take a significant hit. The current version of the \gls{dft} function performs an in-place operation on the input and output data, i.e., it stores the results in the same array as the input data. The input array arguments \lstinline|sample_real| and \lstinline|sample_imag| effectively act as a memory port. That is, you can think of these arguments arrays as stored in the same memory location. Thus, we can only grab one piece of data from each of these arrays on any given cycle. This can create a bottleneck in terms of parallelizing the multiplication and summation operations within the function. This also explains the reason why we must store all of the output results in a temporary array, and then copy all of those results into the ``sample'' arrays at the end of the function. We would not have to do this if we did not perform an in-place operation. 
 
 \begin{exercise}
-Modify the \gls{dft} function interface so that the input and outputs are stored in separate arrays. How does this effect the optimizations that you can perform? How does it change the performance? What about the area results?
+Modify the \gls{dft} function interface so that the input and outputs are stored in separate arrays. How does this affect the optimizations that you can perform? How does it change the performance? What about the area results?
 \end{exercise}
 
 
