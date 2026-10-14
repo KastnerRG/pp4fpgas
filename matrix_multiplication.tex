@@ -272,7 +272,7 @@ After this complex set of \lstinline{for} loops, the block matrix multiplication
 It is important to note that you cannot directly compare the performance of the function \lstinline{blockmatmul} with that of code for matrix multiplication, such as the code in Figure \ref{fig:matrixmultiplication_sw}. This is because it takes multiple calls to the \lstinline{blockmatmul} function in order to perform the entire matrix multiplication. It is important to always compare apples to apples.
 
 \begin{exercise}
-Derive a function to determine the number of times that \lstinline{blockmatmul} must be called in order to complete the entire matrix multiplication. This function should be generic, e.g., it should not be assume a specific value of \lstinline{BLOCK_SIZE} or size of the matrix (i.e., \lstinline{SIZE}).
+Derive a function to determine the number of times that \lstinline{blockmatmul} must be called in order to complete the entire matrix multiplication. This function should be generic, e.g., it should not assume a specific value of \lstinline{BLOCK_SIZE} or size of the matrix (i.e., \lstinline{SIZE}).
 \end{exercise}
 
 \begin{exercise}
