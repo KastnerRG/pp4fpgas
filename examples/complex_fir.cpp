@@ -13,6 +13,6 @@ void complexFIR(data_t Iin, data_t Qin, data_t *Iout, data_t *Qout) {
   firI2(&QinIfir, Qin);
   firQ2(&IinQfir, Iin);
 
-  *Iout = IinIfir + QinQfir;
-  *Qout = QinIfir - IinQfir;
+  *Iout = IinIfir - QinQfir;
+  *Qout = QinIfir + IinQfir;
 }
