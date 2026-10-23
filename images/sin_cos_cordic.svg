@@ -129,5 +129,5 @@
 <text transform="matrix(1 0 0 1 65.9502 185.6582)" font-family="'MyriadPro-Regular'" font-size="18">2) 45°+26.565°=71.565°</text>
 <text transform="matrix(1 0 0 1 346.9502 182.1582)" font-family="'MyriadPro-Regular'" font-size="18">3) 71.565°-14.036°=57.529°</text>
 <text transform="matrix(1 0 0 1 121.4502 144.1582)" font-family="'MyriadPro-Regular'" font-size="18">4) 57.529°+7.125°=64.654°</text>
-<text transform="matrix(1 0 0 1 346.9502 147.1582)" font-family="'MyriadPro-Regular'" font-size="18">5) 64.64°-3.576°=61.078°</text>
+<text transform="matrix(1 0 0 1 346.9502 147.1582)" font-family="'MyriadPro-Regular'" font-size="18">5) 64.654°-3.576°=61.078°</text>
 </svg>
