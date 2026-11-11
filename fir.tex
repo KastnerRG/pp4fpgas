@@ -266,7 +266,7 @@ Loop pipelining is an optimization that overlaps multiple iterations of a \lstin
 The \term{loop initiation interval (II)} is another important performance metric. It is defined as the number of clock cycles until the next iteration of the loop can start. In our example, the loop II is 1, which means that we start a new iteration of the loop every cycle. This is graphically depicted in Figure \ref{fig:pipeline_mac} b). The II can be explicitly set using the directive. For example, the directive \lstinline{#pragma HLS pipeline II=2} informs the \VHLS tool to attempt to set the \lstinline{II=2}. Note that this may not always be possible due to resource constraints and/or dependencies in the code. The output reports will tell you exact what the \VHLS tool was able to achieve. 
 
 \begin{exercise}
-Explicitly set the loop initiation interval starting at 1 and increasing in increments of 1 cycle. How does increasing the II effect the loop latency? What are the trends?  At some point setting the II to a larger value does not make sense. What is that value in this example? How do you describe that value for a general \lstinline{for} loop?
+Explicitly set the loop initiation interval starting at 1 and increasing in increments of 1 cycle. How does increasing the II affect the loop latency? What are the trends?  At some point setting the II to a larger value does not make sense. What is that value in this example? How do you describe that value for a general \lstinline{for} loop?
 \end{exercise}
 
 

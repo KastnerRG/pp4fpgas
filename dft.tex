@@ -174,7 +174,7 @@ The algorithm itself is simply a nested \lstinline|for| loop. The inner loop (\l
 
 Whenever you perform HLS, you should think about the architecture that you wish to synthesize. Memory organization is one of the more important decisions. The question boils down to \emph{where do you store the data from your code?} There are a number of options when mapping variables to hardware. The variable could simply be a set of wires (if its value never needs saved across a cycle), a register, RAM or FIFO. All of these options provide tradeoffs between performance and area. 
 
-Another major factor is the amount of parallelism that is available within the code. Purely sequential code has few options for implementation. On the other hand, code with a significant amount of parallelism has implementation options that range from purely sequentially to fully parallel. These options obviously have different area and performance. We will look at how both memory configurations and parallelism effect the hardware implementation for the matrix-vector implementation of the \gls{dft}.
+Another major factor is the amount of parallelism that is available within the code. Purely sequential code has few options for implementation. On the other hand, code with a significant amount of parallelism has implementation options that range from purely sequentially to fully parallel. These options obviously have different area and performance. We will look at how both memory configurations and parallelism affect the hardware implementation for the matrix-vector implementation of the \gls{dft}.
 
 \begin{figure}
 \centering
@@ -387,7 +387,7 @@ This code uses a function call to calculate \lstinline|cos()| and \lstinline|sin
 %Figure \ref{fig:dft_sequential_arch} provides an overview of the one potential \gls{dft} architecture. This hardware implementation is highly sequential. The data path corresponding to the inner loop is executed $N \times N$ times, which corresponds to $N^2$ computations of $\cos()$ and $\sin()$ and $N^2$ complex multiplications and additions.  In each iteration of the outer loop, the variable $w$ is computed. This is essentially determining the amount of rotation that each row of the $S$ matrix requires. The phasor angle is then calculated in each iteration of the inner loop through a multiplication by the loop iterator $j$. The result is fed into a CORDIC operator to determine the sine and cosine values used in the complex multiplication and subsequent summation.  The result of the inner loop is summed into the appropriate $temp[]$ variable. Finally, after these two nested loops are finished, the values in the $temp[]$ array are copied into the $sample[]$ array. This is called an in-place \gls{dft}, i.e., the output frequency samples are stored in the same location as the input signal samples. This saves memory at the expense of $N$ additional read and write operations. 
 
 \begin{exercise}
-What changes would this code require if you were to use a CORDIC that you designed, for example, from Chapter \ref{chapter:cordic}? Would changing the accuracy of the CORDIC core make the \gls{dft} hardware resource usage change? How would it effect the performance? 
+What changes would this code require if you were to use a CORDIC that you designed, for example, from Chapter \ref{chapter:cordic}? Would changing the accuracy of the CORDIC core make the \gls{dft} hardware resource usage change? How would it affect the performance? 
 \end{exercise}
 
 \begin{exercise}
@@ -397,7 +397,7 @@ Implement the baseline code for the \gls{dft} using HLS.  Looking at the reports
 \section{\gls{dft} optimization}
 \label{subsec:dft_optimization}
 
-The baseline \gls{dft} implementation of the previous section uses relatively high precision \lstinline|double| datatypes.  Implementing floating point operations is typically very expensive and requires many pipeline stages, particularly for double precision.  We can see in Figure \ref{fig:dft_sequential_arch} that this significantly affects the performance of the loop.  With pipelining, the affect of these high-latency operations is less critical, since multiple executions of the loop can execute concurrently.  The exception in this code are the \lstinline|temp_real[]| and \lstinline|temp_imag[]| variables, which are used to accumulate the result.  This accumulation is a \gls{recurrence} and limits the achievable II in this design when pipelining the inner loop.   This operator dependence is shown in Figure \ref{fig:dft_recurrence_behavior}.
+The baseline \gls{dft} implementation of the previous section uses relatively high precision \lstinline|double| datatypes.  Implementing floating point operations is typically very expensive and requires many pipeline stages, particularly for double precision.  We can see in Figure \ref{fig:dft_sequential_arch} that this significantly affects the performance of the loop.  With pipelining, the effect of these high-latency operations is less critical, since multiple executions of the loop can execute concurrently.  The exception in this code are the \lstinline|temp_real[]| and \lstinline|temp_imag[]| variables, which are used to accumulate the result.  This accumulation is a \gls{recurrence} and limits the achievable II in this design when pipelining the inner loop.   This operator dependence is shown in Figure \ref{fig:dft_recurrence_behavior}.
 
 \begin{figure}
 \centering
@@ -439,7 +439,7 @@ Devise an architecture that utilizes $S'$ -- the 1D version of the $S$ matrix. H
 In order to effectively optimize the design, we must consider every part of the code. The performance can only as good as the ``weakest link'' meaning that if there is a bottleneck the performance will take a significant hit. The current version of the \gls{dft} function performs an in-place operation on the input and output data, i.e., it stores the results in the same array as the input data. The input array arguments \lstinline|sample_real| and \lstinline|sample_imag| effectively act as a memory port. That is, you can think of these arguments arrays as stored in the same memory location. Thus, we can only grab one piece of data from each of these arrays on any given cycle. This can create a bottleneck in terms of parallelizing the multiplication and summation operations within the function. This also explains the reason why we must store all of the output results in a temporary array, and then copy all of those results into the ``sample'' arrays at the end of the function. We would not have to do this if we did not perform an in-place operation. 
 
 \begin{exercise}
-Modify the \gls{dft} function interface so that the input and outputs are stored in separate arrays. How does this effect the optimizations that you can perform? How does it change the performance? What about the area results?
+Modify the \gls{dft} function interface so that the input and outputs are stored in separate arrays. How does this affect the optimizations that you can perform? How does it change the performance? What about the area results?
 \end{exercise}
 
 
