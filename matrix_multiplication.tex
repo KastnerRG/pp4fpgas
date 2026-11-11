@@ -168,7 +168,7 @@ The \lstinline{BLOCK_SIZE} variable defines the number of rows from $\mathbf{A}$
 
 The \lstinline{blockvec} data type is used to transfer the \lstinline{BLOCK_SIZE} rows of $\mathbf{A}$ and columns of $\mathbf{B}$ to the function on each execution. The \lstinline{blockmat} data type is where we store the partial results for the $\mathbf{AB}$ matrix. 
 
-Finally, the \lstinline{blockmat} data type is a structure consisting of an \lstinline{BLOCK_SIZE} $\times$ \lstinline{BLOCK_SIZE} array. This holds the resulting values from one execution of the \lstinline{matrmatmul} function. 
+Finally, the \lstinline{blockmat} data type is a structure consisting of an \lstinline{BLOCK_SIZE} $\times$ \lstinline{BLOCK_SIZE} array. This holds the resulting values from one execution of the \lstinline{blockmatmul} function. 
 
 The function prototype itself takes the two inputs which are both of the type \lstinline{hls::stream<blockvec> &}. These are a sequence of \lstinline{blockvec} data. Remember that a \lstinline{blockvec} is a data type that consists of an array with \lstinline{BLOCK_SIZE} elements. 
 
