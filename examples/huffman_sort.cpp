@@ -33,7 +33,7 @@ void sort(
     compute_histogram:
         for(int j = 0; j < num_symbols; j++) {
 #pragma HLS PIPELINE II=1
-            Digit digit = (sorting[j].frequency >> shift) & (RADIX - 1); // Extrract a digit
+            Digit digit = (sorting[j].frequency >> shift) & (RADIX - 1); // Extract a digit
             current_digit[j] = digit;  // Store the current digit for each symbol
             digit_histogram[digit]++;
             previous_sorting[j] = sorting[j]; // Save the current sorted order of symbols
