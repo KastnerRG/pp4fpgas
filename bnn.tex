@@ -5,7 +5,7 @@
 \section{Overview}
 \emph{Binary Neural Networks (BNNs)} are efficient neural network architectures that operate with binary weights and activations rather than full precision values as done in typical neural networks. Binary operations simplify computations by moving from higher precision arithmetic to bit-level operations. Binary operations provide significant advantages in terms of power, performance, and area. Yet, they have significantly less precision than floating point, fixed point, or integer representations.  
 
-This chapter introduces BNNs, provides a basic understanding about how they function, and develops HLS code to implement a small BNN. The chapter begins by motivating the development of BNNs with a discussion of the benefits these networks provide with respect to computational efficiency and memory consumption. Next, the basic operations and concepts behind BNNs are explained to give an idea of how binary values are created and used within the network. Then, the chapter describes model inference and training, i.e., forward and backward propagation, and discuss how BNNs address the challenges that arise as a result of using only binary values. 
+This chapter introduces BNNs, provides a basic understanding about how they function, and develops HLS code to implement a small BNN. The chapter begins by motivating the development of BNNs with a discussion of the benefits these networks provide with respect to computational efficiency and memory consumption. Next, the basic operations and concepts behind BNNs are explained to give an idea of how binary values are created and used within the network. Then, the chapter describes model inference and training, i.e., forward and backward propagation, and discusses how BNNs address the challenges that arise as a result of using only binary values. 
 
 \begin{figure}[htbp]
 \centerline{\includegraphics[scale = .75]{images/network.png}}
@@ -16,7 +16,7 @@ This chapter introduces BNNs, provides a basic understanding about how they func
 
 \section{Motivation}
 
-The development of BNNs is driven by the need for efficiency, particularly in resource-constrained environments. Floating-point precision provides precision, but also requires the significant computational resources and memory capacities for computation and parameter storage. Floating point is often too slow, too large, or even infeasible for small devices. BNNs drastically reduce the memory footprint and computational complexity by using binary values and bitwise operations, making them particularly well-suited for deployment in edge devices, IoT applications, and other scenarios where resources are limited. 
+The development of BNNs is driven by the need for efficiency, particularly in resource-constrained environments. Floating-point precision provides precision, but also requires significant computational resources and memory capacities for computation and parameter storage. Floating point is often too slow, too large, or even infeasible for small devices. BNNs drastically reduce the memory footprint and computational complexity by using binary values and bitwise operations, making them particularly well-suited for deployment in edge devices, IoT applications, and other scenarios where resources are limited. 
 
 BNNs translate floating point operations to more efficient binary operations. We will show how the multiplications and additions can be replaced by XNOR and population count, which facilitates efficient forward and backward propagation. By swapping dot products with these more efficient bitwise operations, BNNs are faster, use fewer resources, and less power in FPGAs and other hardware implementations. 
 
@@ -28,7 +28,7 @@ Such improved efficiency translates to accelerated inference times and enables B
 
 \section{Quantization}
 
-As discussed Chapter~\ref{sec:number_representation}, numbers can be represented in many different ways. 
+As discussed in Chapter~\ref{sec:number_representation}, numbers can be represented in many different ways. 
 Quantization is the notion of mapping a larger set of values to a smaller set of values. 
 Quantization can take many forms, and is very important for hardware optimization. 
 For example, one could quantize a floating point number to a fixed point representation and get significant benefits in computation time, resource usage, and power consumption.
@@ -36,7 +36,7 @@ If the fixed point number was less than 32 total bits, there would also be stora
 A binary number represents the extreme of quantization.
 It transforms a number to one of two possible values. 
 
-The signum function is widely used in BNNs for quantization. The signum function maps a larger bit input number to binary number of -1 or +1 based on the sign of the input value. 
+The signum function is widely used in BNNs for quantization. The signum function maps a larger bit input number to a binary number of -1 or +1 based on the sign of the input value. 
 Calculating the signum function is computationally inexpensive, making it extremely hardware efficient.
 For floating point numbers, this is solely a function of the sign bit, which is the most significant bit. 
 Similarly, the most significant bit of an integer value indicates the sign of the integer in two's complement representation.
@@ -242,9 +242,9 @@ Equation~\ref{eq:sum_minus1_1} defines the relationship between the summation of
 %\newpage
 
 \section{Forward Propagation}
-Recall that in deep learning, forward propagation refers to model inference. That is, given an input, use the model's learned parameters to predict the output. For BNNs, the forward pass is similar to that of any typical deep neural networks architecture with the exception that all weights and activations are binarized to either -1 or +1. 
+Recall that in deep learning, forward propagation refers to model inference. That is, given an input, use the model's learned parameters to predict the output. For BNNs, the forward pass is similar to that of any typical deep neural network architecture with the exception that all weights and activations are binarized to either -1 or +1. 
 
-\subsection{General BNN Forward Propagation Psuedo Code}
+\subsection{General BNN Forward Propagation Pseudo Code}
 The pseudo code for forward propagation of a BNN is shown below. Note that the superscript $b$ on a variable indicates that that variable is binarized. 
 
 For layers $1$ through $L$, the weights are first binarized (and quantized) using the sign function. This step is only necessary during training, however, since once the model is fully trained only the binary weights will be stored. Then, our binary activations from the previous layer and binary weights are multiplied using the XNOR and popcount operations resulting in a non-binary sum. Following this, batch normalization is applied, if necessary, with parameters $\theta_k$. If it is not the last layer of the network, then activations are once again binarized and the process is repeated. 
