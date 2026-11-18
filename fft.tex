@@ -89,7 +89,7 @@ S =
   W^{3 0}_4 & W^{3 1}_4 & W^{3 2}_4 & W^{3 3}_4 \\
  \end{bmatrix}
  \end{equation}
-And the \gls{dft} equation to compute the frequency output terms are:
+And the \gls{dft} equation to compute the frequency output terms is:
 \begin{equation}
 \begin{bmatrix} 
 G[0] \\
@@ -138,7 +138,7 @@ G[2] & = & g[0] \cdot e^{\frac{-j 2 \pi \cdot 2 \cdot 0}{4}} + g[1] \cdot e^{\fr
  & = & g[0] + g[1] \cdot e^{\frac{-j 4 \pi}{4}} + g[2] \cdot e^{\frac{-j 8 \pi}{4}} + g[3] \cdot e^{\frac{-j 12 \pi}{4}}\\
  & = & g[0] - g[1]  + g[2] -  g[3] \\
 \end{array} 
-\end{equation} The reductions were done by simplifications based on rotations. E.g., $e^{\frac{-j 8 \pi}{4}} = 1$ and $e^{\frac{-12 j \pi}{4}} = -1$ since in both cases use the fact that $e^{-j 2\pi}$ is equal to $1$. In other words, any complex exponential with a rotation by $2 \pi$ is equal.
+\end{equation} The reductions were done by simplifications based on rotations. E.g., $e^{\frac{-j 8 \pi}{4}} = 1$ and $e^{\frac{-12 j \pi}{4}} = -1$ since both cases use the fact that $e^{-j 2\pi}$ is equal to $1$. In other words, any complex exponential with a rotation by $2 \pi$ is equal.
 
 Finally, the equation for $G[3]$ is:
 \begin{equation}
@@ -162,7 +162,7 @@ G[3] & = & (g[0] - g[2]) + e^{\frac{-j 2 \pi 3}{4}} (g[1] - g[3])\\
 
 Several different symmetries are starting to emerge. First, the input data can be partitioned into even and odd elements, i.e., similar operations are done on the elements $g[0]$ and $g[2]$, and the same is true for the odd elements $g[1]$ and $g[3]$. Furthermore we can see addition and subtraction symmetries on these even and odd elements. During the calculations of the output frequencies $G[0]$ and $G[2]$, the even and odd elements are summed together. The even and odd input elements are subtracted when calculating the frequencies $G[1]$ and $G[3]$.  Finally, the odd elements in every frequency term are multiplied by a constant complex exponential $W^i_4$ where $i$ denotes the index for the frequency output, i.e., $G[i]$. 
 
-Looking at the terms in the parentheses, we see that they are 2 point \gls{fft}. For example, consider the terms corresponding to the even input values $g[0]$ and $g[2]$. If we perform a 2 point \gls{fft} on these even terms, the lower frequency (DC value) is $g[0] + g[2]$ (see Equation \ref{eq:2ptlower}), and the higher frequency is calculated as $g[0] - g[2]$ (see Equation \ref{eq:2pthigher}). The same applies to the odd input values $g[1]$ and $g[3]$. 
+Looking at the terms in the parentheses, we see that they are 2 point \gls{fft}s. For example, consider the terms corresponding to the even input values $g[0]$ and $g[2]$. If we perform a 2 point \gls{fft} on these even terms, the lower frequency (DC value) is $g[0] + g[2]$ (see Equation \ref{eq:2ptlower}), and the higher frequency is calculated as $g[0] - g[2]$ (see Equation \ref{eq:2pthigher}). The same applies to the odd input values $g[1]$ and $g[3]$. 
 
 We perform one more transformation on these equations.
 \begin{equation}
@@ -179,11 +179,11 @@ The twiddle factors in the last two equations are modified from $e^{\frac{-j 2 \
 \begin{figure}
 \centering
 \includegraphics[width=  .5 \textwidth]{images/4ptFFT}
-\caption{A four point \gls{fft} divided into two stages. Stage 1 has uses two 2 point \gls{fft}s -- one 2 point \gls{fft} for the even input values and the other 2 point \gls{fft} for the odd input values. Stage 2 performs the remaining operations to complete the \gls{fft} computation as detailed in Equation \ref{eq:reduced4point}. }
+\caption{A four point \gls{fft} divided into two stages. Stage 1 uses two 2 point \gls{fft}s -- one 2 point \gls{fft} for the even input values and the other 2 point \gls{fft} for the odd input values. Stage 2 performs the remaining operations to complete the \gls{fft} computation as detailed in Equation \ref{eq:reduced4point}. }
 \label{fig:4ptFFT}
 \end{figure}
 
-Figure \ref{fig:4ptFFT} shows the butterfly diagram for the 4-point \gls{fft}. We can see that the first stage is two 2-point \gls{fft} operations performed on the even (top butterfly) and odd (bottom butterfly) input values. The odd 2-point \gls{fft}s output is multiplied by the appropriate twiddle factor. We can use two twiddle factors for all four output terms using the reduction shown in Equation \ref{eq:reduced4point}.
+Figure \ref{fig:4ptFFT} shows the butterfly diagram for the 4-point \gls{fft}. We can see that the first stage is two 2-point \gls{fft} operations performed on the even (top butterfly) and odd (bottom butterfly) input values. The odd 2-point \gls{fft}'s output is multiplied by the appropriate twiddle factor. We can use two twiddle factors for all four output terms using the reduction shown in Equation \ref{eq:reduced4point}.
 
 We are seeing the beginning of a trend that allows the reduction in complexity from $\mathcal{O}(n^2)$ operations for the \gls{dft} to $\mathcal{O}(n \log n)$ operations for the \gls{fft}. The key idea is building the computation through recursion. The 4-point \gls{fft} uses two 2-point \gls{fft}s. This extends to larger \gls{fft} sizes. For example, an 8-point \gls{fft} uses two 4-point \gls{fft}s, which in turn each use two 2-point \gls{fft}s (for a total of four 2-point \gls{fft}s). A 16-point \gls{fft} uses two 8-point \gls{fft}s, and so on.
 
@@ -238,7 +238,7 @@ We can reduce the complex exponential in the summations as follows:
 e^{\frac{-j 2 \pi (k + N/2) n}{N/2}} = e^{\frac{-j 2 \pi k n}{N/2}} \cdot e^{\frac{-j 2 \pi (N/2) n}{N/2}} = e^{\frac{-j 2 \pi k n}{N/2}} \cdot e^{-j 2 \pi n} = e^{\frac{-j 2 \pi k n}{N/2}} \cdot 1
 \label{eq:fft-split-4-upper}
 \end{equation}
-The first reduction uses the power rule to split the exponential. The second reduction cancels the term $N/2$ in the second exponential. The final reduction uses that fact that $n$ is a non-negative integer, and thus $e^{-j 2 \pi n}$ will always be a rotation of multiple of $2 \pi$. This means that this term is always equal to $1$. 
+The first reduction uses the power rule to split the exponential. The second reduction cancels the term $N/2$ in the second exponential. The final reduction uses the fact that $n$ is a non-negative integer, and thus $e^{-j 2 \pi n}$ will always be a rotation of a multiple of $2 \pi$. This means that this term is always equal to $1$. 
 
 Now let us tackle the second complex exponential
 \begin{equation}
@@ -308,10 +308,10 @@ Index & Binary & Reversed & Reversed \\
 
 Looking at the first row, the initial index $0$ has a binary value of $000$, which, when reversed, remains $000$. Thus, this index does not need to be swapped. Looking at Figure \ref{fig:8ptFFT}, we see this is true. $g[0]$ remains in the same location. In the second row, the index 1 has a binary value $001$. When reversed, this is $100$ or $4$. Thus, the data that initially started at index 1, i.e., $g[1]$, should end up in the fourth location. Looking at index 4, we see that the bit reversed value is $1$. Thus $g[1]$ and $g[4]$ are swapped.  
 
-This bit reversal process works regardless of the input size of the \gls{fft}, assuming that the \gls{fft} is a power of two. \gls{fft} are commonly a power of two since this allows them to be recursively implemented.
+This bit reversal process works regardless of the input size of the \gls{fft}, assuming that the \gls{fft} is a power of two. \glspl{fft} are commonly a power of two since this allows them to be recursively implemented.
 
 \begin{exercise}
-In a 32 point \gls{fft}, index 1 is swapped with which index? Which index is index 2 is swapped with?
+In a 32 point \gls{fft}, index 1 is swapped with which index? Which index is index 2 swapped with?
 \end{exercise}
 
 This completes our mathematical treatment of the \gls{fft}. There are plenty of more details about the \gls{fft} and how to optimize it. We may have spent too much time already discussing the finer details of the \gls{fft}; this is a book on parallel programming for FPGAs, not digital signal processing. This highlights an integral part of creating an optimum hardware implementation -- the designer must understand the algorithm under development. Without that, it isn't easy to create an optimized implementation. The following section deals with creating a good \gls{fft} implementation. 
@@ -417,7 +417,7 @@ Refactoring the \gls{fft} code allows us to perform \gls{taskpipelining}. Figure
 %\includegraphics[width=  \textwidth]{images/fftstages}
 {\scriptsize \includesvg{fftstages}}
 \includesvg{fft_dataflow_behavior}
-\caption{ Dividing the \gls{fft} into different stages allows for task pipelining across each stage. The figure shows an example with three \gls{fft} stages (i.e., an 8 point \gls{fft}). The figure shows four 8-point \gls{fft} executing simultaneously. }
+\caption{ Dividing the \gls{fft} into different stages allows for task pipelining across each stage. The figure shows an example with three \gls{fft} stages (i.e., an 8 point \gls{fft}). The figure shows four 8-point \glspl{fft} executing simultaneously. }
 \label{fig:fftstages}
 \end{figure}
 
